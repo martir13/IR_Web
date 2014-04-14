@@ -1,0 +1,26 @@
+</div><!--___ End page_copy ___ --> 
+
+</div><!--___ End contentMain ___ -->
+
+
+<!--_____________ BEGIN Nav _____________ -->
+
+<div id="nav">
+<h2><a href="/Publications/">Publications</a></h2>
+<ul>
+	<li><a href="/Publications/">Description</a></li>
+	<li><a href="/Publications/Factsheet/">Fact Sheet</a></li>
+	<li><a href="/Publications/CDS/">Common Data Set</a></li>
+	<li><a href="/Factbook/">Fact Book</a></li>
+	<li><a target="_blank" href="http://www.erau.edu/about/facts-figures.html">Facts &amp; Figures</a></li>
+	<li><a href="/Publications/Conferences">Conferences</a></li>
+	<li><a href="http://irweb.erau.edu/irstudies/">Survey Reports</a></li>
+</ul>
+<img src="/css/iface/nav-bottomfade.jpg" alt="" />
+
+<script language="JavaScript" type="text/javascript">setPage()</script>
+</div><!-- END section_nav -->
+
+</div>
+
+<!-- END nonFooter -->

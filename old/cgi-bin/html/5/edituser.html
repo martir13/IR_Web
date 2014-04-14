@@ -1,0 +1,265 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Remark Web Survey Control Panel</title>
+<SCRIPT LANGUAGE="JAVASCRIPT">
+   	function validate(action_name)
+{
+@*(PasswordJavascript)
+switch(action_name)
+{
+case "EDIT_USER":
+@*(UsernameCheck)
+if (document.RWSADMIN.permission[0].checked)
+{
+document.RWSADMIN.FORM_ACTION.value = "EDIT_USER!" + document.RWSADMIN.UserName.value + "\@\*\(\)" + changePassword + "|" + document.RWSADMIN.Password.value + "\@\*\(\)1\@\*\(\)\@\*\(\)@*(EditFlag)";
+document.RWSADMIN.submit();
+}
+else if (document.RWSADMIN.permission[1].checked)
+{
+if (document.RWSADMIN.permission[1].checked)
+
+document.RWSADMIN.FORM_ACTION.value = "EDIT_USER!" + document.RWSADMIN.UserName.value + "\@\*\(\)" + changePassword + "|" + document.RWSADMIN.Password.value + "\@\*\(\)0";
+
+if (document.RWSADMIN.RegularUserPermission[0].checked)
+{
+document.RWSADMIN.FORM_ACTION.value += "|1";
+}
+else
+{
+document.RWSADMIN.FORM_ACTION.value += "|0";
+}
+
+if (document.RWSADMIN.RegularUserPermission[1].checked)
+{
+document.RWSADMIN.FORM_ACTION.value += "|1";
+}
+else
+{
+document.RWSADMIN.FORM_ACTION.value += "|0";
+}
+
+document.RWSADMIN.FORM_ACTION.value += "\@\*\(\)*ALLFORMS*\@\*\(\)@*(EditFlag)";
+document.RWSADMIN.submit();
+}
+else
+{
+document.RWSADMIN.FORM_ACTION.value = "EDIT_USER!" + document.RWSADMIN.UserName.value + "\@\*\(\)" + changePassword + "|" + document.RWSADMIN.Password.value + "\@\*\(\)0";
+
+if (document.RWSADMIN.RestrictedUserPermission[0].checked)
+{
+document.RWSADMIN.FORM_ACTION.value += "|1";
+}
+else
+{
+document.RWSADMIN.FORM_ACTION.value += "|0";
+}
+
+if (document.RWSADMIN.RestrictedUserPermission[1].checked)
+{
+document.RWSADMIN.FORM_ACTION.value += "|1";
+}
+else
+{
+document.RWSADMIN.FORM_ACTION.value += "|0";
+}
+
+document.RWSADMIN.FORM_ACTION.value += "\@\*\(\)";
+if (document.RWSADMIN.forms == "[object]")
+{
+	if (!document.RWSADMIN.forms.length)
+	{
+		if (document.RWSADMIN.forms.checked)
+		{
+			document.RWSADMIN.FORM_ACTION.value += document.RWSADMIN.forms.value + "|";
+		}
+	}
+	else
+	{
+		for (i=0;i<document.RWSADMIN.forms.length;i++) {
+	
+		if (document.RWSADMIN.forms[i].checked) {
+			document.RWSADMIN.FORM_ACTION.value += document.RWSADMIN.forms[i].value + "|";
+		}
+	}
+}
+}
+document.RWSADMIN.FORM_ACTION.value += "\@\*\(\)@*(EditFlag)";
+document.RWSADMIN.submit();
+}
+break;
+case "CANCEL":
+document.RWSADMIN.FORM_ACTION.value = "VIEW_USER_LIST";
+document.RWSADMIN.submit();
+break;
+}
+}
+	</SCRIPT>
+<style type="text/css">
+<!--
+body {
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	background: #FFFFFF;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+}
+
+/* Tips for Elastic layouts 
+1. Since the elastic layouts overall sizing is based on the user's default fonts size, they are more unpredictable. Used correctly, they are also more accessible for those that need larger fonts size since the line length remains proportionate.
+2. Sizing of divs in this layout are based on the 100% font size in the body element. If you decrease the text size overall by using a font-size: 80% on the body element or the #container, remember that the entire layout will downsize proportionately. You may want to increase the widths of the various divs to compensate for this.
+3. If font sizing is changed in differing amounts on each div instead of on the overall design (ie: #sidebar1 is given a 70% font size and #mainContent is given an 85% font size), this will proportionately change each of the divs overall size. You may want to adjust based on your final font sizing.
+*/
+.oneColElsCtrHdr #container {
+	width: 48em;  /* this width will create a container that will fit in an 800px browser window if text is left at browser default font sizes */
+	background: #DCE8FC;
+	margin: 15px auto; /* the auto margins (in conjunction with a width) center the page */
+	border: 1px solid #000000;
+	text-align: left; /* this overrides the text-align: center on the body element. */
+}
+.oneColElsCtrHdr #header {
+	background: #90B2EA;  /* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
+	height: 130px;
+} 
+.oneColElsCtrHdr #header h1 {
+	margin: 0;
+	padding-top: 23px;
+}
+.oneColElsCtrHdr #mainContent {
+	padding: 0 20px; /* remember that padding is the space inside the div box and margin is the space outside the div box */
+	background: #DCE8FC;
+}
+.oneColElsCtrHdr #footer { 
+	padding: 0 10px; /* this padding matches the left alignment of the elements in the divs that appear above it. */
+	background:#DCE8FC;
+} 
+.oneColElsCtrHdr #footer p {
+	margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
+	padding: 10px 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+	font-size: small;
+	text-align:center;
+}
+
+#nav-menu ul
+{
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+#nav-menu li
+{
+float: left;
+margin: 0 .1em;
+}
+
+#nav-menu li a
+{
+background: #ECF5FF;
+height: 1.9em;
+line-height: 1.9em;
+float: left;
+width: 8.9em;
+display: block;
+border: 1px solid #dcdce9;
+border-bottom: none;
+text-decoration: none;
+text-align: center;
+font-size:small;
+color:#000000
+}
+
+#nav-menu li a:hover
+{
+background:#B9CCFD;
+}
+
+/* Hide from IE5-Mac \*/
+#nav-menu li a
+{
+float: none
+}
+/* End hide */
+
+#nav-menu
+{
+	width:48em;
+	background: #90B2EA;
+	height:1.7em;
+	border-bottom: 1px solid #DCE8FC;
+} 
+.oneColElsCtrHdr #container #nav-menu li a.selected {
+	background:#DCE8FC;
+	border-bottom:none;
+	height:2em;
+}
+.oneColElsCtrHdr #container #header #welcome {
+	margin-top:65px;
+	float:right;
+	padding-right: 15px;
+	text-align:right;
+	font-size:smaller;
+	width:13.1em;
+}
+
+-->
+</style>
+</head>
+
+<body class="oneColElsCtrHdr">
+
+<div id="container">
+  <div id="header">
+    <img img src="@*(img)" alt="RWS5 Logo" width="128" height="128" style="float:left; margin-right:10px; margin-left:10px; " />
+    <div id="welcome">Welcome, <strong>@*(username)</strong>.<br /> 
+      <a href="@*(admin)@*(uid)&amp;NAV=Logout"><strong>Logout</strong></a></div>
+    <h1>Remark Web Survey<sup style="font-size:smaller;">&reg;</sup> 5<br />
+      <span style="font-size:smaller;">Admin Control Panel </span>
+      <!-- end #header -->
+    </h1>
+  </div>
+  <div id="nav-menu">
+  <ul>
+  <li><a href="@*(admin)@*(uid)&NAV=Setup">Server Setup</a></li>
+  <li><a href="@*(admin)@*(uid)&NAV=WebForms">Web Forms</a></li>
+  <li><a href="@*(admin)@*(uid)&NAV=Data">Data & Stats</a></li>
+  <li><a class="selected">Users</a></li>
+  <li><a href="@*(admin)@*(uid)&NAV=Password">Password</a></li>
+  <li><a href="@*(admin)@*(uid)&NAV=Diagnostics">Diagnostics</a></li>
+  </ul>
+  </div>
+  <div id="mainContent">
+    <h2>@*(EditUserTitle)</h2>
+    <FORM NAME="RWSADMIN" ACTION="@*(admin)@*(uid)" METHOD="POST">
+    <p style="margin-left:10px; font-size:small;">@*(user_name)</p>
+    <p style="margin-left:10px; font-size:small;">@*(Password_Checkbox)
+    Password
+      <input type="text" name="Password" id="Password" />
+    </p>
+    <p style="margin-left:10px; font-size:small;"><strong>Permissions level:</strong><br />
+      <input name="permission" type="radio" id="Administrator" value="Administrator" @*(administrator_CHECKED) />
+      Administrator<br /><br />
+      <input type="radio" name="permission" id="Administrator2" value="StatsAllForms" @*(all_CHECKED) />
+      Standard User<br />
+      &nbsp;&nbsp;&nbsp;<input type="checkbox" id="RegularUserPermission" name="RegularUserPermission" value="AutoPublish" @*(regular_publish) />Enable automatic publishing from the Designer component<br />
+      &nbsp;&nbsp;&nbsp;<input type="checkbox" id="RegularUserPermission" name="RegularUserPermission" value="AutoDownload" @*(regular_download) />Enable automatic data downloading from the Designer component<br /><br />
+      <input type="radio" name="permission" id="Administrator3" value="Stats" @*(some_CHECKED) />
+      Restricted User (Access to specified web forms only)<br />
+      &nbsp;&nbsp;&nbsp;<input type="checkbox" id="RestrictedUserPermission" name="RestrictedUserPermission" value="AutoPublish" @*(restricted_publish) />Enable automatic publishing from the Designer component<br />
+      &nbsp;&nbsp;&nbsp;<input type="checkbox" id="RestrictedUserPermission" name="RestrictedUserPermission" value="AutoDownload" @*(restricted_download) />Enable automatic data downloading from the Designer component<br />
+      &nbsp;&nbsp;&nbsp;&nbsp;<strong>Specified web forms:</strong><br />
+      @*(form_checks)
+    </p>
+    <p style="text-align:center"> 
+        <input type="button" id="OK" name="OK" value="OK" onclick="validate('EDIT_USER');" style="width: 100px" />&nbsp;&nbsp;<input type="button" id="Cancel" name="Cancel" value="Cancel" onclick="validate('CANCEL');" style="width: 100px" />
+    </p>
+     <INPUT TYPE="HIDDEN" ID="FORM_ACTION" NAME="FORM_ACTION" VALUE="@*(action)"></INPUT></FORM>
+	<!-- end #mainContent --></div>
+  <div id="footer">
+    <p>© @*(year) Gravic, Inc. All Rights Reserved.</p>
+  <!-- end #footer --></div>
+<!-- end #container --></div>
+</body>
+</html>

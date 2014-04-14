@@ -1,0 +1,79 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Untitled Document</title>
+<link href="/css/screen.css" rel="stylesheet" type="text/css" />
+
+<body>
+<form name="jumpy" >
+<select name="example" size="1" style="max-width:350px; font-size:12px; " >
+<!-- CHANGE THE BELOW URLS TO YOUR OWN-->
+<option value="/irstudies/ECAR/CMS/pc/Report/one.html">Which of the following describes you?</option>
+<option value="/irstudies/ECAR/CMS/pc/Report/two.html">I like to learn through</option>
+<option value="/irstudies/ECAR/CMS/pc/Report/eight.html">How should your institution first notify you of a campus emergency?</option>
+<option value="/irstudies/ECAR/CMS/pc/Report/three.html">How many hours each week do you spend actively doing Internet activities for school, work or recreation?</option>
+<option value="/irstudies/ECAR/CMS/pc/Report/four.html">How often do you do the following (for school, work or recreation)?</option>
+<option value="/irstudies/ECAR/CMS/pc/Report/five.html">During the academic year, how do you most frequently access the Internet?</option>
+<option value="/irstudies/ECAR/CMS/pc/Report/six.html">How often do you do the following (for school, work or recreation)?</option>
+<option value="/irstudies/ECAR/CMS/pc/Report/seven.html">What is your skill level for the following?</option>
+
+
+</select>
+
+<input type="button" name="test" value="Go!" onClick="gone()">
+</form>
+<br />
+<div id="helpdiv" class="hidden" style="background-color:white; border: 2px solid black; width:600px; ">The graph will open in the space below. The graphs are in Shockwave format and may take some time to load depending on the speed of your Internet Connection. Please be patient.</div>
+<script language="javascript">
+<!--
+
+//Drop-down Document Viewer- © Dynamic Drive (www.dynamicdrive.com)
+//For full source code, 100's more DHTML scripts, and TOS,
+//visit http://www.dynamicdrive.com
+
+//Specify display mode (0 or 1)
+//0 causes document to be displayed in an inline frame, while 1 in a new browser window
+var displaymode=0
+//if displaymode=0, configure inline frame attributes (ie: dimensions, intial document shown
+var iframecode='<iframe id="external" width = 700px frameborder = "0" scrolling="no" style="width:700px;height:850px; border:0; margin-left:-8%  " src="/newsite/irstudies/GSS/Report/select.htm"></iframe>'
+
+/////NO NEED TO EDIT BELOW HERE////////////
+
+if (displaymode==0)
+document.write(iframecode)
+
+function gone(){
+closeout();
+var selectedurl=document.jumpy.example.options[document.jumpy.example.selectedIndex].value
+if (document.getElementById&&displaymode==0)
+document.getElementById("external").src=selectedurl
+else if (document.all&&displaymode==0)
+document.all.external.src=selectedurl
+else{
+if (!window.win2||win2.closed)
+win2=window.open(selectedurl)
+//else if win2 already exists
+else{
+win2.location=selectedurl
+win2.focus()
+}
+}
+}
+function closeout()
+{
+document.getElementById("helpdiv").className = 'visible';
+window.setTimeout("closeHelpDiv();", 10000);
+
+}
+function closeHelpDiv(){
+document.getElementById("helpdiv").style.display="none";
+}
+
+//-->
+</script>
+
+
+</body>
+</html>

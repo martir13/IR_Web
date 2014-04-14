@@ -1,0 +1,26 @@
+/* reset default styles */
+@import url("http://www.erau.edu/assets/css/reset.css");
+
+/*layout */
+@import url("/css/screen.css");
+
+/* typography styles */
+@import url("http://www.erau.edu/assets/css/typography.css");
+
+/*nav.css*/
+@import url("http://www.erau.edu/assets/css/nav.css");
+
+/*tables.css*/
+@import url("http://www.erau.edu/assets/css/tables.css");
+
+/*images.css*/
+@import url("http://www.erau.edu/assets/css/images.css");
+
+/*forms.css
+@import url("http://www.erau.edu/assets/css/forms.css");
+*/
+/*specific.css*/
+@import url("http://www.erau.edu/assets/css/specific.css");
+
+
+

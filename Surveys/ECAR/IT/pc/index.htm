@@ -1,0 +1,80 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Untitled Document</title>
+<link href="/css/screen.css" rel="stylesheet" type="text/css" />
+
+<body>
+<form name="jumpy" >
+<select name="example" size="1" style="max-width:350px; font-size:12px; " >
+<!-- CHANGE THE BELOW URLS TO YOUR OWN-->
+<option value="/newsite/irstudies/GSS/Report/select.htm" selected>Select</option>
+<option value="/irstudies/ECAR/IT/pc/Report/one.html">It would benefit students if my institution required students to take at least one entirely online course.</option>
+<option value="/irstudies/ECAR/IT/pc/Report/two.html">What is your opinion about the following statements?</option>
+<option value="/irstudies/ECAR/IT/pc/Report/three.html">Are you using the following for courses this semester?</option>
+<option value="/irstudies/ECAR/IT/pc/Report/four.html">How many of your courses this quarter/semester are entirely online?</option>
+<option value="/irstudies/ECAR/IT/pc/Report/five.html">How many of your instructors:</option>
+<option value="/irstudies/ECAR/IT/pc/Report/six.html">I prefer taking courses that use:</option>
+<option value="/irstudies/ECAR/IT/pc/Report/fifteen.html">Are you using a course or learning management system for any of your courses this semester??</option>
+<option value="/irstudies/ECAR/IT/pc/Report/seven.html">Have you ever taken a course that used a course management system (CMS)?</option>
+<option value="/irstudies/ECAR/IT/pc/Report/eight.html">How often do you use course management systems?</option>
+<option value="/irstudies/ECAR/IT/pc/Report/nine.html">What is your skill level using course management systems?</option>
+<option value="/irstudies/ECAR/IT/pc/Report/ten.html">Describe your overall experience using course management systems.</option>
+</select>
+
+<input type="button" name="test" value="Go!" onClick="gone()">
+</form>
+<br />
+<div id="helpdiv" class="hidden" style="background-color:white; border: 2px solid black; width:600px; ">The graph will open in the space below. The graphs are in Shockwave format and may take some time to load depending on the speed of your Internet Connection. Please be patient.</div>
+<script language="javascript">
+<!--
+
+//Drop-down Document Viewer- © Dynamic Drive (www.dynamicdrive.com)
+//For full source code, 100's more DHTML scripts, and TOS,
+//visit http://www.dynamicdrive.com
+
+//Specify display mode (0 or 1)
+//0 causes document to be displayed in an inline frame, while 1 in a new browser window
+var displaymode=0
+//if displaymode=0, configure inline frame attributes (ie: dimensions, intial document shown
+var iframecode='<iframe id="external" width = 100% frameborder = "0" scrolling="no" style="width:100%;height:650px; border:0; " src="/newsite/irstudies/GSS/Report/select.htm"></iframe>'
+/////NO NEED TO EDIT BELOW HERE////////////
+
+if (displaymode==0)
+document.write(iframecode)
+
+function gone(){
+closeout();
+var selectedurl=document.jumpy.example.options[document.jumpy.example.selectedIndex].value
+if (document.getElementById&&displaymode==0)
+document.getElementById("external").src=selectedurl
+else if (document.all&&displaymode==0)
+document.all.external.src=selectedurl
+else{
+if (!window.win2||win2.closed)
+win2=window.open(selectedurl)
+//else if win2 already exists
+else{
+win2.location=selectedurl
+win2.focus()
+}
+}
+}
+function closeout()
+{
+document.getElementById("helpdiv").className = 'visible';
+window.setTimeout("closeHelpDiv();", 10000);
+
+}
+function closeHelpDiv(){
+document.getElementById("helpdiv").style.display="none";
+}
+
+//-->
+</script>
+
+
+</body>
+</html>

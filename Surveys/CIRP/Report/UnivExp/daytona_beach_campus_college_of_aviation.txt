@@ -1,0 +1,7 @@
+<option value="AS Aviation Maint Sciences">AS Aviation Maint Sciences</option>
+<option value="BS Aeronautical Sciences">BS Aeronautical Sciences</option>
+<option value="BS Air Traffic Management">BS Air Traffic Management</option>
+<option value="BS Aviation Maintenance Sciences">BS Aviation Maintenance Sciences</option>
+<option value="BS Aviation Management">BS Aviation Management</option>
+<option value="BS Homeland Security">BS Homeland Security</option>
+<option value="BS Safety Science">BS Safety Science</option>

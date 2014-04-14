@@ -1,0 +1,48 @@
+<base href="http://irweb.embry-riddle.com/" />
+
+<!-- ____________________________ BEGIN footer ____________________________ -->
+
+    <div id="footer">
+        <p class="copyright">©Copyright 2013 Embry-Riddle Aeronautical University. All rights reserved.</p>
+
+        <p class="address">Administrative Offices: 600 South Clyde Morris Blvd., Daytona Beach, FL 32114</p>
+    </div><!-- END footer -->
+                                    
+</div>
+
+<a href="#" class="go-top"><img src="images/green_uparrow.jpg" /></a>
+
+    <!--************************************* BEGIN 3RD PARTY SCRIPTS *********************************************-->
+ 
+    <script src="js/SurveyHomeJS/bootstrap.js" type="text/javascript"></script>
+
+    <!-- Script for hover effect on images -->
+    <script src="js/SurveyHomeJS/indexMosaic.1.0.1.min.js" type="text/javascript"></script>
+    <script src="js/SurveyHomeJS/indexMosaicInit.js" type="text/javascript"></script>
+
+    <!-- Script for To-Top button -->
+    <script src="js/SurveyHomeJS/indexToTop.js" type="text/javascript"></script>
+
+    <!--[if lt IE 9]>
+        <script src="js/SurveyHomeJS/ieIndexMosaic.js" type="text/javascript"></script>
+    <![endif]-->
+
+    <!-- Scripts used for breadcrumbs -->
+    <script src="js/SurveyHomeJS/jquery.easing.1.3.js" type="text/javascript" language="JavaScript"></script>
+    <script src="js/SurveyHomeJS/jquery.jBreadCrumb.1.1.js" type="text/javascript" language="JavaScript"></script>
+
+    <script src="js/megamenu_plugins.js"></script><!-- Mega Menu Plugins (scroller, form, hoverIntent) -->
+    <script src="js/megamenu.js"></script><!-- Mega Menu Script -->
+    <!--************************************* END 3RD PARTY SCRIPTS *********************************************-->
+
+
+
+
+
+    <!--************************************* BEGIN OUR CUSTOM SCRIPTS *********************************************-->
+    <!-- Default custom index page script -->
+    <script src="js/SurveyHomeJS/index.js" type="text/javascript"></script>
+    <!--************************************* END OUR CUSTOM SCRIPTS *********************************************-->
+
+</body>
+</html>

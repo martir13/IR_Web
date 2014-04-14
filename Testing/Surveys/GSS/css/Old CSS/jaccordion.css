@@ -1,0 +1,264 @@
+/* ===[ accordion css reset ]=== */
+.jaccordion * {border: 0;line-height: 0;list-style: none;margin: 0;padding: 0;}
+
+/* ===[ accordion ]=== */
+.jaccordion {
+	background-color: #111;
+	height: 340px;
+	margin: 0 auto;
+	max-width: 1000px;	/* Do not replace max-width with width or you'll lose responsiveness */
+	outline: none !important;
+/*	padding: 5px; */
+	position: relative;
+/*	-webkit-border-radius: 5px;	/* Safari 3-4, iOS 1-3.2, Android =1.6 */
+/*	-moz-border-radius: 5px;	/* FF1+ */
+/*	border-radius: 5px;			/* Opera 10.5, IE9+, Safari 5, Chrome, Firefox 4+, iOS 4, Android 2.1+ */
+}
+.jaccordionShadow {
+	border: 0;
+	display: block;
+	margin: 0 auto;
+	padding: 0;
+	width: 100%;
+}
+/* Do not change anything in this rule */
+.jaccordion .jAccordion-slidesWrapper {height: 100%;overflow: hidden;position: relative;width: 100%;}
+/* Do not change display, overflow or position */
+.jaccordion .jAccordion-slide {
+	display: block;
+	overflow: hidden;
+	position: relative;
+}
+/* Opera 10.xx bug fix
+ * More info: http://css-lab.com/bug-test/opera-ap-bugfix.html
+ */
+.jaccordion .jAccordion-slide:after {content: "";float: left;height: 100%;width: 0;}
+
+/* ===[ Custom elements ]=== */
+.jaccordion .title {
+	background: url(../img/jaccordion_sprite.png) no-repeat left top;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 50px;
+/*	-webkit-border-radius: 4px;	/* Safari 3-4, iOS 1-3.2, Android =1.6 */
+/*	-moz-border-radius: 4px;	/* FF1+ */
+/*	border-radius: 4px;			/* Opera 10.5, IE9+, Safari 5, Chrome, Firefox 4+, iOS 4, Android 2.1+ */
+}
+
+.jaccordion .title span {
+	background: url(../img/jaccordion_sprite.png) no-repeat right top;
+	display: block;
+	height: 100%;
+	width: 100%;
+/*	-webkit-border-radius: 4px;	/* Safari 3-4, iOS 1-3.2, Android =1.6 */
+/*	-moz-border-radius: 4px;	/* FF1+ */
+/*	border-radius: 4px;			/* Opera 10.5, IE9+, Safari 5, Chrome, Firefox 4+, iOS 4, Android 2.1+ */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";	/* IE 8 */
+	filter: alpha(opacity=0);	/* IE 5-7 */
+	-moz-opacity: 0;			/* FF3.5+ */
+	-khtml-opacity: 0;			/* Safari 1.x */
+	opacity: 0;					/* Chrome 4+, Firefox 2+, Safari 3.1+, Opera 9+, IE9+, iOS 3.2+, Android 2.1+ */
+	-webkit-transition: opacity 0.5s linear;	/* Safari 3.2+, Chrome */
+	-moz-transition: opacity 0.5s linear;		/* Firefox 4-15 */
+	-o-transition: opacity 0.5s linear;			/* Opera 10.5–12.00 */
+	transition: opacity 0.5s linear;			/* Firefox 16+, Opera 12.50+ */
+}
+
+.jaccordion .active_slide .title span,
+.jaccordion .jAccordion-slide:hover .title span {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";	/* IE 8 */
+	filter: alpha(opacity=100);	/* IE 5-7 */
+	-moz-opacity: 1;	/* FF3.5+ */
+	-khtml-opacity: 1;	/* Safari 1.x */
+	opacity: 1;			/* Chrome 4+, Firefox 2+, Safari 3.1+, Opera 9+, IE9+, iOS 3.2+, Android 2.1+ */
+}
+.jaccordion .jAccordion-slide img {margin-left: 51px} /* Was 55px. Moved img left to get rid of thick black line */
+
+.jaccordion .caption,
+.jaccordion .description {
+	cursor: default;
+/*	background: transparent url(../images/transparent_background.png) repeat top left;	*/
+	overflow: hidden;
+	position: absolute;
+}
+
+.jaccordion .caption {
+	text-align: left;
+	white-space: normal;
+	letter-spacing:-0.05em;
+}
+
+.jaccordion .caption,
+.jaccordion .description {
+	-moz-border-radius: 3px; 	/* FF1+ */
+    -webkit-border-radius: 3px; /* Safari 3-4, iOS 1-3.2, Android <=1.6 */
+    border-radius: 3px; 		/* Opera 10.5, IE9, Safari 5, Chrome, Firefox 4+, iOS 4, Android 2.1+ */
+}
+.jaccordion .description {
+	bottom: 2%;
+	left: 1%;
+	right: 1%;
+}
+
+/* Preloader */
+.jaccordion .preloader {
+	color: #FFF;
+	font: bold italic 17px Georgia, "Times New Roman", Times, serif;
+	left: 0;
+	position: absolute;
+	right: 0;
+	text-align: center;
+	text-shadow: 1px -1px #000;
+	top: 45%;
+}
+/* ===[ End of custom elements ]=== */
+
+/* ===[ Default font styles ]=== */
+.jaccordion h1,
+.jaccordion h2,
+.jaccordion h3 {
+	color: #939292; /* was #fff */
+/*	font-family: Georgia, "Times New Roman", Times, serif;
+	font-style: italic;
+	font-weight: normal;	*/
+	padding: 7px 15px;
+}
+
+.jaccordion h1 {font-size: 22px;line-height: 1.0;}	/* was 17px and 1.7 */
+.jaccordion h2 {font-size: 15px;line-height: 1.5;}
+.jaccordion h3 {font-size: 14px;line-height: 1.3;}
+.jaccordion p {
+	color: #CCC;
+	font: 12px Georgia, "Times New Roman", Times, serif;
+	padding: 0 15px 7px;
+}
+.jaccordion a {color:#FFF;}
+/* ===[ End of default font styles ]=== */
+
+/* ===[ Custom font styles ]=== */
+.jaccordion h1.caption,
+.jaccordion h2.caption,
+.jaccordion h3.caption {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-style: normal;
+	line-height: 1;
+}
+
+.jaccordion h1.caption {
+	color:#b0a179;
+	font-weight:normal;
+	font-size: 32px;
+	line-height:33px;
+	letter-spacing:-0.05em;
+	width:40%;
+} /* Was font-size:28px */
+.jaccordion h2.caption {font-size: 24px;	width:40%;}
+.jaccordion h3.caption {font-size: 17px; font-weight:normal; line-height:20px; width:40%;}
+.jaccordion h3.spotlight:before, .jaccordion h3.spotlight:after {font-size:150%; font-weight:bold; color:#fff; font-family:Georgia, "Times New Roman", Times, serif; line-height:10px;}
+.jaccordion h3.spotlight:before {content:open-quote;}
+.jaccordion h3.spotlight:after {content:close-quote;}
+
+.jaccordion .title h1 {
+	cursor: default;
+    left: 0.7em;
+    padding: 0;
+    position: absolute;
+    top: 5%;	/* was 10% */
+    white-space: nowrap;
+	/* Rotation of title */
+	-webkit-transform: translateX(-100%) rotate(270deg);    
+    -moz-transform: translateX(-100%) rotate(270deg);
+    -o-transform: translateX(-100%) rotate(270deg);
+	-ms-transform: translateX(-100%) rotate(270deg);
+    transform: translateX(-100%) rotate(270deg);
+    -webkit-transform-origin: right top;
+    -moz-transform-origin: right top;
+    -o-transform-origin: right top;
+	-ms-transform-origin: right top;
+    transform-origin: right top;
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+	
+	-webkit-transition: color 0.5s linear;	/* Safari 3.2+, Chrome */
+	-moz-transition: color 0.5s linear;		/* Firefox 4-15 */
+	-o-transition: color 0.5s linear;		/* Opera 10.5–12.00 */
+	transition: color 0.5s linear;			/* Firefox 16+, Opera 12.50+ */
+}
+
+/* IE9 css hack - IE9 would apply both filter and -ms-transform, which would actually rotate 270 * 2 degrees.
+ * Application of filter without -ms-transform would significantly slow IE9.
+ */
+:root .jaccordion .title h1 {filter: none\9}
+
+.jaccordion .active_slide .title h1,
+.jaccordion .jAccordion-slide:hover .title h1 {color: #fff} /* was #000 */
+/* ===[ End of custom font styles ]=== */
+
+/* ===[ Rules used when JS is disabled ]===
+ * If you don't care about JS fallback you can remove this entire section.
+ * Percents are used to keep the responsiveness for the JS fallback even though it can sometimes make the accordion look a bit jumpy.
+ */
+ 
+/* Rule for inactive slide */
+.jaccordion.noJS .jAccordion-slide {
+	float: left;	/* Remove this rule if using vertical accordion */
+	margin-left: 0px;	/* Spacing - I do not recommend to use spacing for horizontal accordion (replace with margin-top if using vertical accordion) */
+	width: 5.5%;	/* width = 100% / number of slides (replace width with height if using vertical accordion) */
+}
+.jaccordion.noJS .jAccordion-slide:first-child {width:100%}
+/* Shrinked slide size 
+ * shrinked slide size in percents = (100% - active slide size in percents) / (number of slides - 1);
+ */
+.jaccordion.noJS .jAccordion-slidesWrapper:hover .jAccordion-slide {width: 5.5%}
+/* Active slide size
+ * active slide size in percents = active slide size in px / accordion size * 100%;
+ */
+.jaccordion.noJS .jAccordion-slidesWrapper .jAccordion-slide:hover {width: 83.5%}
+.jaccordion.noJS .jAccordion-slide .description,
+.jaccordion.noJS .jAccordion-slide .caption {display: none}
+.jaccordion.noJS .jAccordion-slide:hover .description,
+.jaccordion.noJS .jAccordion-slide:hover .caption {display: block}
+/* ===[ End of rules used when JS is disabled ]=== */
+
+/* ===[ Responsive ]=== */
+/* iPad - screen width from 768px up to 1023px */
+@media only screen and (min-width:768px) and (max-width:1023px) { 
+	.jaccordion h1 {font-size: 17px;padding: 6px 10px;}
+	.jaccordion h2 {font-size: 15px;padding: 6px 10px;}
+	.jaccordion h3 {font-size: 14px;padding: 6px 10px;}
+	.jaccordion h1.caption {font-size: 23px; line-height:24px;}
+	.jaccordion h2.caption {font-size: 19px;}
+	.jaccordion h3.caption {font-size: 14px}
+	.jaccordion p {padding: 0 10px 6px}
+}
+
+/* Small tablet - screen width from 480px up to 767px */
+@media only screen and (min-width:480px) and (max-width:767px) {  
+	.jaccordion h1 {font-size: 14px;padding: 2px 6px;}
+	.jaccordion h2 {font-size: 15px;padding: 2px 6px;}
+	.jaccordion h3 {font-size: 13px;padding: 2px 6px;}
+	.jaccordion h1.caption {font-size: 18px; line-height:20px}
+	.jaccordion h2.caption {font-size: 16px}
+	.jaccordion h3.caption {font-size: 12px; line-height:16px}
+	.jaccordion p {padding: 0 6px 2px}
+	.jaccordion .jAccordion-slide.active_slide .title {width: 35px}
+	.jaccordion .jAccordion-slide.active_slide img {margin-left: 36px} /* Was 40px. Moved img left to get rid of thick black line */
+	.jaccordion .title h1 {left:8px}
+	.jaccordion .jAccordion-slide.active_slide .title h1 {left:8px}
+}
+
+/* iPhone and small phones - screen width up to 479px */
+@media only screen and (max-width:479px) { 
+	.jaccordion h1 {font-size: 15px;padding: 0 3px;}
+	.jaccordion h2 {font-size: 14px;padding: 0 3px;}
+	.jaccordion h3 {font-size: 12px;padding: 0 3px;}
+	.jaccordion h1.caption {font-size: 17px;font-weight:normal;}
+	.jaccordion h2.caption {font-size: 15px;font-weight:normal;}
+	.jaccordion h3.caption {font-size: 13px;font-weight:normal;}
+	.jaccordion p {padding: 0 4px 2p;}
+	.jaccordion .jAccordion-slide.active_slide .title {width: 20px}
+	.jaccordion .jAccordion-slide.active_slide img {margin-left: 25px}
+	.jaccordion .title h1 {left:-3px}
+}

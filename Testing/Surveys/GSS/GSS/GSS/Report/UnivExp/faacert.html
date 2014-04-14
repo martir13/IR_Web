@@ -1,0 +1,656 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <link href="../css/tableau.css" media="all" rel="stylesheet" type=
+    "text/css">
+    <link href="../css/jquery.multiselect.css" media="all" rel="stylesheet" type=
+    "text/css">
+    <link href="../css/jquery.multiselect.filter.css" media="all" rel="stylesheet"
+    type="text/css">
+    <link href=
+    "http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/themes/smoothness/jquery-ui.css"
+    rel="stylesheet" type="text/css">
+    <link href="../css/smoothness/jquery-ui-1.10.2.custom_black.css" rel="stylesheet">
+
+    <!-- Stylesheet for breadcrumbs navigation -->
+    <link rel="stylesheet" href="../css/BreadCrumb.css" type="text/css">
+
+    <!-- Stylesheet for the dataTables on the first tab -->
+    <link rel="stylesheet" type="text/css" href="../css/tableau.jquery.dataTables_new.css">
+
+    <!-- Stylesheet for the intro tutorial -->
+    <link rel="stylesheet" type="text/css" href="../css/tableau.introjs.css">
+
+    <!-- CSS stylesheet for IE 8 and below. -->
+    <!--[if lt IE 9]>
+        <link rel="stylesheet" type="text/css" href="../css/ieonly.css" />
+    <![endif]-->
+
+<title>GSS Interactive Report</title>
+    
+</head>
+
+<body>
+    <!--[if lt IE 8]><p class="chromeframe">You are using an <strong>outdated</strong> browser (or IE compatibilitiy mode is on and should be turned off). Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p><![endif]-->
+
+<div class="topHat">
+    <div class="mainContentContainer">
+        <a class="logo" href="http://www.erau.edu">
+            <img alt="ERAU Logo" height="16" src="../../../../../images/erau_logo.png" width="184" />
+            <span>Interactive Report</span>
+        </a>
+        <span id="topThreeLinks">
+            <a data-step="8" data-intro="Come back here to access the help area, or see the tour once again." href="#" onclick="applyLightbox(event);">Getting Started</a>
+        </span>
+        <select id="needHelpDropdown" onchange="window.open(this.options[this.selectedIndex].value);">
+            <option value="" selected disabled>Click Here</option>
+            <option value="../Help/Survey Reporting Application.html ">Overview</option>
+            <option value="../Help/Navigation.html">Navigation</option>
+            <option value="../Help/Charts.html">Charts</option>
+            <option value="../Help/Filters.html">Filter</option>
+            <option value="../Help/FAQs.html">FAQs</option>
+            <option value="../Help/ContactUs.html">Contact Us</option>
+        </select>
+        <span id="needHelp">
+           Need Help?
+        </span>
+    </div>
+</div>
+
+<div class="mainContentContainer">
+    <div class="container">
+        <!-- Start Breadcrumbs -->
+        <div class="breadCrumbHolder module">
+            <div id="breadCrumb3" class="breadCrumb module surveyBreadcrumb">
+                <ul>
+                    <li class="first">
+                        <a href="http://irweb.erau.edu">Home</a>
+                    </li>
+                    <li>
+                        <a href="../../../index.html">Surveys</a>
+                    </li>
+                    <li>
+                        <a href="../../index.html">GSS</a>
+                    </li>
+                    <li class="last">
+                        GSS Interactive Report
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- This only displays when javascript is disabled. -->
+        <noscript>
+            <h4 style="color: #FF0000; font-size: 20px;">
+                Javascript Warning!
+            </h4>
+            <p style="font-size: 16px;">
+                You must enable Javascript in order to use the features this site offers.
+            </p>
+        </noscript>
+
+        <!-- Begin 3-columns for Survey Data - content input dynamically -->
+        <div id="beforeTable">
+        </div> 
+
+    </div>
+
+        <div class="tableauPlaceholder">
+
+            <h3 id="surveyTitle">Graduating Student Survey</h3>
+
+            <div class="clearfix" id="tabs">
+                <ul>
+                    <li>
+                        <a href="../index.html" title="Report Index">Report Index</a>
+                    </li>
+
+                    <li class="active">
+                    <a href="#" id="universiryExperienceTab" title=
+                        "University Experience">University Experience</a>
+                    </li>
+
+                    <li>
+                        <a href="../ProgSkills/index.html" id="programSkillsTab" title=
+                        "Learning Outcomes">Learning Outcomes</a>
+                    </li>
+
+                    <li>
+                        <a href="../MinProgSkills/index.html" id="minorProgramSkillsTab" title=
+                        "Minor Learning Outcomes">Minor Learning Outcomes</a>
+                    </li>
+
+                    <li>
+                        <a href="../AcadExp/index.html" id="academicExperienceTab" title=
+                        "Academic Experience">Academic Experience</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="panel">
+                <div id="tableauGraphs">
+                    <div class="bigTableauPlaceholder">
+                        <div class="bigTableauGraph">
+                            <div id="container">
+                                    <div data-step="5" data-intro="The various subject areas of the selected category are listed here." id="floatingbar">
+                                        <ul>
+                                          <li><a href="#" onclick="appendFilter('faacert', 'overall');"><button id="NumYears">Overall Experience</button></a></li>
+                                          <li><a href="#" onclick="appendFilter('faacert', 'finaid');"><button id="Money">Financial Aid</button></a></li>
+                                          <li><a href="#" onclick="appendFilter('faacert', 'rotc');"><button id="ROTC">ROTC</button></a></li>
+                                          <li><a href="#" onclick="appendFilter('faacert', 'genskills');"><button id="GenSkills">General Skills</button></a></li>
+                                          <li><a href="#" onclick="appendFilter('faacert', 'profdevelopment');"><button id="ProfOrgs">Professional Development</button></a></li>
+                                          <li><a href="#"><button class="default" id="FAACert">FAA Certifications</button></a></li>
+                                        </ul>
+                                    </div>
+
+
+                                    <h3 id="filtersTitle">Data Filters</h3>
+                                    <div id="filterArea">
+                                        <div data-step="4" data-intro="Here are filters you can apply to the charts below. Simply select the desired filters and click “Apply Filter”. Filters will remain in effect when downloading a chart." id="filterOptions">
+                                            <div id="visibleFilters">
+                                            <select id="CAMPUS" multiple="multiple" name="example-list">
+                                                <option value="Daytona Beach Campus">
+                                                    Daytona Beach Campus
+                                                </option>
+
+                                                <option value="Prescott Campus">
+                                                    Prescott Campus
+                                                </option>
+                                            </select>
+
+                                            <select id="YEAR" multiple="multiple" name="example-list">
+                                                <option value="AY 2008/09">
+                                                    AY 2008/09
+                                                </option>
+
+                                                <option value="AY 2009/10">
+                                                    AY 2009/10
+                                                </option>
+
+                                                <option value="AY 2010/11">
+                                                    AY 2010/11
+                                                </option>
+
+                                                <option value="AY 2011/12">
+                                                    AY 2011/12
+                                                </option>
+                                                 <option value="AY 2012/13">
+                                                    AY 2012/13
+                                                 </option>
+                                            </select> 
+
+                                            <select id="COLLEGE" multiple="multiple" name="example-list">
+                                                <option value="College of Engineering">
+                                                    College of Engineering
+                                                </option>
+
+                                                <option value="College of Business">
+                                                    College of Business
+                                                </option>
+                                                
+                                                <option value="College of Aviation">
+                                                    College of Aviation
+                                                </option>
+                                                
+                                                <option value="College of Arts &amp; Sciences">
+                                                    College of Arts &amp; Sciences
+                                                </option>
+                                            </select>
+
+                                            <select id="MAJOR" multiple="multiple" name="example-list">
+                                                <option value = "M Software Engineering">M Software Engineering</option>
+                                                <option value = "M Business Administration">M Business Administration</option>
+                                                <option value = "BS Aerospace Engineering">BS Aerospace Engineering</option>
+                                                <option value = "BS Computer Science">BS Computer Science</option>
+                                                <option value = "BS Applied Meteorology">BS Applied Meteorology</option>
+                                                <option value = "BS Aeronautics">BS Aeronautics</option>
+                                                <option value = "MS Safety Science">MS Safety Science</option>
+                                                <option value = "MS Human Factors & Systems">MS Human Factors & Systems</option>
+                                                <option value = "MS Aeronautics">MS Aeronautics</option>
+                                                <option value = "M Bus Admin Aviation Mgmt">M Bus Admin Aviation Mgmt</option>
+                                                <option value = "MS Mechanical Engineering">MS Mechanical Engineering</option>
+                                                <option value = "BS Aeronautical Sciences">BS Aeronautical Sciences</option>
+                                                <option value = "BS Air Traffic Management">BS Air Traffic Management</option>
+                                                <option value = "BS Homeland Security">BS Homeland Security</option>
+                                                <option value = "MS Aerospace Engineering">MS Aerospace Engineering</option>
+                                                <option value = "M Aerospace Engineering">M Aerospace Engineering</option>
+                                                <option value = "BS Software Engineering">BS Software Engineering</option>
+                                                <option value = "BS Safety Science">BS Safety Science</option>
+                                                <option value = "BS Mechanical Engineering">BS Mechanical Engineering</option>
+                                                <option value = "BS Engineering Physics">BS Engineering Physics</option>
+                                                <option value = "BS Global Security & Intelligence Studies">BS Global Security & Intelligence Studies</option>
+                                                <option value = "BS Aviation Business Admin">BS Aviation Business Admin</option>
+                                                <option value = "BS Human Factors Psychology">BS Human Factors Psychology</option>
+                                                <option value = "BS Business Administration">BS Business Administration</option>
+                                                <option value = "BS Computational Mathematics">BS Computational Mathematics</option>
+                                                <option value = "BS Aviation Maintenance Sciences">BS Aviation Maintenance Sciences</option>
+                                                <option value = "MS Engineering Physics">MS Engineering Physics</option>
+                                                <option value = "BS Space Physics">BS Space Physics</option>
+                                                <option value = "BS Computer Engineering">BS Computer Engineering</option>
+                                                <option value = "BS Interdisciplinary Studies">BS Interdisciplinary Studies</option>
+                                                <option value = "AS Aviation Maint Sciences">AS Aviation Maint Sciences</option>
+                                                <option value = "BS Electrical Engineering">BS Electrical Engineering</option>
+                                                <option value = "BS Aerospace Studies">BS Aerospace Studies</option>
+                                                <option value = "BS Communication">BS Communication</option>
+                                                <option value = "BS Civil Engineering">BS Civil Engineering</option>
+                                                <option value = "BS Science Tech & Globalization">BS Science Tech & Globalization</option>
+                                                <option value = "PhD Engineering Physics">PhD Engineering Physics</option>
+                                                <option value = "BS Aviation Management">BS Aviation Management</option>
+                                                <option value = "BS Aeronautical Systems Maintenance">BS Aeronautical Systems Maintenance</option>
+                                                <option value = "BS Aerospace Electronics">BS Aerospace Electronics</option>
+                                                <option value = "BS Aviation Environmental Science">BS Aviation Environmental Science</option>
+                                                <option value = "M Electrical/Computer Engineering">M Electrical/Computer Engineering</option>
+
+                                            </select>
+                                            </div>
+
+                                            <select id="SEX" multiple="multiple" name="example-list">
+                                                <option value="Male">
+                                                    Male
+                                                </option>
+
+                                                <option value="Female">
+                                                    Female
+                                                </option>
+                                            </select>
+
+                                            <select id="ETHNIC" multiple="multiple" name="example-list">
+                                                <option value="Black/African American">
+                                                    Black/African American
+                                                </option>
+
+                                                <option value="Race/Ethnicity Unknown">
+                                                    Race/Ethnicity Unknown
+                                                </option>
+
+                                                <option value="Asian">
+                                                    Asian
+                                                </option>
+
+                                                <option value="American Indian/Alaskan Native">
+                                                    American Indian/Alaskan Native
+                                                </option>
+
+                                                <option value="White">
+                                                    White
+                                                </option>
+
+                                                <option value="Hispanic/Latino">
+                                                    Hispanic/Latino
+                                                </option>
+
+                                                <option value="Two or more races">
+                                                    Two or more races
+                                                </option>
+
+                                                <option value="Nonresident Alien">
+                                                    Nonresident Alien
+                                                </option>
+
+                                                <option value="Native Hawaiian/Pacific Islander">
+                                                    Native Hawaiian/Pacific Islander
+                                                </option>
+                                            </select>
+
+                                            <!-- Keep This. Uncomment this for surveys that have veteran and international status. -->
+                                            
+
+                                            <select id="INTERNATIONAL" multiple="multiple" name="example-list">
+                                                <option value="Non-International">
+                                                    Non-International
+
+                                                </option>
+
+                                                <option value="International">
+                                                   International
+                                                </option>
+
+                                            </select>
+
+                                            <!-- Loads showSelected from tableau.js to update the URL hash and graphs based off filter selections -->
+                                            <div class="applyFilters">
+                                                <a class="ui-button applyFilterButton" id="link_param" onclick="showSelected('overallExp');">GO <span id="rightArrow">&rarr;</span></a>
+                                            
+                                                <div class="clearFilters"><a class="ui-button applyFilterButton" onclick="clearFilters('overallExp');">Clear Filter</a></div>
+                                                <a href="" id="hideFilters">Hide &uarr;</a>
+                                          </div>
+
+                                          <a href="#">
+                                              <div id="showFiltersLink">
+                                                Show Filters &darr;
+                                              </div>
+                                          </a>
+
+                                            <div id="filterBreadcrumbs">
+                                                <p>Current Filter: None</p>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+
+                                <div id="postcontent">
+            <h2 id="graphHeading">FAA Certifications</h2>
+            <div id="taskstreamDownload">
+                <!--<span id="taskstreamLabel">Embed Within Taskstream</span>-->
+                <span id="downloadLabel">Download</span>
+            </div>
+            <div class="iframes" id="graph" loaded="true">
+                
+            </div>
+        </div>
+        </div>
+        </div>
+
+        <!-- ____________________________ BEGIN footer ____________________________ -->
+        <div id="footer">
+            <p class="copyright">©Copyright 2013 Embry-Riddle Aeronautical University. All rights reserved.</p>
+
+            <p class="address">Administrative Offices: 600 South Clyde Morris Blvd., Daytona Beach, FL 32114</p>
+        </div><!-- END footer -->
+
+        </div>
+        </div>
+            
+        </div>
+
+</div><!--END tableauPlaceholder-->
+    
+    <!--************************************* BEGIN 3RD PARTY SCRIPTS *********************************************-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
+    <!--<script src="../js/jquery.address.js" type="text/javascript"></script>-->
+    <script src="../js/jquery-ui-1.10.2.custom.min.js" type="text/javascript"></script>
+    <!-- Script to enable the tabs -->
+    <!--<script src="../js/tableauQtabs.js" type="text/javascript"></script>-->
+    <script src="../js/tableauMultiselect.js" type="text/javascript"></script>
+    <script src="../js/jquery.cookie.js" type="text/javascript"></script>
+    <script src="../js/jquery.multiselect.filter.min.js" type="text/javascript"></script>
+    <script src="../js/jquery.multiselect.min.js" type="text/javascript"></script>
+    <!-- Scripts for the data Table on the first tab -->
+    <script type="text/javascript" language="javascript" src="../js/tableau.jquery.dataTables.min.js"></script>
+    <!-- Add-on script for grouping the data table -->
+    <script type="text/javascript" language="javascript" src="../js/tableau.rowGrouping.js"></script>
+    <!-- 2 Scripts used for breadcrumbs -->
+    <script src="../js/jquery.easing.1.3.js" type="text/javascript" language="JavaScript"></script>
+    <script src="../js/jquery.jBreadCrumb.1.1.js" type="text/javascript" language="JavaScript"></script>
+    <!--<script src='../js/Survey_Report.js' type="text/javascript" language="JavaScript"></script>-->
+    <script type="text/javascript" src="../js/tableau.jquery.lightbox_me.js" language="JavaScript"></script>
+    <!-- Script to install the cookie to tell if a user has visited a page before -->
+    <script type="text/javascript" src="../js/tableau.jquery.cookie.js"></script>
+    <!-- Script for the intro tutorial -->
+    <script type="text/javascript" src="../js/tableauIntro.js"></script>
+    <!--************************************* END 3RD PARTY SCRIPTS *********************************************-->
+
+
+
+    <!--************************************* BEGIN OUR CUSTOM SCRIPTS *********************************************-->
+    <!-- Main tableau javascript with document.ready -->
+    <script src="../js/main.js" type="text/javascript"></script>
+    <!-- Script to control Hash Filtering - Contains updateGraphs function -->
+    <script src="../js/tableauFilter.js" type="text/javascript"></script>
+    <!-- Script for initializing the floating menu -->
+    <!--<script src="../js/tableauFloatingMenu.js" type="text/javascript"></script>-->
+<script type="text/javascript">
+	$(document).ready(function() {
+			
+			
+			
+			$('#minorProgramSkillsTab').addClass('disabled')
+			$('#minorProgramSkillsTab').removeAttr('href')
+			
+			$('#academicExperienceTab').addClass('disabled')
+			$('#academicExperienceTab').removeAttr('href')
+			
+			
+								});
+
+</script>
+
+<script type="text/javascript">
+//Global variable to check if sticky menu has been hidden
+var isMenuHidden = 1;
+
+$(function() {
+ 
+     $("#CAMPUS").change(function() {
+                
+                var campuschange = $(this).val();
+                campuschange = $.trim(new String(campuschange)
+                .toLowerCase()
+                .replace(/ /g, "_")
+                .replace(/,/g, "_")
+                .replace(/\./g, '_')); 
+                $("#COLLEGE").multiselect('destroy');
+                $("#MAJOR").multiselect('destroy');
+                
+                var origcollege =  $.ajax({
+                    url: "college.txt",
+                    async: false
+                 }).responseText;
+                 
+                 var origmajor =  $.ajax({
+                    url: "major.txt",
+                    async: false
+                 }).responseText;
+                
+                
+                if(campuschange.length == 4)
+                {
+                    $("#COLLEGE").html(origcollege);
+                    $("#MAJOR").html(origmajor);
+                    
+                    $("#MAJOR").multiselect({
+                        selectedList: 1,
+                        noneSelectedText: 'Select Major'
+                    });
+                    $("#COLLEGE").multiselect({
+                        selectedList: 1,
+                        noneSelectedText: 'Select College'
+                    });
+                }
+                
+                else
+                {
+                var optmaj =  $.ajax({
+                    url: campuschange + "_major.txt",
+                    async: false
+                 }).responseText;
+                 
+                
+                 
+                  $("#MAJOR").html(optmaj);
+                    $("#MAJOR").multiselect({
+                        selectedList: 1,
+                        noneSelectedText: 'Select Major'
+                     });
+                
+
+                var opt = $.ajax({
+                    url: campuschange + ".txt",
+                    async: false
+                 }).responseText;
+                 
+                 
+                
+                 $("#COLLEGE").html(opt);
+                
+                
+                $("#COLLEGE").multiselect({
+                        selectedList: 1,
+                        noneSelectedText: 'Select College'
+                });
+                
+            }
+            });
+            
+     $("#COLLEGE").change(function() {
+                
+                var campuschoice = $("#CAMPUS").val();
+                campuschoice = $.trim(new String(campuschoice)
+                .toLowerCase()
+                .replace(/ /g, "_")
+                .replace(/,/g, "_")
+                .replace(/\./g, '_')); 
+                
+                var strmajor = $(this).val();
+                strmajor = $.trim(new String(strmajor)
+                .toLowerCase()
+                .replace(/ /g, "_")
+                .replace(/,/g, "_")
+                .replace(/\./g, '_')); 
+                $("#MAJOR").multiselect('destroy');
+                var origimajor =  $.ajax({
+                    url: "major.txt",
+                    async: false
+                 }).responseText;
+                 
+        if(campuschoice.length == 4)
+        {
+                 if(strmajor.length == 4)
+                 {
+                
+                    $("#MAJOR").html(origimajor);
+                    $("#MAJOR").multiselect({
+                        selectedList: 1,
+                        noneSelectedText: 'Select Major'
+                        });
+                 }
+                 else
+                 {
+                 
+                var optmajor = $.ajax({
+                    url: strmajor + ".txt",
+                    async: false
+                 }).responseText;
+                
+                 $("#MAJOR").html(optmajor);
+                
+                
+                $("#MAJOR").multiselect({
+                        selectedList: 1,
+                        noneSelectedText: 'Select Major'
+                                        });
+                }
+        }
+        else
+        {
+            if(strmajor.length == 4)
+            {
+                var optmaj =  $.ajax({
+                    url: campuschoice + "_major.txt",
+                    async: false
+                 }).responseText;
+                 
+                 
+                 
+                  $("#MAJOR").html(optmaj);
+                    $("#MAJOR").multiselect({
+                        selectedList: 1,
+                        noneSelectedText: 'Select Major'
+                     });
+                
+            }
+            else
+            {
+            var com_campus_college = campuschoice + "_" + strmajor;
+            
+            var optmaj =  $.ajax({
+                    url: com_campus_college + ".txt",
+                    async: false
+                 }).responseText;
+                 
+                 
+                 
+                  $("#MAJOR").html(optmaj);
+                    $("#MAJOR").multiselect({
+                        selectedList: 1,
+                        noneSelectedText: 'Select Major'
+                     });
+            }
+        }
+                
+            });
+    // grab the initial top offset of the navigation 
+    var sticky_navigation_offset_top = $('#container').offset().top;
+    
+     
+    // our function that decides weather the navigation bar should have "fixed" css position or not.
+    var sticky_navigation = function(){
+        var scroll_top = $(window).scrollTop(); // our current vertical position from the top
+         
+
+        //if we have scrolled past a certain point and menu is not hidden...
+        if ((scroll_top >= sticky_navigation_offset_top) && (isMenuHidden === 1)) { 
+
+            $('#filterArea').css({ 'position': 'fixed', 'top':0, 'width': '90%', '-moz-box-shadow':    '3px 3px 5px 6px #ccc', '-webkit-box-shadow': '3px 3px 5px 6px #ccc', 'box-shadow': '3px 3px 5px 6px #ccc' });
+             $('#filterOptions').css({ 'background-color': 'white'});
+             $('#hideFilters').show();
+        } 
+        //if we are not past the certain point and menu is shown...
+        else if ((scroll_top < sticky_navigation_offset_top)) {
+            $('#filterArea').css({ 'position': 'relative', 'border': 'none', 'width': '100%', 'box-shadow': 'none', '-moz-box-shadow': 'none', '-webkit-box-shadow': 'none' }); 
+             $('#filterOptions').css({ 'background-color': 'white'});
+             $('#hideFilters').hide();
+             $( "#showFiltersLink").hide();
+        }
+        //if we are not past the certain point and menu is hidden...
+        /*
+        else if ((scroll_top < sticky_navigation_offset_top) && (isMenuHidden === 0)) {
+            $('#filterArea').css({ 'position': 'relative', 'border': 'none', 'width': '100%', 'box-shadow': 'none', '-moz-box-shadow': 'none', '-webkit-box-shadow': 'none' }); 
+             $('#filterOptions').css({ 'background-color': 'white'});
+             $('#hideFilters').hide();
+             $( "#showFiltersLink").hide();
+        }
+        */
+        else {
+            $('#filterArea').css({ 'position': 'relative', 'border': 'none', 'width': '100%', 'box-shadow': 'none', '-moz-box-shadow': 'none', '-webkit-box-shadow': 'none' }); 
+             $('#filterOptions').css({ 'background-color': 'white'});
+             $('#hideFilters').hide();
+             $( "#showFiltersLink").show();
+        }   
+    };
+
+    //If Hide is clicked, hide the filters
+    $( "#hideFilters" ).click(function(e) {
+        e.preventDefault();
+        $('#filterArea').css({ 'position': 'relative', 'border': 'none', 'width': '100%', 'box-shadow': 'none', '-moz-box-shadow': 'none', '-webkit-box-shadow': 'none' }); 
+        $('#filterOptions').css({ 'background-color': 'white'});
+        $( "#showFiltersLink").show().css({ 'position': 'fixed', 'top':0, 'right': '20%', 'background-color': '#F0B93A', 'color': '#000000' });
+        //Set the global variable to 0 to signify the sticky menu is hidden.
+        isMenuHidden = 0;
+    });
+
+    //Show menu again when Show Filters is clicked.
+    $( "#showFiltersLink").click(function(e) {
+        e.preventDefault();
+        $('#filterArea').css({ 'position': 'fixed', 'top':0, 'width': '90%', '-moz-box-shadow':    '3px 3px 5px 6px #ccc', '-webkit-box-shadow': '3px 3px 5px 6px #ccc', 'box-shadow': '3px 3px 5px 6px #ccc' });
+        $('#filterOptions').css({ 'background-color': 'white'});
+        $('#hideFilters').show();
+        $( "#showFiltersLink").hide();
+        //Set the global variable to 1 to signify the sticky menu is shown.
+        isMenuHidden = 1;
+    });
+    
+     
+    // run our function on load
+    sticky_navigation();
+     
+    // and run it again every time you scroll
+    $(window).scroll(function() {
+         sticky_navigation();
+    });
+ 
+});
+</script>
+    <script>
+        updateGraphs('faaCert');
+        loadTwoGraphsTwoHeights('faaCert', 'FAA_Cert', 'FAA_Obtained', '480px', '900px');
+    </script>
+ 
+    <!--************************************* END OUR CUSTOM SCRIPTS *********************************************-->
+</body>
+</html>

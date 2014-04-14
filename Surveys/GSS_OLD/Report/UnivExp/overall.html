@@ -1,0 +1,463 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <link href="../css/tableau.css" media="all" rel="stylesheet" type=
+    "text/css">
+    <link href="../css/jquery.multiselect.css" media="all" rel="stylesheet" type=
+    "text/css">
+    <link href="../css/jquery.multiselect.filter.css" media="all" rel="stylesheet"
+    type="text/css">
+    <link href=
+    "http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/themes/smoothness/jquery-ui.css"
+    rel="stylesheet" type="text/css">
+    <link href="../css/smoothness/jquery-ui-1.10.2.custom_black.css" rel="stylesheet">
+
+    <!-- Stylesheet for breadcrumbs navigation -->
+    <link rel="stylesheet" href="../css/BreadCrumb.css" type="text/css">
+
+    <!-- Stylesheet for the dataTables on the first tab -->
+    <link rel="stylesheet" type="text/css" href="../css/tableau.jquery.dataTables_new.css">
+
+    <!-- Stylesheet for the intro tutorial -->
+    <link rel="stylesheet" type="text/css" href="../css/tableau.introjs.css">
+
+    <!-- CSS stylesheet for IE 8 and below. -->
+    <!--[if lt IE 9]>
+        <link rel="stylesheet" type="text/css" href="../css/ieonly.css" />
+    <![endif]-->
+
+<title>GSS Interactive Report</title>
+    
+</head>
+
+<body>
+    <!--[if lt IE 8]><p class="chromeframe">You are using an <strong>outdated</strong> browser (or IE compatibilitiy mode is on and should be turned off). Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p><![endif]-->
+
+<div class="topHat">
+    <div class="mainContentContainer">
+        <a class="logo" href="http://www.erau.edu">
+            <img alt="ERAU Logo" height="16" src="../../img/erau_logo.png" width="184" />
+            <span>Interactive Report</span>
+        </a>
+        <span id="topThreeLinks">
+            <a href="#" onclick="applyLightbox(event);">Getting Started</a>
+        </span>
+        <a href="#" class="tooltip1"><img class="infoIcon" src="../../img/question.png" alt="Question Mark"></a>
+	    <select id="needHelpDropdown" onchange="location = this.options[this.selectedIndex].value;">
+            <option value="" selected disabled>Click Here</option>
+            <option value="../Help/HelpNDoc tutorial.html?Createnewtopics.html">Overview</option>
+            <option value="../Help/navigation.html">Navigation</option>
+            <option value="../Help/graphing.html">Graphing</option>
+            <option value="../Help/filter.html">Filter</option>
+            <option value="../Help/faq.html">FAQs</option>
+            <option value="../Help/contact.html">Contact Us</option>
+        </select>
+		<span id="needHelp">
+	       Need Help?
+	    </span>
+    </div>
+</div>
+
+<div class="mainContentContainer">
+    <div class="container">
+        <!-- Start Breadcrumbs -->
+        <div class="breadCrumbHolder module">
+            <div id="breadCrumb3" class="breadCrumb module surveyBreadcrumb">
+                <ul>
+                    <li class="first">
+                        <a href="http://irweb.erau.edu">Home</a>
+                    </li>
+                    <li>
+                        <a href="http://irweb.db.erau.edu/irstudies/">Surveys</a>
+                    </li>
+                    <li>
+                        <a href="../../index.html">GSS</a>
+                    </li>
+                    <li class="last">
+                        GSS Interactive Report
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- This only displays when javascript is disabled. -->
+        <noscript>
+            <h4 style="color: #FF0000; font-size: 20px;">
+                Javascript Warning!
+            </h4>
+            <p style="font-size: 16px;">
+                You must enable Javascript in order to use the features this site offers.
+            </p>
+        </noscript>
+
+        <!-- Begin 3-columns for Survey Data - content input dynamically -->
+		<div id="beforeTable">
+        </div>
+
+        <div id="filterArea">
+            <div data-step="4" data-intro="These are the filters you can apply to the graph below. Simply select the appropriate filters and click Apply Filter." id="filterOptions">
+                <h3 id="filtersTitle">Data Filters</h3>
+                <div id="visibleFilters">
+                <select id="CAMPUS" multiple="multiple" name="example-list">
+                    <option value="Daytona Beach">
+                        Daytona Beach
+                    </option>
+
+                    <option value="Prescott">
+                        Prescott
+                    </option>
+                </select>
+
+                <select id="YEAR" multiple="multiple" name="example-list">
+                    <option value="AY 2008/09">
+                        AY 2008/09
+                    </option>
+
+                    <option value="AY 2009/10">
+                        AY 2009/10
+                    </option>
+
+                    <option value="AY 2010/11">
+                        AY 2010/11
+                    </option>
+
+                    <option value="AY 2011/12">
+                        AY 2011/12
+                    </option>
+                </select> 
+
+                <select id="COLLEGE" multiple="multiple" name="example-list">
+                    <option value="College of Engineering">
+                        College of Engineering
+                    </option>
+
+                    <option value="College of Business">
+                        College of Business
+                    </option>
+                </select>
+
+                <select id="MAJOR" multiple="multiple" name="example-list">
+                    <option value="PC BS Aerospace Engineering">
+                        PC BS Aerospace Engineering
+                    </option>
+
+                    <option value="DB BS Aerospace Engineering">
+                        DB BS Aerospace Engineering
+                    </option>
+
+                    <option value="DB BS Computer Engineering">
+                        DB BS Computer Engineering
+                    </option>
+
+                    <option value="PC BS Mechanical Engineering">
+                        PC BS Mechanical Engineering
+                    </option>
+
+                    <option value="DB BS Software Engineering">
+                        DB BS Software Engineering
+                    </option>
+
+                    <option value="DB MS Mechanical Engineering">
+                        DB MS Mechanical Engineering
+                    </option>
+
+                    <option value="DB MS Aerospace Engineering">
+                        DB MS Aerospace Engineering
+                    </option>
+
+                    <option value="DB BS Civil Engineering">
+                        DB BS Civil Engineering
+                    </option>
+
+                    <option value="DB BS Electrical Engineering">
+                        DB BS Electrical Engineering
+                    </option>
+
+                    <option value="DB M Software Engineering">
+                        DB M Software Engineering
+                    </option>
+
+                    <option value="PC BS Electrical Engineering">
+                        PC BS Electrical Engineering
+                    </option>
+
+                    <option value="DB D Engineering Physics">
+                        DB D Engineering Physics
+                    </option>
+
+                    <option value="DB BS Mechanical Engineering">
+                        DB BS Mechanical Engineering
+                    </option>
+
+                    <option value="PC BS Computer Engineering">
+                        PC BS Computer Engineering
+                    </option>
+
+                    <option value="DB BS Aerospace Electronics">
+                        DB BS Aerospace Electronics
+                    </option>
+
+                    <option value="PC BS Software Engineering">
+                        PC BS Software Engineering
+                    </option>
+
+                    <option value="DB M Aerospace Engineering">
+                        DB M Aerospace Engineering
+                    </option>
+
+                    <option value="DB M Electrica/ Computer Engineering">
+                        DB M Electrica/ Computer Engineering
+                    </option>
+
+                    <option value="PC MS Software Engineering">
+                        PC MS Software Engineering
+                    </option>
+                </select>
+                </div>
+
+                <div id="hiddenFilters">
+
+                <select id="SEX" multiple="multiple" name="example-list">
+                    <option value="Male">
+                        Male
+                    </option>
+
+                    <option value="Female">
+                        Female
+                    </option>
+                </select>
+
+                <select id="ETHNIC" multiple="multiple" name="example-list">
+                    <option value="Black/African American">
+                        Black/African American
+                    </option>
+
+                    <option value="Race/Ethnicity Unknown">
+                        Race/Ethnicity Unknown
+                    </option>
+
+                    <option value="Asian">
+                        Asian
+                    </option>
+
+                    <option value="American Indian/Alaskan Native">
+                        American Indian/Alaskan Native
+                    </option>
+
+                    <option value="White">
+                        White
+                    </option>
+
+                    <option value="Hispanic/Latino">
+                        Hispanic/Latino
+                    </option>
+
+                    <option value="Two or more races">
+                        Two or more races
+                    </option>
+
+                    <option value="Nonresident Alien">
+                        Nonresident Alien
+                    </option>
+
+                    <option value="Native Hawaiian/Pacific Islander">
+                        Native Hawaiian/Pacific Islander
+                    </option>
+                </select>
+
+                <!-- Keep This. Uncomment this for surveys that have veteran and international status. -->
+                <select id="VETERAN" multiple="multiple" name="example-list">
+                    <option value="AY 2008/09">
+                        AY 2008/09
+                    </option>
+
+                    <option value="AY 2009/10">
+                        AY 2009/10
+                    </option>
+
+                    <option value="AY 2010/11">
+                        AY 2010/11
+                    </option>
+
+                    <option value="AY 2011/12">
+                        AY 2011/12
+                    </option>
+                </select>
+
+                <select id="INTERNATIONAL" multiple="multiple" name="example-list">
+                    <option value="AY 2008/09">
+                        AY 2008/09
+                    </option>
+
+                    <option value="AY 2009/10">
+                        AY 2009/10
+                    </option>
+
+                    <option value="AY 2010/11">
+                        AY 2010/11
+                    </option>
+
+                    <option value="AY 2011/12">
+                        AY 2011/12
+                    </option>
+                </select>
+                
+                </div>
+                <a id="moreFiltersLink" href="#" onclick="showHiddenFilters();">Show More Filters</a>
+
+                <!-- Loads showSelected from tableau.js to update the URL hash and graphs based off filter selections -->
+                <div class="applyFilters">
+                    <a class="ui-button applyFilterButton" id="link_param" onclick="showSelected('overallExp');">Apply Filter</a>
+                
+
+                    <div class="clearFilters"><a class="ui-button applyFilterButton" onclick="clearFilters('overallExp');">Clear Filter</a></div>
+              </div>
+
+                <div id="filterBreadcrumbs">
+                    <p>Current Filter: None</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+        <div class="tableauPlaceholder">
+
+            <h3 id="surveyTitle">Graduating Student Survey</h3>
+
+            <div data-step="5" data-intro="Here you can choose a particular category to view data from." class="clearfix" id="tabs">
+                <ul>
+                    <li>
+                        <a href="../index.html" title="Survey Categories">Survey Categories</a>
+                    </li>
+
+                    <li class="active">
+                    <a href="#" id="universiryExperienceTab" title=
+                        "University Experience">University Experience</a>
+                    </li>
+
+                    <li>
+                        <a href="../ProgSkills/index.html" id="programSkillsTab" title=
+                        "Program Skills">Program Skills</a>
+                    </li>
+
+                    <li>
+                        <a href="minorprogramskills.html" id="minorProgramSkillsTab" title=
+                        "Minor Program Skills">Minor Program Skills</a>
+                    </li>
+
+                    <li>
+                        <a href="academicexperience.html" id="academicExperienceTab" title=
+                        "Academic Experience">Academic Experience</a>
+                    </li>
+                </ul>
+                <a class="tooltip" href="#"><img class="infoIcon" src="../../img/question.png" alt="Question Mark"></a>
+            </div>
+
+            <div class="panel">
+                <div id="tableauGraphs">
+                    <div class="bigTableauPlaceholder">
+                        <div class="bigTableauGraph">
+                            <div id="container">
+                                    <div data-step="6" data-intro="Each category has its own sub-categories located here." id="floatingbar">
+                                        <ul>
+                                          <li><a href="#"><button class="default" id="NumYears">Overall Experience</button></a></li>
+                                          <li><a href="#" onclick="appendFilter('overall', 'finaid');"><button id="Money">Financial Aid</button></a></li>
+                                          <li><a href="#" onclick="appendFilter('overall', 'rotc');"><button id="ROTC">ROTC</button></a></li>
+                                          <li><a href="#" onclick="appendFilter('overall', 'genskills');"><button id="GenSkills">General Skills</button></a></li>
+                                          <li><a href="#" onclick="appendFilter('overall', 'profdevelopment');"><button id="ProfOrgs">Professional Development</button></a></li>
+                                          <li><a href="#" onclick="appendFilter('overall', 'faacert');"><button id="FAACert">FAA Certifications</button></a></li>
+                                        </ul>
+                                    </div>
+                                <div id="postcontent">
+                                    <h2 id="graphHeading">Overall Experience<a class="tooltip2" href="#"><img class="infoIcon" src="../../img/question.png" alt="Question Mark"></a></h2>
+                                    <div id="taskstreamDownload">
+                                    	<span id="taskstreamLabel">Embed Within Taskstream</span>
+                                    	<span id="downloadLabel">Download</span>
+                                    </div>
+                                    <div class="iframes" id="graph" loaded="true">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ____________________________ BEGIN footer ____________________________ -->
+                        <div id="footer">
+                            <p class="copyright">©Copyright 2013 Embry-Riddle Aeronautical University. All rights reserved.</p>
+
+                            <p class="address">Administrative Offices: 600 South Clyde Morris Blvd., Daytona Beach, FL 32114</p>
+                        </div><!-- END footer -->
+
+                    </div>
+        		</div>
+        	</div>
+
+
+</div><!--END tableauPlaceholder-->
+    
+    <!--************************************* BEGIN 3RD PARTY SCRIPTS *********************************************-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
+    <!--<script src="../js/jquery.address.js" type="text/javascript"></script>-->
+    <script src="../js/jquery-ui-1.10.2.custom.min.js" type="text/javascript"></script>
+    <!-- Script to enable the tabs -->
+    <!--<script src="../js/tableauQtabs.js" type="text/javascript"></script>-->
+    <script src="../js/tableauMultiselect.js" type="text/javascript"></script>
+    <script src="../js/jquery.cookie.js" type="text/javascript"></script>
+    <script src="../js/jquery.multiselect.filter.min.js" type="text/javascript"></script>
+    <script src="../js/jquery.multiselect.min.js" type="text/javascript"></script>
+    <!-- Scripts for the data Table on the first tab -->
+    <script type="text/javascript" language="javascript" src="../js/tableau.jquery.dataTables.min.js"></script>
+    <!-- Add-on script for grouping the data table -->
+    <script type="text/javascript" language="javascript" src="../js/tableau.rowGrouping.js"></script>
+    <!-- 2 Scripts used for breadcrumbs -->
+    <script src="../js/jquery.easing.1.3.js" type="text/javascript" language="JavaScript"></script>
+    <script src="../js/jquery.jBreadCrumb.1.1.js" type="text/javascript" language="JavaScript"></script>
+    <!--<script src='../js/Survey_Report.js' type="text/javascript" language="JavaScript"></script>-->
+    <script type="text/javascript" src="../js/tableau.jquery.lightbox_me.js" language="JavaScript"></script>
+    <!-- Script to install the cookie to tell if a user has visited a page before -->
+    <script type="text/javascript" src="../js/tableau.jquery.cookie.js"></script>
+    <!-- Script for the intro tutorial -->
+    <script type="text/javascript" src="../js/tableauIntro.js"></script>
+    <!-- Script for the qTip Tooltips -->
+    <script type="text/javascript" src="../js/jquery.qtip.min.js"></script>
+    <!--************************************* END 3RD PARTY SCRIPTS *********************************************-->
+
+
+
+    <!--************************************* BEGIN OUR CUSTOM SCRIPTS *********************************************-->
+    <!-- Main tableau javascript with document.ready -->
+    <script src="../js/main.js" type="text/javascript"></script>
+    <!-- Script to control Hash Filtering - Contains updateGraphs function -->
+    <script src="../js/tableauFilter.js" type="text/javascript"></script>
+    <!-- Script for initializing the floating menu -->
+    <!--<script src="../js/tableauFloatingMenu.js" type="text/javascript"></script>-->
+
+    <script>
+        //updateGraphs() is in tableauFilter.js and just updates graphs based on URL
+        updateGraphs('overallExp');
+        loadGraph('overallExp', 'Overall_Experience');
+    </script>
+
+    <!-- Script for the second page of the tour -->
+    <script type="text/javascript">
+    $(document).ready(function() {
+      if (RegExp('multipage', 'gi').test(window.location.search)) {
+        introJs().setOptions({skipLabel: "Stop"}).start().oncomplete(function() {
+          window.location.href = '/Surveys/GSS/Report/index.html';
+        }).onexit(function() {
+          window.location.href = '/Surveys/GSS/Report/UnivExp/overall.html';
+        });
+      }
+      });
+    </script>
+    
+
+    <!--************************************* END OUR CUSTOM SCRIPTS *********************************************-->
+</body>
+</html>

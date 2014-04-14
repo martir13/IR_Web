@@ -1,0 +1,144 @@
+#contentHomelinks { position: relative; clear: both; width: 960px; height: auto; background: #fff url(http://css.erau.edu/iface/contentCampusbar-bg.gif) repeat-x top; margin: 0; padding: 10px 0 0 0; /*background: red;*/}
+
+#newslinks, #newslinks *, events, #campuses, {margin: 0; padding: 0;}
+
+/* position divs in #contentHomelinks */
+#newslinks{ width: 320px; float: left; display: inline; margin-left: 25px; /*background: yellow;*/}
+#campuses { width: 540px; float: right; display: inline; margin-right: 30px; /*background: green;*/}
+
+
+#features { width: 540px; float: right; display: inline; margin-right: 30px; margin-top: 25px;}
+
+#features a { border: 0; text-decoration: none; }
+#features a:hover { border-bottom: 1px dotted #999; }
+#features a:active { color: #3a5079; border-bottom: 1px dotted #999; }
+
+#features img { float: left; margin: 8px 12px 45px 0 }
+#features h2 { margin: 0; }
+#features h2 a { display: block; color: #3a5079; font: bold .75em/1 arial, sans-serif; margin: 0; padding: 0 0 4px 0; border-bottom: 1px solid #ccc; letter-spacing: 4px;}
+#features h2 a:hover { border-bottom: 1px solid #3a5079; }
+#features h3 { font-weight: bold; font-size: 1em;}
+#features ul { margin: 15px 0 10px 25px; }
+#features ul li {font: normal .875em/1.2 Arial, Helvetica, sans-serif; margin-top: 6px;}
+#features p { font: normal  .625em/1.2 ;  margin-top: 6px; /*border-top: 1px solid #ccc; padding-left: 15px; */font-weight: normal; }
+
+
+
+ /* stretch to contain floats */
+ #contentHomelinks:after, #newslinks:after, #campuses:after{ content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+ /* h2 headline links */
+#newslinks h2, #campuses h2 { margin: 0; }
+#newslinks h2 a, #campuses h2 a { display: block; color: #3a5079; font: bold .75em/1 arial, sans-serif; margin: 0; padding: 0 0 4px 0; border-bottom: 1px solid #fff; letter-spacing: 4px;}
+#newslinks h2 a:hover, #campuses h2 a:hover { border-bottom: 1px solid #3a5079; }
+
+#newslinks ul { margin: 15px 0 10px 25px;}
+#newslinks ul li {font: normal .875em/1.2 Arial, Helvetica, sans-serif; margin-top: 6px;}
+#newslinks ul li a { border-bottom: 0; }
+#newslinks p { font: normal  .6875em/1 arial, helvetica, sans-serif; margin-left: 25px;  padding-top: 4px; border-top: 1px solid #ccc; padding-left: 220px; }
+#newslinks p a {color: #A6B1CE; }
+#newslinks p a:hover { color: #3a5079; border-bottom: 1px dotted #999; }
+
+.campuslink { float: right; width: 180px; padding-top: 15px; /*background: orange;*/ }
+.campuslink p { padding-top: 35px; }
+.campuslink p a {font: bold .875em/1.3 Arial, Helvetica, sans-serif; border: 0;}
+.campuslink img {float: left;  margin-right: 6px;}
+.campuslink a img {border: 1px solid #fff;}
+
+#extralinks * { padding: 0; margin: 0; }
+#extralinks { display: block; clear: both; width: 600px;  margin: 12px auto 0 auto; height: 20px; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; text-align: center; }
+#extralinks li { display: inline; padding: 0 12px; }
+#extralinks li a {font: bold .8125em/20px Arial, Helvetica, sans-serif; border: 0;}
+
+#newslinks ul li a:hover { color: #000; border-bottom: 1px dotted #999; }
+#newslinks ul li a:active { color: #000; border-bottom: 1px dotted #000; }
+
+.campuslink p a:hover { color: #000; border-bottom: 1px dotted #999; }
+.campuslink a:hover img {border: 1px solid #006;}
+
+
+#extralinks a:hover { color: #000; }
+
+#usnews { position: absolute; visibility: visible; height: 110px; width: 95px; top: -60px; right: 20px;}
+
+#ribbon { clear: both; display: inline; width: 200px; height: 80px; /*border: 1px solid #ccc;*/ float: right;  margin: 16px 50px 0 0; }
+#ribbon p { font: normal 12px/1.1 arial; }
+#ribbon img { margin: -9px 4px 0 0 }
+
+#event { border-bottom: 1px solid #ccc; padding: 0; font: normal .875em/1.2 Arial, Helvetica, sans-serif; margin-top: 8px; }
+#event img { float: left; margin: 0 12px 12px 0}
+#event ul.inline li { display: inline; font-size: 100%;}
+#event h3 { font: bold 1em/1.1 Arial, Helvetica, sans-serif; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Trustee Pages */
+h1.trustee { }
+h1.trustee span { display: block; font-size: .6em; margin-top: 6px; color: #000;}
+
+div.trusteephoto {float: right; margin: -60px 0 15px 15px; display: inline;  padding: 10px; text-align: center; border: 1px solid #ccc;}
+div.trusteephoto p {margin: 3px 0 0 0; font: bold .8em Arial, Helvetica, sans-serif;} 
+
+
+
+
+/*News Release Pages*/
+
+#release-banner p { font: bold .85em arial; border-top: 1px solid #999;  border-bottom: 1px solid #999; padding: 3px 0  3px 0; margin: 10px 0 0 0; }
+#release-banner p.release-address, #release-banner p.release-contact { border: 0; display: inline; float: left; margin: 2px 0 0 90px; font: normal .75em arial; }
+#release-banner p.release-contact { margin-left: 30px}
+
+/*Feature Articles*/
+.publication { font-style: italic; font-size: .75em; margin: 25px 0 10px 0; padding: 4px 0; border-top: 1px solid #666; border-bottom: 1px solid #666;}
+.byline { font-style: italic; }
+
+
+/*Advertising Opportunities "ad-promos.html"*/
+.advertising_ops h2 { clear: both; margin-top: 20px;  padding-top: 8px; border-top: 1px solid #ccc;}
+.advertising_ops img { float: right; margin-top: -24px;}
+.advertising_ops p { margin-right: 280px; }
+
+
+
+
+/*Microformats Vcard*/
+
+/*
+.vcard { font-weight: normal;  font-size: .8125em; line-height: 1.2}
+.vcard div { padding: 2px 0}
+.vcard span {display: block; } 
+span.tel span, span.n span {display: inline;}
+.vcard div.n span { font-weight: bold; display: inline; font-size: 1.125em; }
+.vcard div.n { margin-top: .5em}
+.vcard div.title, .vcard div.org  { font-style: italic; display: inline; }
+.vcard .type { color: #666;}
+
+.secondary_content div.vcard { margin: 0 0 8px 10px; font-size: .75em; line-height: 1.3; }
+
+*/

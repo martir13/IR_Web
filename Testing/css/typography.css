@@ -1,0 +1,271 @@
+/* Default fonts and colors.  */
+body { 
+  font-size: 100%; 
+  color: #222; 
+  font-family: Georgia, Palatino, Times,serif;}
+ 
+  
+/* Headings
+-------------------------------------------------------------- */
+h1,h2,h3,h4,h5,h6 {  
+  color: #111; 
+  font-family: "Book Antiqua", Palatino, "Times New Roman", serif;
+  letter-spacing: -.02em;
+  font-weight: bold; line-height: 1;}
+
+h4, h5, h6 { margin-left: 0;} 
+
+h1 { font-size: 1.375em; margin: 1em 0 .4em -40px; }
+
+h2 { font-size: 1.0625em; margin: 1em 0 .4em -30px; }
+
+h3 { font-size: .9375em; margin: 1em 0 .3em -15px; }
+
+h4 { font-size: .875em; margin: 1em 0 0 0; }
+
+h5 { font-size: .875em; margin: 1em 0 .3em 0; font-weight: bold; }
+
+h6 { font-size: .875em; margin: 1em 0 .3em 0; font-weight: bold; }
+
+#aside h2, #aside h3, div.col-2 h2, div.col-2 h3, div.col-3 h2, div.col-3 h3 {margin-left: 0}
+
+
+
+
+
+
+
+
+
+
+
+
+/* HEADING RELATED */
+h1 span { font-size: .7em; color: #666; }
+
+/*h1.kicker and h1.deck is for extra copy associated with h1 but not a subheading introducing a new section.
+p.h1-kicker { margin: 0 0 4px -16px; font-weight: bold; font-size: .8em; }
+p.h1-deck { margin: 3px 0 18px -16px; font-weight: bold; font-size: .9em; }*/
+
+/*Heading Exceptions for Spry Widgets*/
+div.TabbedPanelsContent h2 { margin: 0 0 3px 0 ; }
+div.TabbedPanelsContent h3 { margin: 15px 0 10px 0;}
+
+/* END HEADINGS */
+
+	
+/* TEXT */
+p { font-size: .875em; line-height: 1.4; margin: 0 0 .6em 0; padding: 0; }
+
+p.footnote { font-size: .6875em; line-height: 1.4; margin: 1em 0 .6em 0; padding: 0; }
+
+
+
+
+/* LINKS */
+a { font-weight: normal; text-decoration: none; border-bottom: 1px solid #ccc; }
+a:link { color:  #06389e; background-color: transparent; }
+a:visited { color: #06389e; background-color: transparent; }
+a:active { color: #06389e; background-color: transparent;  border-bottom: 1px solid #666; }
+a:hover	{ color: #06389e; background-color: transparent; border-bottom: 1px solid #666;}
+
+a.pdf {  padding-right: 20px; background: url(/css/iface/pdf.gif) no-repeat right top;}
+
+
+
+a[href$=".ppt"], a[href$=".pps"], a[href$=".pdf"], a[href$=".doc"], a[href$=".wav"], a[href$=".xml"] {
+ display: inline-block; 	 padding-left: 22px; }
+
+
+a[href$=".ppt"] {
+background: url(iface/powerpoint.gif) no-repeat left top; }
+
+a[href$=".pps"] {
+background: url(iface/powerpoint.gif) no-repeat left top; }
+
+a[href$=".pdf"] {
+background: url(iface/pdf.gif) no-repeat left top; }
+
+a[href$=".doc"] {
+background: url(iface/word.gif) no-repeat left top; }
+
+a[href$=".wav"] {
+background: url(iface/audio_icon.gif) no-repeat left top; }
+
+a[href$=".xml"] {
+background: url(iface/rssfeed.png) no-repeat left top; }
+
+
+
+	
+
+/* LISTS */
+
+ul, ol, dl { margin: .8em 0; font-size: .875em; line-height: 1.3}
+
+dt { margin-top: .6em; font-weight: bold;  line-height: 1.3; }
+dd { margin: 0 0 0 2em;  font-weight: normal; padding: 0; line-height: 1.3;}
+
+ul { list-style-type: disc;}
+ul ul {  list-style-type: circle;}
+ul ul ul { list-style-type: square;}
+
+ol { list-style-type: decimal;}
+ol ol { list-style-type: lower-alpha;}
+ol ol ol { list-style-type: lower-roman; }
+
+li li, dd ul, dd ol, li p, div li, ul a, li a, table ul, li address  {font-size: 100%; }
+
+
+/*List Indents*/
+li { margin: .2em 0 .5em 1.5em;}
+li li {  margin: .2em 0 .5em 3.0em;}
+li li li {  margin: .2em 0 .5em 4em;}
+
+ul li { list-style: url(iface/bullet.gif) outside; }
+
+/* List 3 Columns */
+ul.three-columns li {
+	float:left;
+	width:188px;
+	min-height:27px;
+}
+
+
+/*Styles for columns in content main*/
+
+div.col-3 h2 {  margin: 8px 0 8px 0px; }
+div.col-3 h3 {  margin: 8px 0 4px 0; }
+div.col-3 li {  margin: 5px 0 0 0;  list-style-image: none; list-style: none; font-size: .8125em; line-height: 1.2}
+
+
+ul.departments li { margin: 0;  padding: .3em 0 0 .8em;}
+ul.departments a { font-size: .8125em;  line-height: .7em; }
+
+/* DL lists for Event Calendar */
+
+dl.eventlist
+{ margin: .3em 0 1em 0; padding: 0; }
+
+dl.eventlist dt
+{ clear: left; float: left; width: 16em; border: 1px solid red;}
+
+dl.eventlist dd { clear: both; float: right; margin: 0; padding: 0 }
+
+/*dl.eventlist
+{ margin: .5em 0; padding: 0; }
+
+dl.eventlist dt
+{ position: relative; left: 0; top: 1em; width: 25em; }
+
+dl.eventlist dd { margin: 0 0 0 13em; padding: 0 0 .2em .5em; }
+
+
+dl.float-left
+{
+border: 1px solid #000;
+background-color: #ddd;
+text-align: center;
+padding: 0 0 10px 0;
+float: left;
+margin: 0 1em 1em -51px;
+}
+
+.float-right dt
+{
+font-weight: bold;
+background-color: #131210;
+color: #959289;
+padding: 5px 0;
+margin-bottom: 10px;
+}
+
+.float-right dd img
+{
+border: 1px solid #000;
+}
+
+.float-right dd
+{
+margin: 0;
+padding: 0 10px 5px 10px;
+font-size: 85%;
+}
+*/
+
+
+
+
+
+
+/*DL lists for Degrees*/ 
+
+dl.degree-list
+{  }
+
+dl.degree-list dt
+{ margin-top: 20px; }
+
+
+/*
+dl.degree-list dd.degree-location { float: right;  margin: 0 0 10px 0; }
+dl.degree-list dd.degree-location a { font: bold .8em arial, helvetica, sans-serif; padding: 2px 2px 2px 8px;  border-left: 1px solid blue; margin-left: 10px;}
+*/
+
+
+dl.degree-list dt {border-bottom: 1px solid #ccc; padding: 0 0 6px 0; margin: 8px 0 5px 0;}
+dl.degree-list dd.degree-location { float: right;  width: 100px; margin: -6px 0 0 15px; padding: 0 0 0 0; border-left: 1px solid #ccc;}
+dl.degree-list dd.degree-location a { display: block; font: bold .8em/2.2 arial, helvetica, sans-serif; padding: 0 0 0 6px; margin: 0 0 0 0;}
+
+
+
+
+ul.linklist { margin: 0; padding: 0; list-style-type: none; list-style: none; }
+ul.linklist li { list-style-type: none; list-style: none; margin: 0; list-style-image: none; }
+ul.linklist a { list-style-type: none; list-style: none; border: 0;}
+ul.linklist a:hover { border-bottom: 1px solid #999;}
+ul.linklist p { padding: 2px;}
+
+#aside li {font: normal .8em/1 arial, sans-serif; padding: 2px 0;}
+#aside ul.linklist li { margin: 0; }
+
+
+
+/* MISC */
+
+.secondary_content blockquote { font-size:.75em; line-height: 1.4; font-style: italic;  margin: 8px 0 12px 14px; }
+
+
+pre { font-family: monospace;  font-size: .875em; }
+strong { font-weight: bold; }
+em { font-style:italic; }
+
+hr { display: none; }
+div.hr { height: 1px; margin: 1.5em 10px; border-bottom: 1px dotted black; }
+
+address { margin-top: 1em; font-size: .8125em; font-style: normal;}
+address strong a {font-weight: bold;}
+
+pre {
+padding: 12px; background: #fff; border: 1px solid #ccc;
+color:blue;
+font: normal 1em/.9 "Lucida Console","Courier New",Courier,monospace;
+}
+pre span { display: block; color: red; margin: 12px 0 2px 0;}
+
+
+.red {color: red;}
+
+
+/*Microformats Vcard*/
+
+.vcard { font-weight: normal;  font-size: .8125em; }
+
+.vcard span {display: block;}
+span.tel span, span.n span { display: inline; }
+
+.vcard div.n span { font-weight: bold; display: inline; font-size: 1.1em; }
+.vcard div.n { margin-top: .5em}
+.vcard div.title, .vcard div.org  { font-style: italic; display: inline; }
+
+

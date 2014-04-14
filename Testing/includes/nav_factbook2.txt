@@ -1,0 +1,29 @@
+</div><!--___ End page_copy ___ --> 
+
+</div><!--___ End contentMain ___ -->
+
+
+<!--_____________ BEGIN Nav _____________ -->
+
+<div id="nav">
+<h2><a href="Factbook/">Fact Book</a></h2>
+<ul>
+	<li><a href="Factbook/">Description</a></li>
+	<li><a href="Factbook/Admissions/">Admissions</a></li>
+	<li><a href="Factbook/Alumni/">Alumni</a></li>
+	<li><a href="Factbook/Enrollment/">Enrollment</a></li>
+	<li><a href="Factbook/Expenses/">Expenses &amp; Financial Aid</a></li>
+	<li><a href="Factbook/Degrees/">Degrees Conferred</a></li>
+	<li><a href="Factbook/Faculty_Staff/">Faculty &amp; Staff</a></li>
+	<li><a href="Factbook/Financial/">Financial Performance</a></li>
+	<li><a href="Factbook/Retention/">Retention</a></li>
+	<li><a href="Factbook/Student/">Student Life</a></li>
+	
+</ul>
+<img src="Factbook/css/iface/nav-bottomfade.jpg" alt="" />
+
+</div><!-- END section_nav -->
+
+</div>
+
+<!-- END nonFooter -->

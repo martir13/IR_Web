@@ -1,0 +1,16 @@
+/* CSS Document */
+#leftcoulumn
+{
+float:left;
+margin-left:5%;
+border:1 solid black;
+background-color:rgb(221,236,237);
+}
+
+#rightcoulumn
+{
+float:left;
+margin-left:5%;
+border:1 solid black;
+background-color:rgb(221,236,237);
+}

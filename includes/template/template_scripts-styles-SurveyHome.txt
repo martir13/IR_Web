@@ -1,0 +1,151 @@
+<base href="/" />
+
+<meta content=
+    "Embry-Riddle is rated number one in aviation and aerospace college education offering a wide variety of air and space related degrees."
+    name="Description" />
+    <meta content=
+    "Embry-Riddle, aviation, aerospace, space, degree, education college" name=
+    "Keywords" />
+
+    <link href="Surveys/SurveyHomeCSS/indexPrint.css" media="print" rel="stylesheet" type="text/css" />
+    <link href="Surveys/SurveyHomeCSS/index.css" rel="stylesheet" type="text/css" />
+    <link href="Surveys/SurveyHomeCSS/indexDefault.css" rel="stylesheet" type="text/css" />
+    <link href="Surveys/SurveyHomeCSS/megamenu.css" rel="stylesheet" type="text/css" />
+
+    <!-- Stylesheet for breadcrumbs navigation -->
+    <link rel="stylesheet" href="css/SurveyHomeCSS/BreadCrumb.css" type="text/css" />
+
+    <!-- Styles for the menu on the Archive section -->
+    <link href="Surveys/SurveyHomeCSS/menu_assets/styles.css" rel="stylesheet" type="text/css">
+
+    <!-- CSS stylesheet for IE 8 and below. -->
+    <!--[if lt IE 9]>
+        <link rel="stylesheet" type="text/css" href="Surveys/SurveyHomeCSS/ieonly.css" />
+    <![endif]-->
+
+    <!--[if lt IE 9]>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
+   <![endif]-->
+<!--[if gt IE 8]>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js" type="text/javascript"></script>
+<![endif]-->
+
+<!--[if lt IE 8]>
+    <link rel="stylesheet" type="text/css" href="Surveys/SurveyHomeCSS/megamenu_ie.css" />
+    <![endif]-->
+
+<![if !IE]> <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js" type="text/javascript"></script> <![endif]>
+
+</head>
+
+<body>
+    <!-- header_extender displays bars at top of page behind header -->
+
+    <div id="header_extender"></div>
+
+    <div id="creamBackground">
+
+    <div id="nonFooter">
+        <!--Begin Header-->
+
+        <div id="header">
+            <div id="globalnav">
+                <ul>
+                    <li>
+                        <a href="http://directory.erau.edu">PEOPLE SEARCH</a>
+                    </li>
+
+                    <li>
+                        <a href="https://ernie.erau.edu">ERNIE</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!--SEARCH FORM-->
+<div id="erau_search_container">
+            <form target="_blank"  id="erausearch" action="http://www.erau.edu/searchresults.htm" onSubmit="dcsMultiTrack('DCS.dcsuri','http://www.erau.edu/searchresults.htm','WT.oss',erausearch.q.value, 'WT.oss_r','1');">
+    <input type="hidden" name="cx" value="002357049919384000151:ah5zfp7kmxe" />
+    <input type="hidden" name="cof" value="FORID:11" />
+    <input type="hidden" name="ie" value="UTF-8" />
+                            <span class="search_input_container"><input type="text" name="q" size="21" class="search_input" /></span>
+                            <span class="submit_button_container"><input type="submit" name="sa" value="SEARCH" class="submit" /></span>
+            </form>
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=erausearch&lang=en"></script>
+</div>
+
+            <div id="logo-homelink">
+                <a href="http://www.erau.edu"><img alt=
+                "Embry-Riddle Aeronautical University" src=
+                "../../images/erau-logo.gif" />
+                <span><img alt="" src=
+                "../../images/hover_sitehome-white.gif" />
+                </span></a>
+            </div>
+
+            <div id="slogan">
+                <a href="/"><img alt="" src=
+                "../../images/ir.gif" /></a>
+            </div>
+
+            <div id="topNav">
+                <ul>
+                    <li>
+                        <a href=
+                        "/Factbook/">ERAU
+                        DATA</a>
+                    </li>
+
+                    <li>
+                        <a href=
+                        "/Surveys/">SURVEYS</a>
+                    </li>
+
+                    <li>
+                        <a href=
+                        "/Publications/">PUBLICATIONS</a>
+                    </li>
+
+                    <li>
+                        <a href=
+                        "/OnlineCourseEval/">COURSE
+                        EVALS</a>
+                    </li>
+
+                    <li>
+                        <a href=
+                        "/Staff/">STAFF</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="task-links">
+                <ul>
+                    <li id="apply">
+                        <a href="/">Home</a>
+                    </li>
+
+                    <li id="request">
+                        <a href=
+                        "/Support/Help/">Request</a>
+                    </li>
+
+                    <li id="visit">
+                        <a href=
+                        "http://www.erau.edu/webfeedback/">Feedback</a>
+                    </li>
+                </ul>
+            </div>
+        </div><!--End Header-->
+
+        <!-- Start Breadcrumbs -->
+        <div class="breadCrumbHolder module">
+            <div id="breadCrumb3" class="breadCrumb module">
+                <ul>
+                    <li>
+                        <a href="/index.html">Home</a>
+                    </li>
+                    </ul>
+            </div>
+        </div>
+        <div class="chevronOverlay main">
+        </div>

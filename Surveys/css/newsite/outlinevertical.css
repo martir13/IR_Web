@@ -1,0 +1,134 @@
+body{
+margin:0;
+padding:0;
+line-height: 1.5em;
+}
+
+b{font-size: 110%;}
+em{color: red;}
+
+#maincontainer{
+width: 100%; /*Width of main container*/
+margin: 0 auto; /*Center container on page*/
+}
+
+#topsection{
+background: #EAEAEA;
+height: 90px; /*Height of top section*/
+}
+
+#topsection h1{
+margin: 0;
+padding-top: 15px;
+}
+
+#contentwrapper{
+	float: left;
+	width: 100%;
+	
+}
+
+#contentcolumn{
+	margin: 0 0 0 40%;
+	background-color: #dc8;
+}
+
+#leftcolumn{
+float: left;
+width: 40%; /*Width of left column in pixel*/
+margin-left: -100%; /*Set margin to that of -(MainContainerWidth)*/
+background: #FFFFFF;
+}
+
+#rightcolumn{
+float: left;
+width: 25%; /*Width of right column*/
+margin-left: -25%; /*Set left margin to -(RightColumnWidth)*/
+background: #dc8;
+}
+
+#footer1{
+clear: left;
+width: 100%;
+
+
+text-align: center;
+padding: 4px 0;
+}
+
+
+.innertube{
+margin: 10px; /*Margins for inner DIV inside each column (to provide padding)*/
+margin-top: 0;
+}
+
+#marqueecontainer{
+position: relative;
+width: 92%; /*marquee width */
+height: 200px; /*marquee height */
+background-color: #FFFFFF;
+overflow: hidden;
+border: 3px solid black;
+padding: 2px;
+margin-left:10px;
+padding-left: 4px;
+
+}
+
+
+
+.fon {
+	font-size: 0.9em;
+}
+
+#banner {
+	width: 995px;
+	height: 92px;
+	background-color: #369;
+}
+
+#banner h1 { 
+
+	margin: 0px; 
+	width: 995px; 
+	height: 92px; 
+}
+
+#banner h1 span {
+	display: none
+}
+
+#banner h1 a:link, #banner h1 a:visited, #banner h1 a:hover, #banner h1 a:active {
+	color: #fff;
+	text-decoration: none;
+}
+
+#bread {
+	
+	font-weight:bold;
+	background-color:#FFFFFF;
+	padding: 3px;
+	
+	}
+#bread a:hover
+{
+color:#dc8;
+}
+#bread ul {
+	
+	font-weight:bold;
+	margin-left: 0;
+	padding-left: 0;
+	display: inline;
+	border: none;
+	} 
+
+#bread ul li {
+	
+	font-weight:bold;
+	margin-left: 0;
+	padding-left: 2px;
+	border: none;
+	list-style: none;
+	display: inline;
+	}

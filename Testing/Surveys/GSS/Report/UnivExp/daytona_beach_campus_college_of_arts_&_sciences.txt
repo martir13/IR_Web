@@ -1,0 +1,9 @@
+<option value="BS Aerospace Studies">BS Aerospace Studies</option>
+<option value="BS Communication">BS Communication</option>
+<option value="BS Computational Mathematics">BS Computational Mathematics</option>
+<option value="BS Engineering Physics">BS Engineering Physics</option>
+<option value="BS Human Factors Psychology">BS Human Factors Psychology</option>
+<option value="BS Interdisciplinary Studies">BS Interdisciplinary Studies</option>
+<option value="BS Space Physics">BS Space Physics</option>
+<option value="MS Aeronautics">MS Aeronautics</option>
+<option value="MS Engineering Physics">MS Engineering Physics</option>

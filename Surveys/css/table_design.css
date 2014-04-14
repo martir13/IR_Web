@@ -1,0 +1,80 @@
+/* roScripts
+Table Design by Mihalcea Romeo
+www.roscripts.com
+----------------------------------------------- */
+
+table#sample {
+		border-collapse:collapse;
+		background:#EFF4FB url(http://www.roscripts.com/images/teaser.gif) repeat-x;
+		border-left:1px solid #686868;
+		border-right:1px solid #686868;
+		font:0.8em/145% 'Trebuchet MS',helvetica,arial,verdana;
+		color: #333;
+}
+
+table#sampletd,table#sample th {
+		padding:5px;
+}
+
+table#samplecaption {
+		padding: 0 0 .5em 0;
+		text-align: left;
+		font-size: 1.4em;
+		font-weight: bold;
+		text-transform: uppercase;
+		color: #333;
+		background: transparent;
+}
+
+/* =links
+----------------------------------------------- */
+
+table#sample a {
+		color:#950000;
+		text-decoration:none;
+}
+
+table#sample a:link {}
+
+table#sample a:visited {
+		font-weight:normal;
+		color:#666;
+		text-decoration: line-through;
+}
+
+table#sample a:hover {
+		border-bottom: 1px dashed #bbb;
+}
+
+/* =head =foot
+----------------------------------------------- */
+
+table#sample thead th,  table#sample tfoot th,table#sample tfoot td {
+		background:#333 url(http://www.roscripts.com/images/llsh.gif) repeat-x;
+		color:#fff
+}
+
+table#sample tfoot td {
+		text-align:right
+}
+
+/* =body
+----------------------------------------------- */
+
+table#sample tbody th, table#sample tbody td {
+		border-bottom: dotted 1px #333;
+}
+
+table#sample tbody th {
+		white-space: nowrap;
+}
+
+table#sample tbody th a {
+		color:#333;
+}
+
+.odd {}
+
+table#sample tbody tr:hover {
+		background:#fafafa
+}

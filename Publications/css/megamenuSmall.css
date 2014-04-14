@@ -1,0 +1,188 @@
+span.drop {
+    background-position: right 18px;
+    background-repeat: no-repeat;
+    padding: 11px 25px 11px 10px;
+    background-color: #3F61A1;
+    color: #FFFFFF;
+    width: 381px;
+    font-size: 18px;
+    float: left;
+    font-weight: bold;
+}
+div.menu ul.menuList>li {
+    float: left;
+    width: 416px;
+    list-style: none;
+    margin-left: 0px;
+    border: 1px solid #666666;
+}
+div.menu ul.menuList li ul {
+    margin-top: 13px;
+}
+div.menu ul.menuList li ul a {
+    text-decoration: underline;
+}
+ul.menuList li ul a li.active {
+    background-image: url("../images/bullet-green-icon.png");
+    background-repeat: no-repeat;
+    background-position: 2px 2px;
+}
+ul.menuList li ul a li {
+    margin-left: 7px;
+    padding-left: 21px;
+    list-style: none;
+    font-size: 14px;
+    float: left;
+    width: 168px;
+}
+ul.menuList li ul a li.active span {
+    border: 1px solid #CCCCCC;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+ul.menuList li ul a li span {
+    text-decoration: underline;
+    border: 1px solid #FFFFFF;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+ul.menuList li ul a li span:hover {
+    background: #CCCCCC;
+    text-decoration: underline;
+}
+div.menu div h2 {
+    clear: both;
+    font-size: 20px;
+    margin: 0px 0px 8px 0px;
+    text-align: left;
+}
+div.menu div h3 {
+    margin-left: 0px;
+    color: #161616;
+    font-weight: normal;
+    margin: 0 0 18px;
+    padding: 0;
+    font-size: 24px;
+    font-family: Arial;
+}
+
+div.col_2 {
+    background-color: #FFFFFF;
+    border: 1px solid #555555;
+    border-radius: 5px 5px 5px 5px;
+    padding: 3px;
+    width: 130px;
+}
+div.col_4 {
+    background-color: #FFFFFF;
+    border: 1px solid #555555;
+    border-radius: 5px 5px 5px 5px;
+    padding: 3px;
+    width: 334px;
+}
+div.col_2, div.col_4, div.col_1 {
+    float: left;
+    margin-left: 5px;
+    margin-right: 5px;
+    position: relative;
+}
+div.col_4 .col_1 {
+    margin-left: 0;
+    width: 31%;
+}
+#menuContent {
+    width: 100%;
+}
+#page_copy {
+    width: 700px;
+}
+div#menuContent div.col_4 div.col_1 ul li {
+    margin-left: 13px;
+}
+div#menuContent div.col_2 ul li {
+    margin-left: 13px;
+}
+div#menuContent div.col_4 div.col_1 h5 {
+    margin-left: .9em;
+}
+
+.WCFallTrends, .WCAcadYear, .undupLink, .RCDashEnroll {
+    display: none;
+}
+
+/* Styles for the tabs */
+.etabs { margin: 0; padding: 0; }
+.tab {
+    display: inline-block;
+    zoom:1; margin: 0px;
+    *display:inline;
+    background: #eee;
+    border: solid 1px #999;
+    border-bottom: none;
+    -webkit-border-top-left-radius: 4px;
+    -webkit-border-top-right-radius: 4px;
+    -moz-border-radius-topleft: 4px;
+    -moz-border-radius-topright: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.tab a { font-size: 14px; line-height: 2em; display: block; padding: 0 10px; outline: none; }
+.tab a:hover { text-decoration: underline; border-bottom: 1px solid #CCCCCC; }
+.tab.active { background: #fff; padding-top: 6px; position: relative; top: 2px; border-color: #666; margin: 0px; z-index: 999; }
+.tab a.active { font-weight: bold; border: none; }
+
+div#fall.active, div#spring.active, div#summer.active, div#db.active, div#pc.active, div#ww.active, div#sair.active, div#air.active, div#fair.active {
+    background: #fff;
+    border: solid #666 1px;
+    padding: 10px;
+    -webkit-border-radius: 4px;
+    -webkit-border-top-left-radius: 0;
+    -moz-border-radius: 4px;
+    -moz-border-radius-topleft: 0;
+    border-radius: 4px;
+    border-top-left-radius: 0;
+    width: 603px;
+}
+
+.tab-container ul.etabs li#singleTab {
+    top: 1px;
+}
+
+.tab-container div.active ul li a {
+    border-bottom: 1px solid;
+}
+
+ul.menuList li ul a#WCAcadYear.menuLinks li {
+    width: 151px;
+}
+ul.menuList li ul a#undupLink.menuLinks li {
+    width: 191px;
+}
+ul.menuList li ul a#factsheetLink.menuLinks li {
+    width: 168px;
+}
+#WWMainBox {
+    width: 205px;
+}
+li#WWMainBox span.drop {
+    width: 184px;
+    padding: 11px 10px 11px 11px;
+}
+
+html body div#nonFooter div#contentMain {
+    width: 69%;
+}
+
+div#fall ul, div#spring ul, div#summer ul, div#db ul, div#pc ul, div#ww ul, div#sair ul, div#air ul, div#fair ul {
+    width: 118px;
+    float: left;
+    margin-bottom: 15px;
+}
+
+div#tab-container.tab-container div.col_1 ul li ul li {
+    margin-left: 0px;
+}
+
+div#tab-container.tab-container div.col_1 ul li {
+    list-style: none;
+}

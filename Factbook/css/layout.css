@@ -1,0 +1,149 @@
+/*AviationPhd site layout styles*/
+body { background-color: #fff; 
+background: url(iface/clouds.jpg) center top no-repeat; 
+height: 100%; text-align: center;}
+
+html { height: 100%; }
+
+#columns { /* repeating background image for faux columns. Contained in #nonfooter and given transparency to allow clouds to show through*/
+position: absolute; top: auto; left: 0; bottom: 0; margin: 0; height: 10000px; width: 960px; background: url(iface/fauxcol.jpg) center top repeat-y; filter:alpha(opacity=25); -moz-opacity:.25;opacity:.25;}
+
+#columns-aside { position: absolute; top: auto; left: 0; bottom: 0; margin: 0; height: 10000px; width: 960px; background: url(iface/fauxcol-aside.jpg) center top repeat-y; filter:alpha(opacity=25); -moz-opacity:.25;opacity:.25;}
+
+/*nonFooter has to do with positioning the footer at the bottom of the viewing window. Do not change.*/
+#nonFooter {position: relative;  width: 960px; margin: 0 auto; text-align: left;  min-height: 100%; }
+
+* html #nonFooter { /*stretch to full height in IE6*/  height: 100%; } 
+
+#nonFooter:after, #content:after { /* stretch to contain floats */ content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+#footer, #header, #section-id  { /* keep these on top */ position: relative; z-index: 1; }
+
+.clearer { clear: both; display: block; height: 1px; margin-bottom: -1px; font-size: 1px; line-height: 1px; }
+
+
+
+/* HEADER ________________________________________________________*/
+#header_extender { position: absolute; top: 0; left: 0; width: 100%; height: 150px; background: url(/css/iface/header_extender.jpg) center top repeat-x; filter:alpha(opacity=30); -moz-opacity:.30;opacity:.30; }
+
+#header { background: #666 url(/css/iface/erau_header_bg_2but.jpg) center top no-repeat; height: 150px; width: 960px; margin: 0; padding: 0; }
+
+	/* HEADER Global Nav*/
+#globalnav  * { margin: 0; padding: 0; border: 0}
+#globalnav {position: absolute; top:3px; left: 430px; width: 280px;  }
+#globalnav ul { list-style-type: none; }
+#globalnav ul li { float: left;  display: inline; text-align: center;  }
+#globalnav ul li a { display: block; padding:3px 24px; color: white; font: bold .75em Arial, Helvetica, sans-serif;  letter-spacing: 1px; }
+#globalnav ul li a:hover { background: #7c8db8 url(iface/globalnav-hoverBG.gif) 50% 50%; color: #fff;}
+
+	/* HEADER Form styles in forms.css*/
+
+
+/* HEADER Logo*/
+#logo-homelink { position: absolute; left: 20px; top: 43px; margin: 0; padding: 0; }
+#logo-homelink img { border: 0; margin: 0; padding: 0; }
+#logo-homelink a { display: block; border: 0; text-decoration: none; }
+#logo-homelink a span { display: block; padding-top: 6px; display: none;}
+#logo-homelink a:hover span { display: block;  }
+
+#site-name { position: absolute; left: 240px; top: 43px; margin: 0; padding: 0; }
+#site-name img { border: 0; display: block; margin: 0; padding: 0;}
+#site-name a { display: block; border: 0; text-decoration: none; }
+#site-name a span { display: block; padding-top: 6px; display: none;}
+#site-name a:hover span { display: block;}
+
+
+#topNav * { margin: 0; padding: 0}
+#topNav { position: absolute; left: 0; top: 122px; width: 960px; text-align: center;}
+#topNav ul {list-style-type: none;  padding: 0; margin: 0 auto; }
+#topNav li {list-style-image: none; display: inline; }
+#topNav a { padding: 9px 16px 7px; text-decoration: none; border: 0; font: bold .875em/27px Arial, Helvetica, sans-serif; color: #3a5079; text-align: center;}
+#topNav a:hover { background: #fbe197 url(/css/iface/topnav_bghover.jpg) repeat-x top; color: #3a5079;}
+
+
+
+
+#task-links {  position: absolute; left: 574px; top: 94px; margin: 0; padding: 0;}
+#task-links ul { list-style-type: none; list-style-image: none; margin: 0; padding: 0; }
+#task-links li { list-style: none;  list-style-image: none; margin: 0; padding: 0; text-align: left;}
+#task-links li a { display: block; text-decoration: none; border: 0; width: 114px; height: 25px; color: #fff;  font: bold .875em/25px Arial, Helvetica, sans-serif; padding: 0 0 0 25px; margin: 0 0 0 0; }
+
+/*
+#task-links li#contact  { position: absolute; left: 0; top: 0; } 
+#task-links li#contact  a:hover {color: #000; background: url(iface/task-link-bg.gif) 0 -25px no-repeat } 
+*/#task-links li#apply { position: absolute; left: 124px; top: 0;} 
+#task-links li#apply  a:hover {color: #000; background: url(iface/task-link-bg.gif) 0 -25px no-repeat } 
+#task-links li#request {  position: absolute; left: 248px; top: 0;} 
+#task-links li#request  a:hover {color: #000; background: url(iface/task-link-bg.gif) -126px -50px no-repeat } 
+
+
+
+
+/* CONTENT SECTION Contains contentMain and #nav.  */
+#content { position: relative; padding-bottom: 150px; width: 960px; text-align: left; font-size: inherit; /*border: 1px solid red;*/ }  
+
+/*ContentMain contains page_copy and columns.*/
+#contentMain { float: right; width: 720px; padding: 0 0 0 0; margin: 0 0 0 0; display: inline; overflow: hidden; }
+
+#page_copy { /*width: 630px;*/ padding: 0 20px 0 70px; float: left; display: inline; }
+
+#page_copy_aside { width: 418px; padding: 0 20px 0 70px; float: left; display: inline; /*background: yellow;*/ }
+#aside { width: 192px; padding: 10px 10px; overflow: hidden;  float: right; display: inline;  /*background: orange; */}
+
+
+
+
+.secondary_content {display: inline; float: right; width: 200px; margin: 10px -20px 60px 35px; padding: 0; border-left: 1px solid #6f91d0;  background: #fff; font-family: arial, helvetica, sans-serif; }
+.secondary_content * { margin: 0; padding: 0;}
+.secondary_content h2 { padding: 5px 6px; margin-bottom: 12px; font: bold .8125em/1.3 arial, helvetica, sans-serif; border: 1px solid #6f91d0; border-width: 1px 0 1px 0; background: url(/css/iface/gold_horz.gif) repeat-y ; }
+.secondary_content p, .secondary_content li  { font: normal .8125em/1.3 arial, helvetica, sans-serif;}
+.secondary_content p { margin: 0 10px 6px 12px;}
+.secondary_content li { margin: 4px 0  6px 14px; padding-top: 4px; list-style-image: none; list-style: none; font-size: 100%; }
+
+
+/*columns in contentMain*/
+div.col-3, div.col-2  { float: left; display: inline; width: 180px; margin: 20px 28px 0 0; overflow: visible; /*background: yellow;*/ }
+div.col-2 { width: 280px; }
+
+
+#nav  { width: 240px;  float: left; display: inline;} /*Other #nav styles in nav.css*/
+
+/*FOOTER 
+Footer is outside div#nonfooter. div#nonfooter is 100% of window with padding on bottom which provides space for footer. Footer is brought into view by the negative top margin.\*/
+#footer { position: relative; width: 960px; margin: -80px auto 0 auto; background: #e3e9f4 url(/css/iface/footer-bg.gif) repeat-x top;  text-align: center; height: 85px; padding-bottom: 14px;}
+
+#bottomLinks { text-align: center; list-style: none;  margin: 0; padding-top: .5em; }
+#bottomLinks li { display: inline;  padding: 0 10px 0 10px; margin: 0; border-left: 1px solid #142d57; text-align: center; }
+#bottomLinks li.last { border-right: 1px solid #142d57;}
+#bottomLinks a {font: normal .85em/1 Arial, Helvetica, sans-serif;  padding: 0 3px 2px 3px; color: #000; border: 0;}
+#bottomLinks a:hover {border-bottom: 1px solid #a9bbd9;}
+
+#footer p { text-align: center; font: normal .6875em/1.2 Arial, Helvetica, sans-serif; margin: 0; padding:0; }
+#footer p.copyright {  margin-top: 1.5em;}
+#footer p.campus { font-weight: bold;}
+#footer p.address { font: normal .6875em/1.2 Arial, Helvetica, sans-serif; }
+
+
+
+.clear { clear: both; } 
+
+
+/*BASIC FLOATS*/
+.floatright {float: right; margin: .5em 0 10px 10px;}
+.floatleft { float: left; margin: .5em 10px 10px 0; }
+
+
+
+/*MISC*/
+
+/*Link from article lead in to the whole article*/
+span.morelink a { font: bold .8em Arial, Helvetica, sans-serif; padding: 0 .5em; margin-left: 8px; background: #ccc; color: #000;}
+
+
+/*Did You Know Teaser Boxes*/
+
+#did-you-know { width: 105px; float: right; background: #fff url(/css/iface/did-you-know.gif) center top no-repeat; padding-top: 70px; padding-left: 8px; margin: 0 -24px 40px 50px;  display: inline; border-left: 2px dotted #b0c5e7; }
+#did-you-know p { font: normal .75em/1.8 trebuchet ms, sans-serif; padding: 0 4px  4px 6px; margin-top: -26px; }-->
+#did-you-know a { display: block; width: 30px;}
+
+

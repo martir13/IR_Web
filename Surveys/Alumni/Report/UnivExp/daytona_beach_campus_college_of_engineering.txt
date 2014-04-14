@@ -1,0 +1,12 @@
+<option value="BS Aerospace Electronics">BS Aerospace Electronics</option>
+<option value="BS Civil Engineering">BS Civil Engineering</option>
+<option value="BS Computer Engineering">BS Computer Engineering</option>
+<option value="BS Computer Science">BS Computer Science</option>
+<option value="BS Electrical Engineering">BS Electrical Engineering</option>
+<option value="BS Mechanical Engineering">BS Mechanical Engineering</option>
+<option value="BS Software Engineering">BS Software Engineering</option>
+<option value="M Aerospace Engineering">M Aerospace Engineering</option>
+<option value="M Electrical/Computer Engineering">M Electrical/Computer Engineering</option>
+<option value="MS Aerospace Engineering">MS Aerospace Engineering</option>
+<option value="MS Mechanical Engineering">MS Mechanical Engineering</option>
+<option value="PhD Engineering Physics">PhD Engineering Physics</option>

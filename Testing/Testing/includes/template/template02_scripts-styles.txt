@@ -1,0 +1,118 @@
+<meta http-equiv="imagetoolbar" content="no" />
+<link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/vnd.microsoft.icon" /> 
+  
+<script src="/highlight.js" type="text/javascript"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script><!--jquery core served by Google-->
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js"></script>
+<script type="text/javascript" src="http://assets.erau.edu/jquery/erau_allsites_enhancement.js"></script><!--jquery for all embryriddle sites interface--> 
+
+
+
+
+<link href="/css/print.css" rel="stylesheet" type="text/css" media="print" />
+<link href="/css/screen.css" rel="stylesheet" type="text/css" media="screen" />
+
+<!--[if IE 6]>
+<link rel="stylesheet" type="text/css" href="/css/ie6.css" />
+<![endif]-->
+
+<script language="javascript">
+    function open_my_window()
+    {
+      var f = window.open("https://crm.orionondemand.com/crm/forms/N7TB3OC6703Ex6700mxK",'MainWindow', 'toolbar=no,location=no,directories=no,status=no,scrollbars=yes,titlebar=no,menubar=no,resizable=no,height=630,width=770,top=40,left=25');
+      f.moveto(0,0);
+    }
+  </script>
+  <script language="javascript">
+    function open_my_window_apply()
+    {
+      var f = window.open("https://crm.orionondemand.com/crm/forms/x80K4mTS868Ex6700mxK",'MainWindow', 'toolbar=no,location=no,directories=no,status=no,scrollbars=yes,titlebar=no,menubar=no,resizable=no,height=630,width=770,top=40,left=25');
+      f.moveto(0,0);
+    }
+  </script>
+  </head>
+
+<body>
+
+<div id="header_extender"></div>
+
+<div id="logoprint">
+<img src="/images/logo-hi.jpg" alt="ERAU Logo" />
+<h2>Strategic Planning and Analysis</h2>
+</div>
+
+<div id="nonFooter">
+<div id="columns"></div>
+
+<!--Begin Header-->
+<div id="header">
+<div id="globalnav">
+<ul>
+	<li><a href="http://directory.erau.edu">PEOPLE SEARCH</a></li>
+	<li><a href="https://ernie.erau.edu">ERNIE</a> </li>
+</ul>
+</div>
+
+<div id="erau_search_container">
+			<form  id="erausearch" action="/searchresults.htm" onSubmit="dcsMultiTrack('DCS.dcsuri','/search/index.html','WT.oss',erausearch.q.value, 'WT.oss_r','1');">
+			<input class="hidden" type="hidden" name="cx" value="002357049919384000151:ah5zfp7kmxe" />
+			<input class="hidden" type="hidden" name="cof" value="FORID:11" />
+			<input class="hidden" type="hidden" name="ie" value="UTF-8" />
+							<span class="search_input_container"><input type="text" name="q" size="21" class="search_input" /></span>
+							<span class="submit_button_container"><input type="submit" name="sa" value="SEARCH" class="submit" /></span>
+			</form>
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=erausearch&lang=en"></script>
+
+</div>
+
+<div id="logo-homelink">
+<a href="http://www.erau.edu?WT.svl=1"><img src="/css/iface/erau-logo.gif" alt="Embry-Riddle University Home" />
+<!--<span><img src="/css/iface/hover_erauhome.gif" alt="" /></span>--></a>
+</div>
+
+
+
+<div id="site-name">
+<a href="/index.html"><img src="/css/iface/ir.gif" alt="Institutional Research Home" />
+<span><img src="/css/iface/hover_sitehome.gif" alt="" /></span></a>
+</div>
+
+<div id="topNav">
+<ul>
+<li><a href="/data/index.html">ERAU DATA</a></li>
+<li><a href="/Surveys/index.html">SURVEYS</a></li>
+<li><a href="/Publications/index.html">PUBLICATIONS</a></li>
+<li><a href="/evals/index.html">COURSE EVALS</a></li>
+<li><a href="/staff/index.html">STAFF</a></li>
+<li><a href="http://spa.erau.edu/">STRATEGIC PLANNING</a></li>
+</ul>
+</div>
+
+
+<div id="task-links">
+<ul>
+<li id="request"><a href="http://ir.erau.edu">Home</a></li>
+<li id="request"><a href="/request-info.html">Request Info</a></li>
+<li id="apply"><a href="/support.html">Feedback</a></li> 
+ </ul>
+</div>
+
+</div><!--End Header-->
+
+
+<div id="content"><!--Content contains #contentMain and #nav-->
+<div class="breadCrumbHolder module">
+            <div id="breadCrumb3" class="breadCrumb module">
+                <ul>
+                    <li>
+                        <a href="http://irweb.erau.edu">Home</a>
+                    </li>
+               
+                    </ul>
+            </div>
+        </div>
+<!--_____________ BEGIN contentMain _____________-->
+<div id="contentMain">
+
+<div class="pageimage">
+

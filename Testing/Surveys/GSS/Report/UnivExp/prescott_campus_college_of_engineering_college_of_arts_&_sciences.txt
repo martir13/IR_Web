@@ -1,0 +1,13 @@
+<option value="BS Aerospace Engineering">BS Aerospace Engineering</option>
+<option value="BS Aviation Business Admin">BS Aviation Business Admin</option>
+<option value="BS Aviation Environmental Science">BS Aviation Environmental Science</option>
+<option value="BS Computer Engineering">BS Computer Engineering</option>
+<option value="BS Computer Science">BS Computer Science</option>
+<option value="BS Electrical Engineering">BS Electrical Engineering</option>
+<option value="BS Global Security & Intelligence Studies">BS Global Security & Intelligence Studies</option>
+<option value="BS Interdisciplinary Studies">BS Interdisciplinary Studies</option>
+<option value="BS Mechanical Engineering">BS Mechanical Engineering</option>
+<option value="BS Science, Tech, & Globalization">BS Science, Tech, & Globalization</option>
+<option value="BS Software Engineering">BS Software Engineering</option>
+<option value="BS Space Physics">BS Space Physics</option>
+<option value="M Software Engineering">M Software Engineering</option>

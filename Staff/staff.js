@@ -1,0 +1,50 @@
+$( document ).ready(function() {
+	$('#maria').hover(function() {
+		$('#maria').html(
+					'<div class="left-card no-margin-top">'
+					+	'<h3>Education</h3>'
+					+	'<ul style="margin-left:1%; font-size:12px; text-align:left;">'
+					+	'<li>MS Statistical Computing, University of Central Florida</li>'
+					+	'<li>BS Statistics, University of Central Florida</li>'
+					+	'</ul>'
+					+'</div>'
+					+'<div class="right-card no-margin-top">'
+					+	'<h3>Contact Information</h3>'
+					+	'<ul style="margin-left:1%; font-size:12px; text-align:left;">'
+					+	'<li>Embry-Riddle Aeronautical University<br>'
+					+	'600 S. Clyde Morris Blvd<br>'
+					+	'Daytona Beach, FL 32114<br>'
+					+	'</li>'
+					+	'<li>Ph: (386)226-6225</li>'
+					+	'<li>Fax: (386)226-6055</li>'
+					+	'<li>Email: <a href="mailto:francom@erau.edu" target="_blank">Maria Franco</a></li>'
+					+	'<li>Website: <a href="/" target="_blank"> /</a></li>'
+					+	'</ul>'
+					+'</div>'
+					+'<hr>'
+			);
+	}, function() {
+		$('#maria').html(
+					'<div class="left-card">'
+					+	'<h2 class="card-title"><a href="mailto:francom@erau.edu">Maria Franco</a></h2>'
+					+	'<p class="card-photo"><img src="/images/Picture 028.jpg" width="220" height="150" alt="" /></p>'
+					+'</div>'
+					+'<div class="right-card">'
+					+	'<p class="card-desc">Director </p>'
+					+	'<p class="card-resp"><strong>Responsibilities</strong></p>'
+					+	'<div><ul style="margin-left:25%; font-size:12px; text-align:left; "><li style="margin-top:1%; margin-bottom:1%; ">'
+					+	'  Office Oversight'
+					+	'</li><li style="margin-top:1%; margin-bottom:1%; ">'
+					+	'  <a href="/Factbook/Retention/" style=" border-bottom-style:none border-bottom-width:thin; margin-top:1%; margin-bottom:4%;">Retention Research</a>'
+					+	'</li><li style="margin-top:1%; margin-bottom:1%; ">'
+					+	'  Enrollment Projections'
+					+	'</li>'
+					+	'</ul>'
+					+	'</div>'
+					+	'<hr>'
+					+	'<p class="card-info"><a href="/Staff/maria.htm?keepThis=true&TB_iframe=true&height=500&width=500" title="" class="thickbox">More...</a> </p>'
+					+'</div>'
+					+'<hr>'
+			);
+	});
+});

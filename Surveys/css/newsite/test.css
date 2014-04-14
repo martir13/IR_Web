@@ -1,0 +1,382 @@
+#container {
+	background-color: #9AB3CB;
+	position:relative;
+	text-align: right;
+	height: 200px;
+	width: 800px;
+	margin-top: 10px;
+	margin-left: 60px;
+	
+}
+
+#container2 {
+	background-color: #FFFFFF;
+		
+	position:relative;
+	text-align: right;
+	height: 200px;
+	width: 800px;
+	margin-top: 10px;
+	margin-left: 60px;
+	
+
+}
+
+
+#capt
+{
+	float:left;
+	margin-left:160px;
+	margin-top: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	font-weight: bolder;
+	text-decoration: underline;
+}
+
+#captkathy
+{
+	float:left;
+	margin-left:140px;
+	margin-top: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	font-weight: bolder;
+	text-decoration: underline;
+}
+
+#captmichael
+{
+	float:left;
+	margin-left:20px;
+	margin-top: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	font-weight: bolder;
+	text-decoration: underline;
+}
+
+#subcapt
+{
+	float:left;
+	margin-left:-140px;
+	margin-top: 40px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	
+
+}
+
+#subcaptmichael
+{
+	float:left;
+	margin-left:-160px;
+	margin-top: 40px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	
+
+}
+
+#subcapttiff
+{
+	float:left;
+	margin-left:-190px;
+	margin-top: 40px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	
+
+}
+
+#subcaptkim
+{
+	float:left;
+	margin-left:-190px;
+	margin-top: 40px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	
+
+}
+#subcaptjessica
+{
+	float:left;
+	margin-left:-170px;
+	margin-top: 40px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	
+
+}
+
+#subcaptheidi
+{
+	float:left;
+	margin-left:-230px;
+	margin-top: 40px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	
+
+}
+
+#subcaptnimesh
+{
+	float:left;
+	margin-left:-250px;
+	margin-top: 40px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	
+
+}
+
+
+#subsub
+{
+	float:left;
+	margin-left:-160px;
+	margin-top: 40px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	
+
+}
+#subsubmichael
+{
+	float:left;
+	margin-left:-190px;
+	margin-top: 40px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	
+
+}
+
+#responsibility
+{
+	float:left;
+	margin-left:-140px;
+	margin-top: 40px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight:600;
+	text-decoration: underline;
+	
+
+}
+
+#responsibilitymichael
+{
+	float:left;
+	margin-left:-180px;
+	margin-top: 40px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight:600;
+	text-decoration: underline;
+	
+
+}
+
+#responsibilitytiff
+{
+	float:left;
+	margin-left:-160px;
+	margin-top: 40px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight:600;
+	text-decoration: underline;
+	
+
+}
+
+#responsibilitykathy
+{
+	float:left;
+	margin-left:-160px;
+	margin-top: 40px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight:600;
+	text-decoration: underline;
+	
+	
+
+}
+
+#responsibilityjessica
+{
+	float:left;
+	margin-left:-130px;
+	margin-top: 40px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight:600;
+	text-decoration: underline;
+	
+	
+
+}
+
+#responsibilityheidi
+{
+	float:left;
+	margin-left:-180px;
+	margin-top: 40px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight:600;
+	text-decoration: underline;
+	
+	
+
+}
+
+#responsibilitynimesh
+{
+	float:left;
+	margin-left:-200px;
+	margin-top: 40px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight:600;
+	text-decoration: underline;
+	
+	
+
+}
+
+#list
+{
+	float:left;
+	margin-left:-140px;
+	margin-top: 40px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	list-style-position: inside;
+	list-style-type: disc;
+}
+
+#listkathy
+{
+	float:left;
+	margin-left:-320px;
+	margin-top: 40px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	list-style-position: inside;
+	list-style-type: disc;
+}
+
+#listkathysecond
+{
+	float:left;
+	margin-left:-90px;
+	margin-top: 40px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	list-style-position: inside;
+	list-style-type: disc;
+}
+
+#listmichael
+{
+	float:left;
+	margin-left:-320px;
+	margin-top: 40px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	list-style-position: inside;
+	list-style-type: disc;
+}
+
+#listmichaelsecond
+{
+	float:left;
+	margin-left:-130px;
+	margin-top: 40px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	list-style-position: inside;
+	list-style-type: disc;
+}
+
+#listtiff
+{
+	float:left;
+	margin-left:-300px;
+	margin-top: 40px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	list-style-position: inside;
+	list-style-type: disc;
+}
+
+#listtiffsecond
+{
+	float:left;
+	margin-left:-70px;
+	margin-top: 40px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	list-style-position: inside;
+	list-style-type: disc;
+}
+
+#listjessica
+{
+	float:left;
+	margin-left:-280px;
+	margin-top: 40px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	list-style-position: inside;
+	list-style-type: disc;
+}
+
+#listjessicasecond
+{
+	float:left;
+	margin-left:-50px;
+	margin-top: 40px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	list-style-position: inside;
+	list-style-type: disc;
+}
+
+#listheidi
+{
+	float:left;
+	margin-left:-180px;
+	margin-top: 40px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	list-style-position: inside;
+	list-style-type: disc;
+}
+
+#listnimesh
+{
+	float:left;
+	margin-left:-200px;
+	margin-top: 40px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	list-style-position: inside;
+	list-style-type: disc;
+}
+
+#test{
+
+ 	float:left;
+	margin-left:120px;
+
+	
+	margin-top: 20px;
+	
+}
+

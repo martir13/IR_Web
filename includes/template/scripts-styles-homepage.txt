@@ -1,0 +1,174 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+    <title>Embry-Riddle Aeronautical University - Institutional Research</title>
+    <meta content=
+    "Embry-Riddle is rated number one in aviation and aerospace college education offering a wide variety of air and space related degrees."
+    name="Description" />
+    <meta content=
+    "Embry-Riddle, aviation, aerospace, space, degree, education college" name=
+    "Keywords" />
+
+    <link href="/css/indexPrint.css" media="print" rel="stylesheet" type="text/css" />
+    <link href="/css/index.css" rel="stylesheet" type="text/css" />
+    <link href="/css/indexDefault1.css" rel="stylesheet" type="text/css" />
+	
+ <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js" type="text/javascript"></script>
+   
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js"></script>
+
+    <!-- Stylesheet for breadcrumbs navigation -->
+    <link rel="stylesheet" href="/css/BreadCrumb.css" type="text/css" />
+
+    <!-- CSS stylesheet for IE 8 and below. -->
+    <!--[if lt IE 9]>
+        <link rel="stylesheet" type="text/css" href="/css/ieonly.css" />
+    <![endif]-->
+	
+	
+<script type="text/javascript">
+$("document").ready(function(){
+$("#breadCrumb3").jBreadCrumb();
+});
+</script>
+
+</head>
+
+<body>
+    <!-- header_extender displays bars at top of page behind header -->
+
+    <div id="header_extender"></div>
+
+    <div id="creamBackground">
+
+    <div id="nonFooter">
+        <!--Begin Header-->
+
+        <div id="header">
+            <div id="globalnav">
+                <ul>
+                    <li>
+                        <a href="http://directory.erau.edu">PEOPLE SEARCH</a>
+                    </li>
+
+                    <li>
+                        <a href="https://ernie.erau.edu">ERNIE</a>
+                    </li>
+                </ul>
+            </div><!--SEARCH FORM
+
+            <div id="erau_search_container">
+                <form action="">
+                    <input class="st-search-input" id="st-search-input"
+                    onfocus="this.value=''" style=" background-color:#FFFFFF;"
+                    type="text" value="Search" />
+                </form>
+
+                <div id="st-results-container"></div>
+                <script type=
+                "text/javascript">
+//<![CDATA[
+                var Swiftype = window.Swiftype || {};
+                (function() {
+                Swiftype.key = 'JgDr7w6zjbbr8f1dun4c';
+                Swiftype.inputElement = '#st-search-input';
+                Swiftype.resultContainingElement = '#st-results-container';
+                Swiftype.attachElement = '#st-search-input';
+                Swiftype.renderStyle = "overlay";
+
+                var script = document.createElement('script');
+                script.type = 'text/javascript';
+                script.async = true;
+                script.src = "//swiftype.com/embed.js";
+                var entry = document.getElementsByTagName('script')[0];
+                entry.parentNode.insertBefore(script, entry);
+                }());
+                //]]>
+                </script>
+            </div>-->
+
+            <!--SEARCH FORM-->
+<div id="erau_search_container">
+            <form target="_blank"  id="erausearch" action="http://www.erau.edu/searchresults.htm" onSubmit="dcsMultiTrack('DCS.dcsuri','http://www.erau.edu/searchresults.htm','WT.oss',erausearch.q.value, 'WT.oss_r','1');">
+    <input type="hidden" name="cx" value="002357049919384000151:ah5zfp7kmxe" />
+    <input type="hidden" name="cof" value="FORID:11" />
+    <input type="hidden" name="ie" value="UTF-8" />
+                            <span class="search_input_container"><input type="text" name="q" size="21" class="search_input" /></span>
+                            <span class="submit_button_container"><input type="submit" name="sa" value="SEARCH" class="submit" /></span>
+            </form>
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=erausearch&lang=en"></script>
+</div>
+
+            <div id="logo-homelink">
+                <a href="http://www.erau.edu"><img alt=
+                "Embry-Riddle Aeronautical University" src=
+                "/images/erau-logo.gif" />
+                <span><img alt="" src=
+                "/images/hover_sitehome-white.gif" />
+                </span></a>
+            </div>
+
+            <div id="slogan">
+                <a href="/"><img alt="" src=
+                "/images/ir.gif" /></a>
+            </div>
+
+             <div id="topNav">
+                <ul>
+                    <li>
+                        <a href=
+                        "Factbook/">ERAU
+                        DATA</a>
+                    </li>
+
+                    <li>
+                        <a href=
+                        "Surveys/">SURVEYS</a>
+                    </li>
+
+                    <li>
+                        <a href=
+                        "Publications/">PUBLICATIONS</a>
+                    </li>
+
+                    <li>
+                        <a href=
+                        "OnlineCourseEval/">ONLINE COURSE
+                        EVALS</a>
+                    </li>
+
+                    <li>
+                        <a href=
+                        "Staff/">STAFF</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="task-links">
+                <ul>
+                    <li id="apply">
+                        <a href="/">Home</a>
+                    </li>
+
+                    <li id="request">
+                        <a href=
+                        "/Support/Help/">Request</a>
+                    </li>
+
+                    <li id="visit">
+                        <a href=
+                        "http://www.erau.edu/webfeedback/">Feedback</a>
+                    </li>
+                </ul>
+            </div>
+        </div><!--End Header-->
+
+        <div class="chevronOverlay main">
+        </div>
+
+        <div id="mainContent">

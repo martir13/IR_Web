@@ -1,0 +1,44 @@
+
+#nav, #nav * { padding: 0; margin: 0;} 
+#nav ul { padding: 0 0 0 0; margin: 0;}/*small space bottem of parent ul*/
+#nav ul img { margin: 0 0 0 0}  /*small space before  fade image*/
+
+#nav h2 {
+background: #3f61a1;  font: bold 1.125em/56px arial, helvetica, sans-serif; 
+padding: 0 0 0 14px; margin: 0 0 0 0;}
+
+#nav h2 a { border: 0; font: bold .9375em/56px arial; color: #fff; background: #3f61a1;}
+
+
+#nav li { display: inline;  /*display:inline removes extra space between list items from ie6*/ } 
+
+#nav ul li a { color: #222;  /*all links set to black*/
+display: block;   /*needed to make the whole a tag clickable not just the text*/
+border: 0;   /*deletes the underline border default on ERAU links*/
+font: bold .9375em/1 arial, helvetica, sans-serif; /*menus are all sans-serif*/
+padding: .5em .2em .5em 1.2em;
+border-bottom: 1px solid #b0c5e7;
+
+
+} /*space around text in links*/
+
+#nav ul li a:hover { color: #222; background: #b0c5e7; /*hover color for top-level links*/ }
+
+
+/*Nested Menus*/
+#nav ul ul { padding: 0 0 .15em 0; border-bottom: 1px solid #b0c5e7; 
+/*Space bottom of nested lists. Negates padding put on parent ul*/
+/*background: #b0c5e7;*/ 
+} 
+
+#nav ul ul a {
+padding: .3em .7em .3em 2.5em; font-weight: normal; font-size: 1em; border: 0;
+} 
+
+#nav a.submenu {background: #6f91d0; color: #fff;}
+
+/*highlight.js applies class of current the link which has the same url as the current page*/
+#nav li a.current { background: #6f91d0; color: #fff; }
+#nav li li a.current { background: #fff; color: #222; font-weight: bold; }
+
+

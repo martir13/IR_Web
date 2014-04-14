@@ -1,0 +1,23 @@
+<!-- ____________________________ BEGIN footer ____________________________ -->
+<div id="footer">
+<p class="copyright">&copy;Copyright 2013 Embry-Riddle Aeronautical University. All rights reserved.</p>
+<p class="address">Administrative Offices: 600 South Clyde Morris Blvd., Daytona Beach, FL 32114</p>
+</div>
+<!-- END footer -->
+
+
+ <!-- Scripts used for breadcrumbs -->
+    <script src="/js/jquery.easing.1.4.js" type="text/javascript"></script>
+    <script src="/js/jquery.jBreadCrumb.1.1.js" type="text/javascript"></script>
+	 <script src="/js/make_dropdown.min.js" type="text/javascript"></script>
+	 <script src="/OnlineCourseEval/js/utility.js" type="text/javascript"></script>
+	 <script src="/js/factbook.js" type="text/javascript"></script><!-- Js to control the factbook menu functionality -->
+
+	<script src="/Factbook/js/jquery.hashchange.min.js" type="text/javascript"></script>
+	<script src="/Factbook/js/jquery.easytabs.js" type="text/javascript"></script>
+    <!--************************************* END 3RD PARTY SCRIPTS *********************************************-->
+ <script src="/OnlineCourseEval/js/index.js" type="text/javascript"></script>
+
+
+</body>
+</html>

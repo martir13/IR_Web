@@ -1,0 +1,12 @@
+.container {
+	width: 100%;
+}
+#readMore {
+	display: none;
+}
+html body div#creamBackground div#nonFooter div#mainContent div.bottomWidgets ul {
+	list-style: none;
+}
+html body div#creamBackground div#nonFooter div#mainContent div.bottomWidgets ul li {
+	list-style: none;
+}

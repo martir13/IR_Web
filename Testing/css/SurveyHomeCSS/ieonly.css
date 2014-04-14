@@ -1,0 +1,34 @@
+.container {
+	width: 1000px;
+}
+#readMore {
+	display: none;
+}
+html body div#creamBackground div#nonFooter div#mainContent div.bottomWidgets ul {
+	list-style: none;
+}
+html body div#creamBackground div#nonFooter div#mainContent div.bottomWidgets ul li {
+	list-style: none;
+}
+
+html body div#creamBackground div#nonFooter div#mainContent div.bottomWidgets ul div.mosaic-block a.mosaic-overlay {
+	height: 170px;
+}
+
+.mosaic-block {
+	height: 247px !important;
+}
+
+.bar2 .mosaic-overlay {
+			bottom:-120px;
+			height:170px;
+			opacity:0.95;
+			-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=95)";
+			filter:alpha(opacity=95);
+}
+.bar2Big .mosaic-overlay {
+	bottom:20px;
+}
+html body div#creamBackground div#nonFooter div#mainContent div.bottomWidgets ul div.bar2Big a.mosaic-overlay {
+	height: 190px;
+}

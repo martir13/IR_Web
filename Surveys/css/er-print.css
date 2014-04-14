@@ -1,0 +1,744 @@
+body     {
+	color: #000000;
+	font-size: 12pt;
+	font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular;
+	margin: 0pt;
+	background-color: #FFFFFF;
+}
+
+
+body, div, ul, li, td, h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+	font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular;
+}
+
+div, span, img, form  {
+	margin: 0pt;
+	padding: 0pt;
+}
+
+html, body  { height: 100% }
+
+p, td       { color: #000; font-size: 12pt; line-height: 130%; font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular }
+
+
+
+table, tr, td  { vertical-align: text-top }
+th  { vertical-align: middle }
+
+
+td#logo  { text-align: left; vertical-align: middle; padding-left: 30pt }
+
+
+td#flexcell {
+	width: auto;
+}
+
+td#headergraphic {
+	text-align: right;
+}
+
+
+
+.form { font-family: Arial, Helvetica, sans-serif; font-size: 10pt; color: red; background: yellow; color: blue; }
+.button { font-weight: bold; color: yellow; background-color: blue;} 
+input:focus  { background-color: #f0e68c }
+
+table.tablespace { margin-top: 25pt; padding-top: 0pt;}
+
+
+
+p.initialcap:first-letter { 
+font-weight: bold; 
+font-size: 200%; 
+line-height: 100%; 
+font-family: "Times New Roman", Georgia, Times, Georgia, Times; 
+float: left; 
+vertical-align: bottom; 
+padding-right: 1pt; weight: bold 
+}
+
+
+
+td#globalleftmenu        { background-color: #b0c4de; text-align: right; vertical-align: top; margin-right: 0pt; margin-left: 0pt; padding-top: 15pt; padding-right: 10pt; padding-left: 8pt; width: 160pt }
+td#globalleftmenu a:link       { color: #000; font-size: 10pt; text-decoration: none; margin-bottom: 6pt; padding-right: 2pt; padding-bottom: 1pt; border-right: 1pt solid #b0c4de; border-bottom: 1pt solid #b0c4de; display: block }
+td#globalleftmenu a:visited      { color: #000; font-size: 10pt; text-decoration: none; margin-bottom: 6pt; padding-right: 2pt; padding-bottom: 1pt; border-right: 1pt solid #b0c4de; border-bottom: 1pt solid #b0c4de; display: block }
+td#globalleftmenu a:hover       { color: #000; font-size: 10pt; text-decoration: none; background-color: #f0f8ff; margin-bottom: 6pt; padding-right: 2pt; padding-bottom: 1pt; border-right: 1pt solid #006; border-bottom: 1pt solid #006; display: block }
+td#globalleftmenu a:active      { color: #000; font-size: 10pt; text-decoration: none; margin-bottom: 6pt; padding-right: 2pt; padding-bottom: 1pt; border-right: 1pt solid #b0c4de; border-bottom: 1pt solid #b0c4de; display: block }
+
+
+td#globalcontent  { background-color: #fff; vertical-align: top; padding: 20pt 40pt 15pt 36pt }
+td#globalcontent h1 {
+	font-size: 16pt;
+}
+
+td.blocklink    { margin: 0pt; padding: 0pt 0pt 0pt 15pt }
+td.blocklink a    { font-size: 12pt; margin: 5pt 0pt 0pt; padding: 0pt; display: block }
+td.blocklink p   { line-height: 0pt; margin: 0pt; padding: 0pt }
+
+table#grayborder  { background-color: #696969; margin-top: 6pt }
+table#grayborder td    { font-weight: normal; background-color: #fff; vertical-align: top; padding: 5pt }
+
+/* BEGIN search styles*/
+div.advspace  { text-align: center; margin-top: 8pt }
+
+div#searchform        { text-align: center; margin: 0pt 0pt 0pt 8pt; padding-top: 15pt; padding-bottom: 6pt; 
+width: 160pt }
+div#searchform input    { margin-bottom: 6pt }
+div#searchform input:focus  { background-color: #f0e68c }
+
+div.trusteephoto {
+	color: #696969;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12pt;
+	line-height: 14pt;
+	background-color: #FFFFFF;
+	float: right;
+	margin: 0pt 0pt 14pt 7pt;
+	padding: 0pt 0pt 12pt 5pt;
+	width: 150pt;
+	height: auto;
+	text-align: center;
+	border-bottom-width: 1pt;
+	border-left-width: 1pt;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-bottom-color: #333333;
+	border-left-color: #333333;
+}
+
+
+
+div.pullquote       { color: #696969; font-style: italic; font-size: 12pt; line-height: 130%; background-color: #e6e6fa; float: right; clear: right; margin: 10pt 7pt 0pt; padding: 6pt 5pt 0pt; border-top: 2pt solid #696969; width: 180pt; height: auto }
+
+div.pullquote.name    { color: #696969; font-style: italic; font-weight: bold; font-size: 10pt; line-height: 14pt; background-color: #e6e6fa; float: right; clear: right; margin: 0pt 7pt; padding: 0pt 5pt; width: 180pt; height: auto }
+div.pullquote.title    { color: #696969; font-style: italic; font-size: 10pt; line-height: 14pt; background-color: #e6e6fa; float: right; clear: right; margin: 0pt 7pt; padding: 0pt 5pt 3pt; border-bottom: 2pt solid #696969; width: 180pt; height: auto }   
+
+div.linksection  { margin-top: 8pt; margin-bottom: 8pt; padding-top: 5pt; border-top: 1pt solid #696969 }
+
+td#campusname        {
+	font-size: 16pt;
+	background-color: #fff;
+	text-align: center;
+	word-spacing: 6pt;
+	letter-spacing: 10pt;
+	vertical-align: middle;
+	padding: 4pt 10pt;
+	border-top: 1pt solid #a9a9a9;
+	border-bottom: 1pt solid #a9a9a9;
+	line-height: 100%;
+}
+
+td#head-noletterspace       {
+	font-size: 18pt;
+	background-color: #fff;
+	text-align: center;
+	word-spacing: 8pt;
+	letter-spacing: 4pt;
+	vertical-align: middle;
+	padding: 4pt 10pt;
+	border-top: 1pt solid #a9a9a9;
+	border-bottom: 1pt solid #a9a9a9;
+	line-height: 100%;
+}
+/*!begin table styles*/
+
+table.style3 {
+	background-color: #000000;
+	clear: both;
+	margin-right: 18pt;
+	margin-top: 10pt;
+}
+.style3 th {
+	color: #FFFFFF;
+	background-color: #666666;
+	padding-top: 2pt;
+	padding-right: 5pt;
+	padding-bottom: 2pt;
+	padding-left: 5pt;
+	font-size: 11pt;
+}
+.style3 td {
+	background-color: #FFFFFF;
+	padding-top: 2pt;
+	padding-right: 5pt;
+	padding-bottom: 2pt;
+	padding-left: 5pt;
+	font-size: 11pt;
+}
+
+
+/*!begin old styles*/
+table#retainedcontent  {
+	padding-top: 0pt;
+	border-top: 1pt solid #000;
+}
+
+
+td#retainedicon   { background-color: #b0c4de; text-align: center; vertical-align: top; padding-top: 12pt }
+
+table#retainedcontent td#retainedmenu {display: none; }
+div#ernav, div#homenav, ul#campuslist, td#menuspace {display: none; }
+
+
+td#retainedcopy    {
+	font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular;
+	text-align: left;
+	vertical-align: top;
+	padding: 20pt 20pt 20pt 30pt;
+	width: 590pt;
+}
+
+/*font-family is already defined, here I only set the font-size*/
+
+td#retainedcopy h1 {font-size: 20pt; color: #000000; line-height: 110%; }
+td#retainedcopy h2 {font-size: 14pt; color: #000000; line-height: 110%; }
+td#retainedcopy h3 {font-size: 12pt; color: #000000; line-height: 110%; }
+td#retainedcopy h4 {font-size: 14pt; color: #000000; line-height: 110%; }
+td#retainedcopy h5 {font-size: 10pt; color: #000000; line-height: 110%; }
+td#retainedcopy h6 {font-size: 9pt; color: #000000; line-height: 100%; font-style: normal}
+
+td#retainedcopy ol, dl, ul, li  { line-height: 115%}
+
+td#retainedcopy ul { list-style-type: square }
+td#retainedcopy li {
+	margin-top: 3pt;
+	margin-bottom: 0pt;
+}
+td#retainedcopy ol { list-style-type: decimal }
+
+td#retainedcopy h2.spc_aboveonly {
+	padding: 0pt;
+	margin-top: 13pt;
+	margin-right: 0pt;
+	margin-bottom: 0pt;
+	margin-left: 0pt;
+}
+td#retainedcopy p.no-spc_indent {
+	padding: 0pt;
+	margin-top: 2pt;
+	margin-right: 0pt;
+	margin-bottom: 0pt;
+	margin-left: 25pt;
+}
+
+td#retainedcopy dt { padding-top: 3pt; font-weight: bold}
+td#retainedcopy table.emi { background-color: #000000 }
+td#retainedcopy table.emi th { font-size: 13pt; color: #ffffff; font-weight: bold; background-color: #00008b }
+td#retainedcopy table.emi td { font-size: 11pt; color: #000000; background-color: #ffffff }
+td#retainedcopy table.emi td.cellcolor2 { font-size: 11pt; color: #000000; background-color: #boc4de }
+
+td#retainedcopy table.faculty { background-color: #000000 }
+td#retainedcopy table.faculty th { font-size: 12pt; color: #ffffff; font-weight: bold; background-color: #00008b }
+td#retainedcopy table.faculty td { font-size: 10pt; color: #000000; background-color: #ffffff }
+td#retainedcopy table.faculty td.cellcolor2 { font-size: 10pt; color: #000000; background-color: #boc4de }
+
+
+td#retainedcopy a.Nav:link { font-size: 10pt; line-height: 100%; padding-top: 5pt;  font-weight: bold; color: #000066; text-decoration: underline}
+td#retainedcopy a.Nav:visited { font-size: 10pt; line-height: 100%; font-weight: bold; color: #330066; text-decoration: underline}
+td#retainedcopy a.Nav:hover { font-size: 10pt; line-height: 100%; color: #00FF00; text-decoration: underline}
+td#retainedcopy a.Nav:active { font-size: 10pt; line-height: 100%; font-weight: bold; color: #009900; text-decoration: underline}
+
+td#retainedcopy td#collegenav {padding-right: 12pt; border-right: solid gray 1pt; text-align: left;}
+td#retainedcopy td#collegenav a {display: block; margin: 0; padding: 3pt; font-family: Arial, Helvetica, sans-serif;font-size: 10pt; line-height: 100%; border-bottom: solid gray 1pt; text-decoration: none}
+
+td#retainedcopy td.collegelist h2 {margin: 0; padding-top: 5pt; padding-bottom: 1pt; font-family: Arial, Helvetica, sans-serif; font-size: 14pt;}
+td#retainedcopy td.collegelist p {margin: 0; padding-top: 6pt; font-family: Arial, Helvetica, sans-serif; font-size: 13pt; line-height: 110%; text-decoration: underlined; text-align: top;}
+
+
+td#retainedcopy h2.degreecategory {
+	margin-top: 25pt;
+	margin-bottom: 20pt;
+	clear: both;
+	color: #FFFFFF;
+	padding: 3pt;
+	background-color: #666666;
+	width: 100%;
+	text-align: center;
+}
+
+td#retainedcopy h1.degreename {
+	padding-top: 5pt;
+	border-top: 1pt solid #333333;
+	margin-top: 40pt;
+	margin-bottom: 4pt;
+	font-size: 16pt;
+	clear: both;
+}
+
+td#retainedcopy p.degreetext {
+	padding-top: 0pt;
+	margin-top: 0pt;
+	margin-bottom: 4pt;
+}
+
+td#retainedcopy div.degreelinks {
+	padding-top: 0pt;
+	margin-top: 8pt;
+	margin-bottom: 30pt;
+	display: inline;
+	text-align: right;
+	clear: both;
+	float: right;
+}
+
+
+/* begin styles for newsrelease template */
+
+td#retainedcopy .redheadnews {
+	font-size: 16pt;
+	color: #FF0000;
+	text-align: center;
+	margin: 0pt;
+	width: 100%;
+	padding-top: 3pt;
+	padding-bottom: 3pt;
+	border-top-width: 1pt;
+	border-bottom-width: 1pt;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #333333;
+	border-bottom-color: #333333;
+}
+td#retainedcopy.prinfo {
+	margin: 0pt 0pt 30pt;
+	width: 100%;
+	padding-bottom: 10pt;
+	border-bottom-width: 2pt;
+	border-bottom-style: solid;
+	border-bottom-color: #000066;
+}
+
+/* end styles for newsrelease template */
+
+
+
+/* BEGIN AcademicOrg Index page styles*/
+
+table#retainedcontent table.academicorgs td{
+	padding-left: 12pt;
+	padding-left: 5pt;
+	padding-right: 8pt;
+}
+
+table#retainedcontent table.academicorgs th {
+	font-size: 16pt;
+	color: #FFFFFF;
+	background-color: #000066;
+	padding-top: 3pt;
+	padding-bottom: 3pt;
+	text-align: center;
+}
+
+table#retainedcontent table.academicorgs h1 {
+	font-size: 14pt;
+	margin: 0pt;
+	padding: 0pt;
+	line-height: 100%;
+}
+
+table#retainedcontent table.academicorgs img {
+	margin-top: 8pt;
+	margin-right: 0pt;
+	margin-bottom: 6pt;
+	margin-left: 0pt;
+}
+
+
+table#retainedcontent table.academicorgs p.collegeof {
+	font-size: 12pt;
+	border-top-width: 1pt;
+	border-bottom-width: 1pt;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #333333;
+	border-bottom-color: #333333;
+	margin: 12pt 0pt 0pt;
+	padding: 2pt 0pt;
+	line-height: 100%;
+}
+
+table#retainedcontent table.academicorgs p.deptof {
+	font-size: 11pt;
+	padding: 0pt 0pt 3pt;
+	line-height: 100%;
+	margin: 5pt 0pt 0pt;
+	border-bottom-width: 1pt;
+	border-bottom-style: solid;
+	border-bottom-color: #CCCCCC;
+	}
+	
+/* End AcademicOrg Index page styles*/
+	
+	
+
+
+
+
+/* End AcademicOrg basic page styles*/
+
+
+table#retainedcontent p.college {
+	font-size: 12pt;
+	line-height: 12pt;
+	font-weight: normal;
+	color: #333333;
+	text-align: right;
+	margin: 0pt;
+	padding: 0pt;
+}
+
+
+
+table#retainedcontent p.dept {
+	font-size: 14pt;
+	line-height: 20pt;
+	color: #000000;
+	padding: 0pt;
+	margin-top: 0pt;
+	margin-right: 0pt;
+	margin-bottom: 0pt;
+	margin-left: 0pt;
+	text-align: right;
+	font-weight: bold;
+}
+
+
+
+table#retainedcontent h1.pagetitle  {
+	font-size: 18pt;
+	line-height: 18pt;
+	font-weight: bold;
+	color: #000000;
+	text-align: left;
+	margin: 10pt 0pt 14pt;
+	padding-top: 0pt;
+	padding-right: 0pt;
+	padding-bottom: 6pt;
+	padding-left: 0pt;
+	border-bottom-width: 1pt;
+	border-bottom-style: solid;
+	border-bottom-color: #666666;
+}
+
+
+table.basictable {
+	background-color: #000000;
+	height: auto;
+	width: 100%;
+	color: #FFFFFF;
+}
+table.basictable th {
+	font-size: 12pt;
+	line-height: 12pt;
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #666666;
+	text-align: center;
+	vertical-align: middle;
+	padding: 4pt;
+}
+
+table.basictable th.banner {
+	font-size: 14pt;
+	line-height: 14pt;
+}
+
+table.basictable th.light {
+	font-size: 12pt;
+	line-height: 12pt;
+	font-weight: normal;
+	color: #333333;
+	background-color: #CCCCCC;
+	text-align: center;
+}
+
+table.basictable th.lightright {
+	font-size: 12pt;
+	line-height: 12pt;
+	font-weight: normal;
+	color: #000000;
+	background-color: #CCCCCC;
+	text-align: right;
+}
+
+table.basictable td {
+	font-size: 11pt;
+	line-height: 11pt;
+	background-color: #FFFFFF;
+	text-align: left;
+	vertical-align: middle;
+	padding: 2pt 5pt;
+}
+
+
+
+
+
+
+
+
+
+/* begin generic styles*/
+
+.indent {
+	text-indent: 25pt;
+}
+.space6pt {
+	margin-top: 6pt;
+}
+.ruleabove {
+	padding-top: 6pt;
+	border-top-width: 1pt;
+	border-top-style: solid;
+	border-top-color: #000000;
+}
+.rulebelow {
+	padding-bottom: 6pt;
+	border-bottom-width: 1pt;
+	border-bottom-style: solid;
+	border-bottom-color: #000000;
+}
+.red {
+	color: #FF0000;
+}
+
+.spacebelow {
+	margin-bottom: 20pt;
+}
+
+.nospace {
+	margin: 0;
+	padding: 0;
+}
+
+.padright20 { padding-right: 20pt }
+.padleft15wborder { padding-left: 15pt; border-left: 1pt solid #696969 }
+.border-right { padding-right: 2pt; border-right: 1pt solid #696969 }
+
+.floatleft {
+	float: left;
+	margin-top: 5pt;
+	margin-bottom: 10pt;
+	margin-left: 0pt;
+	margin-right: 10pt;
+	clear: none;
+}
+
+.floatright 
+{ 
+float: right; 
+margin-top: 5pt; 
+margin-bottom: 10pt; 
+margin-left: 10pt; 
+margin-right: 0pt;
+}
+
+.margintop15 {
+	margin-top: 15pt;
+}
+
+.space15-topbottom {
+	margin-top: 15pt;
+	margin-right: 0pt;
+	margin-bottom: 15pt;
+	margin-left: 0pt;
+}
+
+
+
+a:link    { color: #000066; font-weight: bold; text-decoration: none }
+a:visited    {
+	color: #000066;
+	font-weight: bold;
+	text-decoration: none;
+}
+a:hover    { color: #0066CC; text-decoration: none }
+a:active  { color: #000066; font-weight: bold; text-decoration: none }
+
+
+/* BEGIN globalmenus styles*/
+
+td#globalnav { background-color: #000066; text-align: right; vertical-align: middle; }
+td#globalnav img  { padding-right: 15pt }
+
+table#contentcells  { margin-top: 15pt }	
+
+td#presmenu-placeholder { margin-top: 25pt }
+
+td#globalcontent p.trusteename {
+	font-size: 14pt;
+	margin: 6pt 0pt 0pt;
+	padding: 0pt;
+}
+td#globalcontent p.trusteetitle {
+	font-size: 11pt;
+	font-style: italic;
+	margin: 0pt 0pt 0pt 25pt;
+	padding: 0pt;
+}
+/* END globalmenus styles*/
+
+
+
+/* Begin menu-campuslist styles for horizontal colorcoded campus links*/
+
+
+#campuslist {
+	position: static;
+	width: 100%;
+	text-align: center;
+}
+
+#campuslist ul {
+        margin: 0; /*removes indent IE and Opera*/
+        padding: 0; /*removes indent Mozilla and NN7*/
+        list-style-type: none; /*turns off display of bullet*/
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 11pt;
+								white-space: nowrap;
+								text-align: center;
+} 
+
+#campuslist li {
+ width: 25%;
+	float: left;
+	list-style-type: none;
+} 
+
+#campuslist a {
+	display: block;
+	padding: 2pt;
+	text-decoration: none;	
+} 
+
+
+
+#db a:link, #db a:visited, #db a:active { background-color: #006600; color: #fff }
+#pr a:link, #pr a:visited, #pr a:active { background-color: #a52a2a; color: #fff }
+#ec a:link, #ec a:visited, #ec a:active { background-color: #4b0082; color: #fff }
+#sp a:link, #sp a:visited, #sp a:active { background-color: #006699; color: #fff }
+
+#db a:hover { background-color: #009933; color: #000 }
+#pr a:hover { background-color: #FF9999; color: #000 }
+#ec a:hover { background-color: #8a2be2; color: #000 }
+#sp a:hover { background-color: #0099ff; color: #000 }
+
+
+/* End menu-campuslist styles for horizontal colorcoded campus links*/
+
+
+
+
+
+/* BEGIN Index menu styles*/
+td#mainmenu           { color: #f5f5f5; text-align: right; vertical-align: top; margin-right: 5pt; padding-top: 3pt; padding-right: 6pt; padding-left: 6pt; border-top: 1pt solid #a9a9a9 }
+
+td#mainmenu a  { margin-bottom: 3pt; padding-top: 2pt; padding-right: 3pt; padding-bottom: 1pt; display: block }
+
+td#mainmenu h2       { color: #4682b4; font-weight: bold; font-size: 10pt; text-align: center; margin: 
+0pt 0pt 8pt; padding-top: 2pt; padding-right: 0pt; padding-bottom: 2pt; border-bottom: 1pt solid #4682b4 }
+
+td#mainmenu a:link { color: #000; font-size: 10pt; text-decoration: none;  border-right: 1pt solid #fff; border-bottom: 1pt solid #fff;}
+td#mainmenu a:visited  { color: #000; font-size: 10pt; text-decoration: none;  border-right: 1pt solid #fff; border-bottom: 1pt solid #fff; }
+td#mainmenu a:hover  { color: #006; font-size: 10pt; text-decoration: none; background-color: #b0c4de; border-right: 1pt solid #006; border-bottom: 1pt solid #006;}
+td#mainmenu a:active   { color: #1e90ff; font-size: 10pt; text-decoration: none; margin-bottom: 1pt; padding-right: 3pt; border-right: 1pt solid #fff; border-bottom: 1pt solid #fff; }
+
+/*retained menu should be named leftmenu. All the campus sites css uses that. This retainedmenu should be like left menu with different colors. The old retainedmenu was removed from teh common.css sheet*/
+
+td#retainedmenu *, td#retainedmenu div.icon, td#presmenu-placeholder {
+	display: none;
+}
+
+/*
+td#retainedmenu div.icon { display: none;
+	border-bottom-width: 1pt;
+	border-bottom-style: solid;
+	border-bottom-color: #006;
+	text-align: center;
+	margin-right: 10pt;
+	margin-left: 10pt;
+	padding-top: 15pt;
+	padding-bottom: 15pt;
+	margin-bottom: 15pt;
+}
+
+td#retainedmenu a:link  { margin-bottom: 1pt; padding-right: 2pt; padding-bottom: 1pt; border-right: 1pt solid #b0c4de; border-bottom: 1pt solid #b0c4de; display: none }
+td#retainedmenu a:visited  { margin-bottom: 1pt; padding-right: 2pt; padding-bottom: 1pt; border-right: 1pt solid #b0c4de; border-bottom: 1pt solid #b0c4de; display: none }
+td#retainedmenu a:hover { background-color: #f0f8ff; margin-bottom: 1pt; padding-right: 2pt; padding-bottom: 1pt; border-right: 1pt solid #006; border-bottom: 1pt solid #006; display: none }
+td#retainedmenu a:active { margin-bottom: 1pt; padding-right: 2pt; padding-bottom: 1pt; border-right: 1pt solid #b0c4de; border-bottom: 1pt solid #b0c4de; display: none }
+*/
+
+
+
+
+div#ebbs  { margin-top: 14pt; margin-right: 3pt; margin-bottom: 3pt; padding-top: 4pt; border-top: 1pt solid #b0c4de }
+
+td#presidentleftmenu  { text-align: left; padding-top: 30pt }
+.trusteename { color: #006; font-size: 13pt; margin: 0pt; padding: 10pt 0pt 0pt }
+.trusteetitle { font-weight: normal; font-size: 12pt; line-height: 16pt; margin: 0pt; padding: 3pt 0pt 0pt }
+td#usermenu             { background-color: #b0c4de; text-align: left; vertical-align: top; margin-right: 5pt; padding-top: 3pt; padding-right: 10pt; padding-left: 8pt; border-top: 1pt solid #a9a9a9 }
+
+td#usermenu a  { margin-bottom: 3pt; padding-top: 2pt; padding-bottom: 1pt; padding-left: 3pt }
+
+td#usermenu h2       { color: #fff; font-weight: bold; font-size: 10pt; text-align: center; margin: 0pt 
+0pt 8pt; padding-top: 2pt; padding-right: 0pt; padding-bottom: 2pt; border-bottom: 1pt solid #fff }
+td#usermenu  a:link         { color: #000; font-size: 10pt; text-decoration: none; border-bottom: 1pt solid #b0c4de; border-left: 1pt solid #b0c4de; display: block }
+td#usermenu  a:visited       { color: #000; font-size: 10pt; text-decoration: none; border-bottom: 1pt solid #b0c4de; border-left: 1pt solid #b0c4de; display: block }
+td#usermenu  a:hover      { color: #006; font-size: 10pt; text-decoration: none; background-color: #f0f8ff; border-bottom: 1pt solid #006; border-left: 1pt solid #006; display: block }
+td#usermenu  a:active       { color: #1e90ff; font-size: 10pt; text-decoration: none; border-bottom: 1pt solid #b0c4de; border-left: 1pt solid #b0c4de; display: block }
+
+
+td#feature       { background-color: #fff; text-align: left; vertical-align: top; padding: 15pt 15pt 15pt 18pt; border-top: 1pt solid #a9a9a9 }
+td#feature h1       { color: #000; font-weight: bold; font-size: 14pt; line-height: 14pt }
+td#feature h2     { color: #000; font-weight: bold; font-size: 12pt; line-height: 12pt; margin-top: 12pt; margin-bottom: 0pt; padding-top: 6pt; padding-bottom: 0pt; border-top: 1pt solid #808080 }
+td#feature img    { padding-top: 5pt; padding-right: 5pt }
+td#feature p    { font-style: normal; font-weight: normal; font-size: 11pt; line-height: 13pt; margin: 0pt; padding: 5pt 0pt 0pt }
+
+td#sidebar         { background-color: #fff; text-align: left; vertical-align: top; margin: 0pt; padding: 0pt; border-top: 1pt solid #a9a9a9; border-left: 1pt solid #a9a9a9 }
+td#sidebar h2       { color: #006; font-weight: bold; font-size: 11pt; background-color: #b0c4de; text-align: center; margin: 0pt 0pt 8pt; padding-top: 2pt; padding-right: 0pt; padding-bottom: 2pt }
+td#sidebar h3     { color: #006; font-weight: bold; font-size: 11pt; background-color: #b0c4de; text-align: center; margin: 10pt 0pt 8pt; padding-top: 2pt; padding-right: 0pt; padding-bottom: 2pt }
+
+td#sidebar p.nolink  { color: #000; font-weight: normal; font-size: 10pt; line-height: 11pt; text-decoration: none; margin-right: 10pt; margin-left: 15pt;}
+
+td#sidebar a:link        { color: #000; font-weight: normal; font-size: 10pt; line-height: 11pt; text-decoration: none; margin-right: 10pt; margin-left: 15pt; padding-top: 5pt; padding-bottom: 5pt; display: block }
+td#sidebar a:visited    { color: #000; font-weight: normal; font-size: 10pt; line-height: 11pt; text-decoration: none; margin-right: 10pt; margin-left: 15pt; padding-top: 5pt; padding-bottom: 5pt; display: block }
+td#sidebar a:hover     { color: #006; font-weight: normal; font-size: 10pt; line-height: 11pt; text-decoration: none; margin-right: 10pt; margin-left: 15pt; padding-top: 5pt; padding-bottom: 5pt; display: block }
+td#sidebar a:active    { color: #000; font-weight: normal; font-size: 10pt; line-height: 11pt; text-decoration: none; margin-right: 10pt; margin-left: 15pt; padding-top: 5pt; padding-bottom: 5pt; display: block }
+
+
+td#sidebar div#emergency      { text-align: center; margin-top: 6pt; margin-bottom: 6pt; padding: 0pt; border-top: 1pt solid #696969; border-bottom: 1pt solid #696969 }
+td#sidebar div#emergency  a:link    { color: #006; font-size: 10pt; text-decoration: none; text-align: center; padding-top: 1pt; padding-bottom: 1pt }
+td#sidebar div#emergency  a:visited   { font-size: 10pt; text-align: center; }
+td#sidebar div#emergency  a:hover     { color: #f00; font-size: 10pt; text-decoration: none; text-align: center }
+td#sidebar div#emergency  a:active     { font-size: 10pt; text-align: center }
+
+/* END Index menu styles*/
+
+/* BEGIN footer styles*/
+td#footer     { font-size: 10pt; background-color: #ffffff; text-align: center; padding: 10pt 30pt 18pt; border-top: 1pt solid #a9a9a9; width: 750pt; border-bottom-style: none; border-left-style: none; border-right-style: none; border-top-color: #333333; border-top-style: solid  }
+td#footer p    { font-size: 10pt; margin: 0pt; padding: 0pt }
+
+
+/* BEGIN User/BridgepageStyles styles*/
+
+td#usertitle        { background-color: #fff; text-align: center }
+td#usertitle h1    { color: #006; font-weight: normal; font-size: 18pt; font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular; text-align: center; letter-spacing: 6pt; vertical-align: middle; margin: 0pt; padding: 8pt 0pt; border-top: 1pt solid #696969; border-bottom: 1pt solid #696969 }
+
+td#slideshow     { background-color: #fff; text-align: center; vertical-align: top; padding-top: 10pt; padding-bottom: 10pt; padding-left: 30pt }
+
+
+td.userlinks        { font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular; background-color: #fff; text-align: left; vertical-align: text-top; margin: 0pt; padding: 10pt 5pt 8pt 15pt; border-left: 1pt solid #808080 }
+td.userlinks a.link:link      { color: #000; font-weight: normal; font-size: 11pt; text-decoration: none; text-align: left; vertical-align: top; padding-top: 3pt; display: block }
+td.userlinks a.link:visited { color: #000; font-weight: normal; font-size: 11pt; text-decoration: none; text-align: left; vertical-align: top; padding-top: 3pt; display: block  }
+td.userlinks a.link:hover  { color: #0000cd; font-weight: normal; font-size: 11pt; text-decoration: none; text-align: left; vertical-align: top; padding-top: 3pt; display: block }
+td.userlinks a.link:active { color: #000; font-weight: normal; font-size: 11pt; text-decoration: none; text-align: left; vertical-align: top; padding-top: 3pt; display: block  }
+
+td.userlinks a.sublink:link      { color: #696969; font-weight: normal; font-size: 10pt; line-height: 11pt; text-decoration: none; margin-left: 15pt; padding: 0pt; display: block }
+td.userlinks a.sublink:visited { color: #696969; font-weight: normal; font-size: 10pt; line-height: 11pt; text-decoration: none; margin-left: 15pt; padding: 0pt; display: block }
+td.userlinks a.sublink:hover  { color: #0000cd; font-weight: normal; font-size: 10pt; line-height: 11pt; text-decoration: none; margin-left: 15pt; padding: 0pt; display: block }
+td.userlinks a.sublink:active {  color: #696969; font-weight: normal; font-size: 10pt; line-height: 11pt; text-decoration: none; margin-left: 15pt; padding: 0pt; display: block }
+
+div#bbML21 { display: none; }
+

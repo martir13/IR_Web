@@ -1,0 +1,4 @@
+html body div#creamBackground div#nonFooter div#slider div.slideTitle h1 {
+  -ms-transform: rotate(90deg) !important;
+  transform: rotate(90deg) !important;
+}

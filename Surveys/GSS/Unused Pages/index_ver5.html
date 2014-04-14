@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+
+<html class="">
+<!--<![endif]-->
+
+<head>
+    <title>Institutional Research: GSS Survey</title>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <meta content="Percussion" name="generator">
+    <link href="css/perc_decoration.css" media="all" rel="stylesheet" type=
+    "text/css">
+    <link href="css/jquery-ui-1.8.9.custom.css" media="all" rel="stylesheet"
+    type="text/css">
+    <link href="css/worldwide.css" media="all" rel="stylesheet" type=
+    "text/css"><!--<script type="text/javascript" src="js/jquery.js"></script>
+            <script type="text/javascript" src="js/jquery-ui.js"></script>-->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <meta content="page">
+    <meta content="homepage">
+    <meta content="2012-10-10T14:57:17">
+    <meta content="Home">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="img/favicon.ico" rel="shortcut icon" type=
+    "image/vnd.microsoft.icon"><!--[if lt IE 9]><style type="text/css">#top, #nav, #body{border:solid 0px #000;}</style><![endif]-->
+    <link href="css/meganizr.css" rel="stylesheet" type="text/css">
+    <!--[if lt IE 9]><link href="http://worldwide.erau.edu/web_resources/themes/worldwide/css/meganizr-ie.css" rel="stylesheet" type="text/css"><![endif]-->
+    <link href="css/jaccordion.css" rel="stylesheet" type="text/css">
+    <link href="css/fb-buttons.css" rel="stylesheet" type="text/css">
+    <link href="css/accordion-v.css" rel="stylesheet" type="text/css">
+    <style>
+#body{background-color:#000;}
+    </style><!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+    <!--
+<script type="text/javascript">
+   (function() {
+   jQuery.getDeliveryServiceBase = function(){ return '';};
+   jQuery.getCm1License = function(){ return '2013CM1-53ff-f3ef-19be-2556';};
+   })();
+</script>
+   -->
+
+    <style>
+#body{background-color:#000;}
+    .handle
+    {
+    color:white;
+    text-align:center;
+    font-size:14px;
+    font-weight:bold;
+    background-color:#B1A277;
+    }
+
+    .fb_edge_widget_with_comment span.fb_edge_comment_widget {
+    z-index:1;
+    }
+
+    .fb-send
+    {float:left;
+    margin-left:2%;
+    }
+
+    .fb-like
+    {float:left;
+    }
+
+    .bottom
+    {
+    color: white;
+    text-align:center;
+    font-size:14px;
+    font-weight:bold;
+    background-color:#36393D;
+    }
+
+    .facebook-style
+    {
+    -moz-user-select: none;
+    background: #EBEBEB;
+    border: 1px solid #000000;
+    color: white;
+    padding: 3px 5px;
+    text-decoration: none;
+    font: 12px Verdana, sans-serif;
+    }
+
+    .thumbnail
+    {
+    float: left;
+    width: 30px;
+    margin-left:2%;
+    border-style:none;
+    padding-top: 0px;
+    padding-left: 0px;
+    }
+    li
+    {
+    list-style-type: none;
+    }
+    .listclass {
+    background-color: white;
+    width: 140px;
+
+
+     list-style-type: none;
+    }
+
+    /* Styles for Menu under accordion */
+    div.submenu li {
+    display: inline;
+    padding-right: 10px;
+    }
+    div.submenu li {
+    color: #FFFFFF;
+    }
+    div.submenu ul {
+    margin-left: 0px;
+    }
+    div.submenu li a {
+    color: #FFFFFF;
+    }
+
+    /* Styles for map area at the top-right */
+    div#mapMenu {
+    height: 123px;
+    background-image: url('img/map.png');
+    }
+    div#mapMenu ul {
+    top: 28px;
+    width: 97%;
+    float: right;
+    }
+    div#mapMenu ul li:first-child {
+    border-left: 1px solid #28659E;
+    }
+    div#mapMenu ul li {
+    background: -moz-linear-gradient(center top , #03417A 0%, #00386F 100%) repeat scroll 0 0 transparent;
+    border-bottom: 1px solid #28659E;
+    border-radius: 0 0 0 0;
+    border-top: 1px solid #28659E;
+    float: left;
+    height: 32px;
+    max-width: 200px;
+    position: relative;
+    z-index: 500;
+    }
+
+    /* Styles for widgets */
+    div.bottomWidgets ul li {
+    width: 323px;
+    padding: 5px;
+    float: left;
+    }
+    div.bottomWidgets ul {
+    margin: 0px;
+    }
+    div.widgetsDownload a {
+    color: #FFFFFF;
+    }
+
+    div.hiddenContent {
+    display: none;
+    width: 98%;
+    height: auto;
+    padding: 10px;
+    background-color: #FFFFFF;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+    -webkit-box-shadow: 4px 4px 5px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    4px 4px 5px rgba(50, 50, 50, 0.75);
+    box-shadow:         4px 4px 5px rgba(50, 50, 50, 0.75);
+    }
+
+    li#surveyInstrWidgetHidden {
+    display: none;
+    }
+    div.widgetsDownload a {
+    margin-left: -5px;
+    }
+
+    </style>
+</head>
+
+<body>
+    <!--Check for browsers less than IE6 and display warning message.-->
+    <!--[if lte IE 6]><script src="js/ie6/warning.js"></script><script>window.onload=function(){e("js/ie6/")}</script><![endif]-->
+
+    <div id="fb-root"></div><script>
+(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=255231943344";
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <div class=
+    "perc-region perc-noAutoResize perc-fixed perc-vertical hspan_12 erauContainer"
+    id="erauContainer">
+        <div class=" perc-vertical">
+            <div class=
+            "perc-region perc-region-leaf perc-noAutoResize perc-fixed perc-vertical topbar"
+            id="topbar">
+                <div class=" perc-vertical">
+                    <div class="perc-widget">
+                        <div>
+                            <div class="rxbodyfield">
+                                <a href=
+                                "/about-worldwide/contact-us/index.html" id=
+                                "contact-link-top">Strategic Planning</a>
+                                <a href="/admissions/apply-now/index.html" id=
+                                "apply-link-top">Assessments</a> <a href=
+                                "/request-information/index.html" id=
+                                "request-link-top">Taskstream (Assessment
+                                Reporting Tool)</a> <a href=
+                                "https://ernie.erau.edu/" id="ernie-link-top"
+                                target="_blank">ERNIE</a> <a href=
+                                "http://www.erau.edu/" id="univ-link-top"
+                                target="_blank"><img height="25" id="eagle-sm"
+                                src="img/eagle-sm.png" width="25">University
+                                Home</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class=
+            "perc-region perc-region-leaf perc-noAutoResize perc-fixed perc-vertical header"
+            id="header">
+                <div class=" perc-vertical">
+                    <div class="perc-widget">
+                        <div>
+                            <div class="rxbodyfield">
+                                <a href="/index.html"><img src=
+                                "img/erau-logo1.png" title=
+                                "Worldwide Logo"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class=
+            "perc-region perc-region-leaf perc-noAutoResize perc-fixed perc-vertical header-right"
+            id="header-right">
+                <div class=" perc-vertical">
+                    <div class="perc-widget">
+                        <!-- The div containing the map. -->
+
+                        <div id="mapMenu">
+                            <!-- Menu over the map. -->
+
+                            <ul class="meganizr mzr-erauMenu mzr-responsive">
+                                <li class="mzr-drop mzr-levels">
+                                    <a href="/admissions/index.html">ERAU
+                                    Data</a>
+                                </li>
+
+                                <li class="mzr-drop mzr-levels">
+                                    <a href=
+                                    "/degrees-programs/index.html">Surveys</a>
+                                </li>
+
+                                <li class="mzr-drop mzr-levels">
+                                    <a href=
+                                    "/finance/index.html">Publications</a>
+                                </li>
+
+                                <li class="mzr-drop mzr-levels">
+                                    <a href=
+                                    "/about-worldwide/index.html">Online Course
+                                    Eval</a>
+                                </li>
+
+                                <li class="mzr-drop mzr-levels">
+                                    <a href=
+                                    "/about-worldwide/index.html">Staff</a>
+                                </li>
+                            </ul>
+                            <!--<div class="rxbodyfield" xmlns:o="urn:www.microsoft.com/office" xmlns:st1="urn:www.microsoft.com/smarttags" xmlns:st2="urn:www.microsoft.com/smarttags2" xmlns:w="urn:www.microsoft.com/word" xmlns:x="urn:www.microsoft.com/excel"><img src="http://worldwide.erau.edu/Assets/worldwide/images/map.png" /></div>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="perc-region perc-region-leaf perc-fixed perc-vertical"
+            id="mobile-shortcuts">
+                <div class=" perc-vertical">
+                    <div class="perc-widget">
+                        <div class="clearfix" style=
+                        "padding:14px; background-image:url(img/eagle_watermark.png); background-position:center; background-repeat:no-repeat; background-size:contain; margin-left:auto; margin-right:auto; max-width:480px; text-align:center; font-size:90%;">
+                        <div style="width:33.33%; float:left; clear:both;">
+                                <div style="padding:7px;">
+                                    <a href="/locations/index.html" style=
+                                    "text-align:center"><img src=
+                                    "img/about.png"><br>
+                                    <strong>Find a Location</strong></a>
+                                </div>
+                            </div>
+
+                            <div style="width:33.33%; float:left;">
+                                <div style="padding:7px;">
+                                    <a href="/request-information/index.html"
+                                    style="text-align:center"><img src=
+                                    "img/info.png"><br>
+                                    <strong>Request Information</strong></a>
+                                </div>
+                            </div>
+
+                            <div style="width:33.33%; float:left;">
+                                <div style="padding:7px;">
+                                    <a href="tel:+18772150009" style=
+                                    "text-align:center;"><img src=
+                                    "img/call.png"><br>
+                                    <strong>Click to call</strong></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class=
+            "perc-region perc-region-leaf perc-noAutoResize perc-fixed perc-vertical nav"
+            id="nav">
+                <div class=" perc-vertical">
+                    <div class="perc-widget">
+                        <!-- Meganizr Menu HTML -->
+
+                        <ul class="meganizr mzr-erauMenu mzr-responsive">
+                            <li class="mzr-drop mzr-levels">
+                                <a href="javascript:history.go(0)">Home</a>
+                            </li>
+
+                            <li class="mzr-drop mzr-levels">
+                                <a href="/admissions/index.html" id=
+                                "dataInfoLink">Data Infographic</a>
+                            </li>
+
+                            <li class="mzr-drop mzr-levels">
+                                <a href="/degrees-programs/index.html" id=
+                                "methodologyLink">Methodology</a>
+                            </li>
+
+                            <li class="mzr-drop mzr-levels">
+                                <a href="/finance/index.html" id=
+                                "surveyInstrLink">Survey Instrument</a>
+                            </li>
+
+                            <li class="mzr-drop mzr-levels">
+                                <a href="/about-worldwide/index.html" id=
+                                "dataTablesLink">Data Tables</a>
+                            </li>
+
+                            <li class="mzr-search mzr-align-right">
+                                <form action="/search-results/index.html">
+                                    <div class="input-append">
+                                        <input id="q" name="q" placeholder=
+                                        "Search" type="text"> <button class=
+                                        "btn btn-mini" type="submit"><em class=
+                                        "icon-search"></em></button>
+                                    </div>
+                                </form>
+                            </li>
+                        </ul><!-- end Meganizr Menu HTML -->
+                    </div>
+                </div>
+            </div>
+
+            <div class=
+            "perc-region perc-region-leaf perc-noAutoResize perc-fixed perc-horizontal ui-helper-clearfix body"
+            id="body">
+                <div class=" perc-horizontal ui-helper-clearfix">
+                    <div class="perc-widget">
+                        <div style="max-width: 1000px; margin: 0 auto;">
+                            <div class="jaccordion noJS">
+                                <div class="preloader">
+                                    Loading content...
+                                </div>
+
+                                <div class="jAccordion-slidesWrapper">
+                                    <div class="jAccordion-slide">
+                                        <div class="jAccordion-slideWrapper">
+                                            <div class="title">
+                                                <span>&nbsp;</span>
+
+                                                <h1>GSS</h1>
+                                            </div><img alt="slide1" class=
+                                            "jAccordion-img" height="100%" src=
+                                            "img/coverphoto.jpg" width="100%">
+
+                                            <h1 class="caption" data-delay=
+                                            "500" data-fade="true"
+                                            data-initevent="onSlideOpened"
+                                            data-movedirection="top"
+                                            data-offset="15%" style=
+                                            "top: 5%;right: 2%;">Graduating
+                                            Student Survey</h1>
+
+                                            <h3 class="caption" data-delay=
+                                            "1000" data-fade="true"
+                                            data-initevent="onSlideOpened"
+                                            data-movedirection="top"
+                                            data-offset="15%" style=
+                                            "top: 30%;right: 2%;">Survey
+                                            administered to Graduating Students
+                                            to gather the following outcomes
+                                            data: <span class=
+                                            "spotlight-bigger">placement rates,
+                                            salary figures, the pursuance of
+                                            higher education, and the rating of
+                                            an ERAU education</span></h3>
+
+                                            <h3 class="caption" data-delay=
+                                            "1500" data-fade="true"
+                                            data-initevent="onSlideOpened"
+                                            data-movedirection="bottom"
+                                            data-offset="15%" style=
+                                            "bottom: 5%;right: 2%; text-align:right;">
+                                            <a class="more-link-lg" href=
+                                            "/newsroom/spotlights/student-alex-mangum.html"
+                                            title=
+                                            "Alex Mangum wants to be out of this world">
+                                            READ MORE</a></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="perc-region perc-fixed perc-vertical footer-holder" id=
+            "footer-holder">
+                <div class="bottomWidgets" style="margin:0 auto; width: 100%;">
+                    <ul>
+                        <li id="dataInfographicWidget">
+                            <div class="handle">
+                                Data Infographic
+                            </div><iframe frameborder="0" src=
+                            "http://docs.google.com/gview?url=/Factbook/Alumni/Placement_Rates/PDF/AllMajorAssoc.pdf&amp;embedded=true"
+                            style="width:100%; height:400px;"></iframe>
+
+                            <div class="bottom">
+                                <div class="fb-like" data-href=
+                                "/irstudies/GSS/Beta/img/Infographic%20db.png"
+                                data-layout="button_count" data-send="false"
+                                data-show-faces="false" data-width="100"></div>
+
+                                <div class="fb-send" data-href=
+                                "/irstudies/GSS/Beta/img/Infographic db.png">
+                                </div>
+
+                                <div class="thumbnail">
+                                    <a class="facebook-style" data-toggle=
+                                    "modal" href="#facebooksend">Embed</a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li id="methodologyWidget">
+                            <div class="handle">
+                                Methodology
+                            </div><iframe frameborder="0" src=
+                            "http://docs.google.com/gview?url=/irstudies/GSS/PDF/methods.pdf&amp;embedded=true"
+                            style="width:100%; height:400px;"></iframe>
+
+                            <div class="bottom">
+                                <div class="fb-like" data-href=
+                                "/irstudies/GSS/Beta/img/Infographic%20db.png"
+                                data-layout="button_count" data-send="false"
+                                data-show-faces="false" data-width="100"></div>
+
+                                <div class="fb-send" data-href=
+                                "/irstudies/GSS/Beta/img/Infographic db.png">
+                                </div>
+
+                                <div class="thumbnail">
+                                    <a class="facebook-style" data-toggle=
+                                    "modal" href="#facebooksend">Embed</a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li id="surveyInstrWidget">
+                            <div class="handle">
+                                Survey Instrument<br>
+                                <a href="#" id="surveyDB">Daytona Beach</a> |
+                                <a href="#" id="surveyPrescott">Prescott</a>
+                            </div><iframe frameborder="0" src=
+                            "http://docs.google.com/gview?url=/irstudies/GSS/PDF/GSS_DB_SP2012.pdf&amp;embedded=true"
+                            style="width:100%; height:380px;"></iframe>
+
+                            <div class="bottom">
+                                <div class="fb-like" data-href=
+                                "/irstudies/GSS/Beta/img/Infographic%20db.png"
+                                data-layout="button_count" data-send="false"
+                                data-show-faces="false" data-width="100"></div>
+
+                                <div class="fb-send" data-href=
+                                "/irstudies/GSS/Beta/img/Infographic db.png">
+                                </div>
+
+                                <div class="thumbnail">
+                                    <a class="facebook-style" data-toggle=
+                                    "modal" href="#facebooksend">Embed</a>
+                                </div>
+                            </div>
+                        </li><!-- hidden widget -->
+
+                        <li id="surveyInstrWidgetHidden">
+                            <div class="handle">
+                                Survey Instrument<br>
+                                <a href="#" id="surveyDB">Daytona Beach</a> |
+                                <a href="#" id="surveyPrescott">Prescott</a>
+                            </div><iframe frameborder="0" src=
+                            "http://docs.google.com/gview?url=/irstudies/GSS/PDF/GSS_PCSurveySP12.pdf&amp;embedded=true"
+                            style="width:100%; height:380px;"></iframe>
+
+                            <div class="bottom">
+                                <div class="fb-like" data-href=
+                                "/irstudies/GSS/Beta/img/Infographic%20db.png"
+                                data-layout="button_count" data-send="false"
+                                data-show-faces="false" data-width="100"></div>
+
+                                <div class="fb-send" data-href=
+                                "/irstudies/GSS/Beta/img/Infographic db.png">
+                                </div>
+
+                                <div class="thumbnail">
+                                    <a class="facebook-style" data-toggle=
+                                    "modal" href="#facebooksend">Embed</a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li id="dataTablesWidget">
+                            <div class="handle">
+                                Data Tables
+                            </div><iframe frameborder="0" src=
+                            "http://docs.google.com/gview?url=/irstudies/GSS/PDF/Overall%20Tables-ShortVersion.pdf&amp;embedded=true"
+                            style="width:100%; height:400px;"></iframe>
+
+                            <div class="widgetsDownload">
+                                <a href=
+                                "/irstudies/GSS/PDF/Overall%20Tables%2011_12.pdf">
+                                Download Full Data Tables PDF</a>
+                            </div>
+
+                            <div class="bottom">
+                                <div class="fb-like" data-href=
+                                "/irstudies/GSS/Beta/img/Infographic%20db.png"
+                                data-layout="button_count" data-send="false"
+                                data-show-faces="false" data-width="100"></div>
+
+                                <div class="fb-send" data-href=
+                                "/irstudies/GSS/Beta/img/Infographic db.png">
+                                </div>
+
+                                <div class="thumbnail">
+                                    <a class="facebook-style" data-toggle=
+                                    "modal" href="#facebooksend">Embed</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Content to be displayed only when 'Read More' link is clicked. -->
+
+                <div class="hiddenContent">
+                    <h2>Graduating Student Survey: Daytona Beach &amp;
+                    Prescott</h2>
+
+                    <h3>Description</h3>
+
+                    <p>Administered to graduating students from both
+                    residential campuses in order to gather the following
+                    outcomes data: placement rates, salary figures, the
+                    pursuance of higher education, and the rating of an ERAU
+                    education. An in-house survey instrument is utilized.</p>
+
+                    <h3>Timeline</h3>
+
+                    <p>The administration begins approximately one month prior
+                    to graduation and continues for two weeks after
+                    graduation.</p>
+
+                    <h3>Report Formats</h3>
+
+                    <p>Webapp - Full Report with the ability to see interactive
+                    tables and download data.</p>
+                </div><a class="apply-tab" data-toggle="modal" href=
+                "#facebooksend">Apply Now</a>
+
+                <div class="modal hide fade fluid" id="facebooksend" tabindex=
+                "-1">
+                    <div class="modal-header">
+                        <button class="close" data-dismiss="modal" type=
+                        "button">×</button>
+
+                        <h3 id="applyModalLabel">Embed the Infographic</h3>
+                    </div>
+
+                    <div class="modal-body">
+                        <p>Copy the code below and paste it in an HTML editor
+                        to embed the Data Infographic</p>
+                        <pre>
+&lt;iframe src="/irstudies/GSS/Beta/img/Infographic db.png" width="100%" height="1000px;"&gt;&lt;/iframe&gt;
+</pre>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button class="btn" data-dismiss="modal">Close</button>
+                        <!--button class="btn btn-primary">Save changes</button-->
+                    </div>
+                </div>
+
+                <div class=
+                "perc-region perc-region-leaf perc-fixed perc-vertical social-holder"
+                id="social-holder">
+                    <div class=" perc-vertical">
+                        <div class="perc-widget">
+                            <div style=
+                            "margin-left:auto; margin-right:auto; max-width:250px; text-align:center;">
+                            <div id="head-soc">
+                                    <ul>
+                                        <li id="g">
+                                            <a href=
+                                            "//plus.google.com/105929691492169236773/about"
+                                            target="_blank">Google+</a>
+                                        </li>
+                                        <!--li id="rss"><a href="#">RSS Feed</a> </li-->
+                                        <!--li id="sub"><a href="#">Subscribe</a></li-->
+
+                                        <li id="fb">
+                                            <a href=
+                                            "//facebook.com/EmbryRiddleWorldwide"
+                                            target="_blank">Facebook</a>
+                                        </li>
+
+                                        <li id="twit">
+                                            <a href=
+                                            "//twitter.com/ERAUWorldwide"
+                                            target="_blank">Twitter</a>
+                                        </li>
+
+                                        <li id="li">
+                                            <a href=
+                                            "//linkedin.com/company/embry-riddle-aeronautical-university"
+                                            target="_blank">LinkedIn</a>
+                                        </li>
+
+                                        <li id="youtube">
+                                            <a href=
+                                            "//youtube.com/EmbryRiddleUniv"
+                                            target="_blank">YouTube</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=
+                "perc-region perc-region-leaf perc-noAutoResize perc-fixed perc-vertical copyright"
+                id="copyright">
+                    <div class=" perc-vertical">
+                        <div class="perc-widget">
+                            <div>
+                                <div class="rxbodyfield">
+                                    <p>Copyright © 2013 Embry-Riddle
+                                    Aeronautical University. All rights
+                                    reserved. Administrative Offices: 600 South
+                                    Clyde Morris Blvd., Daytona Beach, FL
+                                    32114</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=
+                "perc-region perc-region-leaf perc-noAutoResize perc-fixed perc-vertical eagle"
+                id="eagle">
+                    <div class=" perc-vertical">
+                        <div class="perc-widget">
+                            <div>
+                                <div class="rxbodyfield">
+                                    <p><a href="/index.html" title=
+                                    "Embry-Riddle Aeronautical University - Worldwide">
+                                    <img src="img/eagle.png"></a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=
+                "perc-region perc-region-leaf perc-noAutoResize perc-fixed perc-vertical bottom-links"
+                id="bottom-links">
+                    <div class=" perc-vertical">
+                        <div class="perc-widget">
+                            <div>
+                                <div class="rxbodyfield">
+                                    <p><a href=
+                                    "/about-worldwide/contact-us/index.html"
+                                    id="contact" title="Contact Us">Contact</a>
+                                    <a href="/terms-of-use/index.html">Terms of
+                                    Use</a> <a href=
+                                    "http://www.erau.edu/administration/hr.html"
+                                    id="working" target="_blank">Working at
+                                    Embry-Riddle</a> <img height="25" id=
+                                    "eagle-mobile" src="img/eagle-sm.png"
+                                    width="25"> <a href="/feedback/index.html"
+                                    id="feedback" title=
+                                    "Website Feedback">Website Feedback</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=
+                "perc-region perc-region-leaf perc-noAutoResize perc-fixed perc-vertical full-page"
+                id="before-body-end">
+                    <div class=" perc-vertical">
+                        <div class="perc-widget">
+                            <a class="apply-tab" data-toggle="modal" href=
+                            "#applyModal">Apply Now</a>
+
+                            <div class="modal hide fade fluid" id="applyModal"
+                            tabindex="-1">
+                                <div class="modal-header">
+                                    <button class="close" data-dismiss="modal"
+                                    type="button">×</button>
+
+                                    <h3 id="applyModalLabel">How To Apply</h3>
+                                </div>
+
+                                <div class="modal-body">
+                                    <h4 class="perc-box-2">Step 1) <a href=
+                                    "https://crm.orionondemand.com/crm/forms/C7lB8MN6868Ex6700mxK">
+                                    Complete the online application</a></h4>
+
+                                    <p>Whether you plan on attending one of our
+                                    more than <a href=
+                                    "http://worldwide.erau.edu/locations/index.html">
+                                    <strong>150 locations</strong></a>
+                                    throughout the world, or prefer online
+                                    instruction, Embry-Riddle Worldwide
+                                    candidates must <a href=
+                                    "https://crm.orionondemand.com/crm/forms/C7lB8MN6868Ex6700mxK"
+                                    target="_blank" title=
+                                    "Complete an online application">complete
+                                    an online application</a> to begin the
+                                    process.</p>
+
+                                    <h4 class="perc-box-2">Step 2) Send
+                                    Transcripts</h4>
+
+                                    <p>Request transcripts from the registrar's
+                                    office at all colleges or universities you
+                                    have previously attended. Transcripts must
+                                    be sent directly from the issuing
+                                    institution to be deemed official.</p>
+
+                                    <p><strong>Have documents sent to the
+                                    University at:<br></strong>Attn: Worldwide
+                                    Imaging<br>
+                                    Embry-Riddle Aeronautical University<br>
+                                    600 S. Clyde Morris Blvd.<br>
+                                    Daytona Beach, FL 32114</p>
+
+                                    <p><strong>Special
+                                    Considerations:</strong></p>
+
+                                    <ul>
+                                        <li>International Applicants: Documents
+                                        from schools outside the U.S. must be
+                                        sent to an Embry-Riddle approved
+                                        <a href=
+                                        "http://worldwide.erau.edu/admissions/international-students/index.html">
+                                            <strong>Foreign Credential
+                                            Evaluation Agency</strong></a> for
+                                            translation.
+                                        </li>
+
+                                        <li>Military Applicants: The American
+                                        Council of Education’s website can
+                                        direct service members and veterans in
+                                        ordering <a href=
+                                        "http://www.acenet.edu/news-room/Pages/Transcripts-for-Military-Personnel.aspx"
+                                            target="blank"><strong>official
+                                            military transcripts</strong></a>.
+                                        </li>
+                                    </ul>
+
+                                    <h4 class="perc-box-2">Step 3) Apply for
+                                    Financial Aid</h4>
+
+                                    <ul>
+                                        <li>U.S. Citizens interested in
+                                        applying for financial aid should
+                                        complete a <a href=
+                                        "http://www.fafsa.ed.gov/" target=
+                                        "blank"><strong>FAFSA
+                                        application</strong></a>.
+                                        </li>
+
+                                        <li>All students can refer to our
+                                        <a href=
+                                        "http://worldwide.erau.edu/finance/financial-aid/index.html">
+                                            <strong>Financial Aid
+                                            page</strong></a> for information
+                                            on funding opportunities through
+                                            Embry-Riddle and to answer question
+                                            you may have.
+                                        </li>
+                                    </ul>
+
+                                    <h4 class="perc-box-2">Step 4) Check your
+                                    E-mail</h4>
+
+                                    <p>Remember to check your e-mail regularly
+                                    for messages from Embry-Riddle Aeronautical
+                                    University. Add @erau.edu as a trusted
+                                    sender and check your spam filter to insure
+                                    our correspondence reaches you.</p>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button class="btn" data-dismiss=
+                                    "modal">Close</button> 
+                                    <!--button class="btn btn-primary">Save changes</button-->
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="perc-widget">
+                            <a class="info-tab" data-toggle="modal" href=
+                            "#infoModal">Request Info</a>
+
+                            <div class="modal hide fade fluid" id="infoModal"
+                            tabindex="-1">
+                                <div class="modal-header">
+                                    <button class="close" data-dismiss="modal"
+                                    type="button">×</button>
+
+                                    <h3 id="infoModalLabel">Request Info</h3>
+                                </div>
+
+                                <div class="modal-body">
+                                    <h4 class="perc-box-2">Contact
+                                    Information</h4><iframe frameborder="0"
+                                    height="2000" id="RFI" name="RFI"
+                                    scrolling="no" src=
+                                    "http://worldwide.erau.edu/forms/rfi/worldwide/index.cfm"
+                                    width="100%"></iframe>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="perc-widget">
+                            <a class="chat-tab" data-toggle="modal" href=
+                            "#chatModal">Chat with Us</a>
+
+                            <div class="modal hide fade fluid" id="chatModal"
+                            tabindex="-1">
+                                <div class="modal-header">
+                                    <button class="close" data-dismiss="modal"
+                                    type="button">×</button>
+
+                                    <h3 id="chatModalLabel">Chat with an
+                                    Enrollment Counselor</h3>
+                                </div>
+
+                                <div class="modal-body">
+                                    <div class="chat_popup popup">
+                                        <script src=
+                                        "//www.intelliworkschat.com/a/Hello?cid=67ba40ec-f9da-4ff1-992e-ff83ee7287d4;v=1;ti=1226583a-83e3-43f0-a920-174bb2800e32&amp;e=1"
+                                        type="text/javascript"></script>
+                                    </div>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button class="btn" data-dismiss=
+                                    "modal">Close</button> 
+                                    <!--button class="btn btn-primary">Save changes</button-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><script src=
+        "//ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script> <script src="js/perc_common_ui.js" type="text/javascript"></script> <script src="js/jquery.cookie.js" type="text/javascript"></script> <script src="js/perc_membership.js" type="text/javascript"></script> <script src="js/main1.js" type="text/javascript"></script> <script src="js/respond.min.js"></script> <script src="js/jquery.jAccordion-1.2.3.min.js" type=
+"text/javascript"></script> <script type="text/javascript">
+
+        (function ($) {
+        $.QueryString = (function (a) {
+            if (a == "") return {};
+            var b = {};
+            for (var i = 0; i < a.length; ++i) {
+                var p = a[i].split('=');
+                if (p.length != 2) continue;
+                b[p[0]] = decodeURIComponent(p[1].replace(/\+/g, " "));
+            }
+            return b;
+        })(window.location.search.substr(1).split('&'))
+        })(jQuery);
+        </script> <script type="text/javascript">
+$(document).ready(function() {
+
+        // jAccordion Slider
+        $('.jaccordion').jAccordion({
+        event : 'click',
+        defaultActiveSlideIdx : 0,
+        inactiveSlideSize : 50,
+        spacing : 1,
+        autoplay : true,
+        autoplayInterval: 10000,
+        arrowKeysNav : true,    //This option automatically enables sticky, that's why it's not set
+        ready : function() {
+            $('.preloader', this.$accordion).remove();  //Comment this line to see the preloader if testing locally.
+        }
+        });
+        });
+        </script> <script src="js/accordion-v.js"></script> <script src="js/document-ready.js"></script> <script src="js/bootstrap.js"></script> <script src="js/jquery.ba-resize.js" type="text/javascript"></script> 
+    </div>
+</body>
+</html>

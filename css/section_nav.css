@@ -1,0 +1,35 @@
+/*Section-id is the bar that identifys the section for the menu. e.g. admissions.*/
+#section-id { position: absolute; right: 0; top: 0; width: 960px; height: 35px; background: #006; filter:alpha(opacity=70); -moz-opacity:.70;opacity:.70; }
+#section-id  p { margin: 0; padding: 0; position: absolute; top: 8px; right: 50px; color: #fff; font: bold 18px arial; }
+2
+
+/*Navagation*/
+#nav { width: 220px; padding: 0; margin: 0; }
+
+#nav ul {margin: 0; padding: 0; list-style: none; text-align: left; }   
+#nav ul ul { margin: 0 0 0 15px; padding: 0; width: 200px}  
+
+#nav li a { color: black; font: bold .75em/1  Arial, Helvetica; display: block; width: 210px; padding: 2px 0 2px 4px; border-left: 3px solid blue; }
+
+#nav li li a { border-left: 3px solid red; font-weight: normal;} 
+
+#nav ul a {  padding: 2px 0 2px 6px; }
+
+#nav ul li a:link,  #nav ul li a:visited, #nav ul li a:active  { color: #000;}
+
+#nav  a:hover {  border-left: 3px solid #999; background: #999;}
+
+
+/*The following work with the navigation menu and a highlight.js to control display of submenus.*/
+
+/*First rule hides all nested lists.*/
+#nav ul ul {display: none; }
+
+/*highlight.js applies class of current the link which is the same as the current page*/
+#nav a.current { border: 2px solid red; color: #fff; }
+
+/*if highlight.js applies class of current to first level of list, the nested ul is display block*/
+#nav li.current ul {display:block; border: 2px solid green;}
+
+/*if highlight.js applies class of current to nested list item, the parent ul is set to display block*/
+#nav ul.parent {display:block; border: 2px solid green;}

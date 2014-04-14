@@ -1,0 +1,31 @@
+* html #nonFooter {/* stretch to full height in IE6 */ height: 100%; }
+
+#nonFooter { height: 100%; }
+
+#content {padding-bottom: 100px; 
+
+
+table.coursereg { margin: 2em 0;}
+
+/*ie6 puts this div in front. Firefox puts negative z-index behind the body.*/
+#header_extender { z-index: -1; } 
+
+#section_id { margin-top: -3px}
+
+ul li {list-style:none}
+ul {list-style:none}
+ul li {list-style-type:none}
+ul {list-style-type:none}
+
+#topNav { left: 25px; }
+
+#topNav a { padding: 0 14px; font: bold .875em/31px Arial, Helvetica, sans-serif; height: 31px; }
+
+#task-links li a { font-weight: bold}
+
+#page_copy_aside { width: 418px; padding: 0 20px 0 70px; float: left; display: inline; /*background: yellow;*/ }
+
+#aside { width: 192px; padding: 10px 10px; overflow: hidden;  float: right; display: inline;  /*background: orange;*/ }
+
+form#feedback input, form#feedback textarea, form#feedback select#campus { font-size: 1.75em}
+

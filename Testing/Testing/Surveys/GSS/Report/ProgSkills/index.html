@@ -1,0 +1,266 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <link href="../css/tableau.css" media="all" rel="stylesheet" type=
+    "text/css">
+    <link href="../css/jquery.multiselect.css" media="all" rel="stylesheet" type=
+    "text/css">
+    <link href="../css/jquery.multiselect.filter.css" media="all" rel="stylesheet"
+    type="text/css">
+    <link href=
+    "http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/themes/smoothness/jquery-ui.css"
+    rel="stylesheet" type="text/css">
+    <link href="../css/smoothness/jquery-ui-1.10.2.custom_black.css" rel="stylesheet">
+
+    <!-- Stylesheet for breadcrumbs navigation -->
+    <link rel="stylesheet" href="../css/BreadCrumb.css" type="text/css">
+
+    <!-- Stylesheet for the dataTables on the first tab -->
+    <link rel="stylesheet" type="text/css" href="../css/tableau.jquery.dataTables_new.css">
+
+    <!-- Stylesheet for the intro tutorial -->
+    <link rel="stylesheet" type="text/css" href="../css/tableau.introjs.css">
+
+    <!-- CSS stylesheet for IE 8 and below. -->
+    <!--[if lt IE 9]>
+        <link rel="stylesheet" type="text/css" href="../css/ieonly.css" />
+    <![endif]-->
+
+<title>GSS Interactive Report</title>
+
+
+    
+</head>
+
+<body>
+    <!--[if lt IE 8]><p class="chromeframe">You are using an <strong>outdated</strong> browser (or IE compatibilitiy mode is on and should be turned off). Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p><![endif]-->
+
+<div class="topHat">
+    <div class="mainContentContainer">
+        <a class="logo" href="http://www.erau.edu">
+            <img alt="ERAU Logo" height="16" src="../../../../../../images/erau_logo.png" width="184" />
+            <span>Interactive Report</span>
+        </a>
+        <span id="topThreeLinks">
+            <a href="#" onclick="applyLightbox(event);">Getting Started</a>
+        </span>
+		<a href="#" class="tooltip1"><img class="infoIcon" src="/images/question.png" alt="Question Mark"></a>
+        <select id="needHelpDropdown" onchange="location = this.options[this.selectedIndex].value;">
+            <option value="" selected disabled>Click Here</option>
+            <option value="../Help/Survey Reporting Application.html ">Overview</option>
+            <option value="../Help/Navigation.html">Navigation</option>
+            <option value="../Help/Charts.html">Graphing</option>
+            <option value="../Help/Filters.html">Filter</option>
+            <option value="../Help/FAQs.html">FAQs</option>
+            <option value="../Help/ContactUs.html">Contact Us</option>
+        </select>
+        <span id="needHelp">
+           Need Help?
+        </span>
+    </div>
+</div>
+
+<div class="mainContentContainer">
+    <div class="container">
+        <!-- Start Breadcrumbs -->
+        <div class="breadCrumbHolder module">
+            <div id="breadCrumb3" class="breadCrumb module surveyBreadcrumb">
+                <ul>
+                    <li class="first">
+                        <a href="http://irweb.erau.edu">Home</a>
+                    </li>
+                    <li>
+                        <a href="../../../index.html">Surveys</a>
+                    </li>
+                    <li>
+                        <a href="../../index.html">GSS</a>
+                    </li>
+                    <li class="last">
+                        GSS Interactive Report
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- This only displays when javascript is disabled. -->
+        <noscript>
+            <h4 style="color: #FF0000; font-size: 20px;">
+                Javascript Warning!
+            </h4>
+            <p style="font-size: 16px;">
+                You must enable Javascript in order to use the features this site offers.
+            </p>
+        </noscript>
+
+        <!-- Begin 3-columns for Survey Data - content input dynamically -->
+        <div id="beforeTable">
+        </div>
+
+        
+
+        <div class="tableauPlaceholder">
+
+            <h3 id="surveyTitle">Graduating Student Survey</h3>
+
+            <div data-step="5" data-intro="Here you can choose a particular category to view data from." class="clearfix" id="tabs">
+                <ul>
+                    <li>
+                        <a href="../index.html" title="Survey Categories">Survey Categories</a>
+                    </li>
+
+                    <li>
+                    <a href="../UnivExp/overall.html" id="universiryExperienceTab" title=
+                        "University Experience">University Experience</a>
+                    </li>
+
+                    <li class="active">
+                        <a href="../ProgSkills/index.html" id="programSkillsTab" title=
+                        "Program Skills">Program Skills</a>
+                    </li>
+
+                    <li>
+                        <a href="../MinProgSkills/index.html" id="minorProgramSkillsTab" title=
+                        "Minor Program Skills">Minor Program Skills</a>
+                    </li>
+
+                    <li>
+                        <a href="academicexperience.html" id="academicExperienceTab" title=
+                        "Academic Experience">Academic Experience</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="panel">
+                <div id="tableauGraphs">
+                    <div class="bigTableauPlaceholder">
+                        <div class="bigTableauGraph">
+                            <div id="container">
+                                    <div id="floatingbar" class="dropdownProgramSkills">
+                                    <label id="majorDropdownLabel" for="programSkills" style="font-size:18px; font-weight:bold; ">Select a major to filter by:</label>
+                                        <select onchange="setIframeSource('PSKILLS');" id="PSKILLS" name="programSkills">
+                                             <option value="BSA">
+                                               DB BS Aeronautics
+                                            </option>
+											
+											<option value="BSAE">
+                                               DB BS Aerospace Engineering
+                                            </option>
+											
+											<option value="BSAELEC">
+                                               DB BS Aerospace Electronics
+                                            </option>
+
+                                            <option value="BSAMET">
+                                                DB BS Applied Metereology
+                                            </option>
+
+                                            <option value="BSAMS">
+                                                DB BS Aviation Maint Science
+                                            </option>
+											
+											<option value="BSAS">
+                                                DB BS Aeronautical Science
+                                            </option>
+											
+											<option value="BSATM">
+                                                DB BS Air Traffic Management
+                                            </option>
+											
+											<option value="BSBA">
+                                                DB BS Business Administration
+                                            </option>
+											
+											<option value="BSCE">
+                                                DB BS Computer Engineering
+                                            </option>
+																						
+                                        </select>
+                                    </div>
+                                <div id="postcontent">
+                                    <!--<h2 id="graphHeading">Overall Experience</h2>-->
+                                    
+
+                                    <!-- The div to put the tableau graphs in. -->
+                                    <div class="iframes" id="graph" loaded="true">
+                                        <iframe id="BSAE" src="http://public.tableausoftware.com/views/GSS_PROGSKILLS/BSA_Dashboard?undefined&:toolbar=bottom" width="100%" height="2500px" frameborder="0" scrolling="no"></iframe>
+                                    </div>
+                                    
+                                    <div id="taskstreamDownload">
+                                        <!--<span id="taskstreamLabel">Embed Within Taskstream</span>-->
+                                        <span id="downloadLabel">Download</span>
+                                    </div>
+                                
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ____________________________ BEGIN footer ____________________________ -->
+                        <div id="footer">
+                            <p class="copyright">©Copyright 2013 Embry-Riddle Aeronautical University. All rights reserved.</p>
+
+                            <p class="address">Administrative Offices: 600 South Clyde Morris Blvd., Daytona Beach, FL 32114</p>
+                        </div><!-- END footer -->
+
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+</div><!--END MainContentContainer-->
+    
+    <!--************************************* BEGIN 3RD PARTY SCRIPTS *********************************************-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
+    <!--<script src="../js/jquery.address.js" type="text/javascript"></script>-->
+    <script src="../js/jquery-ui-1.10.2.custom.min.js" type="text/javascript"></script>
+    <!-- Script to enable the tabs -->
+    <!--<script src="../js/tableauQtabs.js" type="text/javascript"></script>-->
+    <script src="../js/tableauMultiselect.js" type="text/javascript"></script>
+    <script src="../js/jquery.cookie.js" type="text/javascript"></script>
+    <script src="../js/jquery.multiselect.filter.min.js" type="text/javascript"></script>
+    <script src="../js/jquery.multiselect.min.js" type="text/javascript"></script>
+    <!-- Scripts for the data Table on the first tab -->
+    <script type="text/javascript" language="javascript" src="../js/tableau.jquery.dataTables.min.js"></script>
+    <!-- Add-on script for grouping the data table -->
+    <script type="text/javascript" language="javascript" src="../js/tableau.rowGrouping.js"></script>
+    <!-- 2 Scripts used for breadcrumbs -->
+    <script src="../js/jquery.easing.1.3.js" type="text/javascript" language="JavaScript"></script>
+    <script src="../js/jquery.jBreadCrumb.1.1.js" type="text/javascript" language="JavaScript"></script>
+    <!--<script src='../js/Survey_Report.js' type="text/javascript" language="JavaScript"></script>-->
+    <script type="text/javascript" src="../js/tableau.jquery.lightbox_me.js" language="JavaScript"></script>
+    <!-- Script to install the cookie to tell if a user has visited a page before -->
+    <script type="text/javascript" src="../js/tableau.jquery.cookie.js"></script>
+    <!-- Script for the intro tutorial -->
+    <script type="text/javascript" src="../js/tableauIntro.js"></script>
+	
+	<script type="text/javascript">
+	$(document).ready(function() {
+			
+			$('#filterArea :input').attr('disabled', true);
+			
+			$('#minorProgramSkillsTab').addClass('disabled')
+			$('#minorProgramSkillsTab').removeAttr('href')
+			
+			$('#academicExperienceTab').addClass('disabled')
+			$('#academicExperienceTab').removeAttr('href')
+			
+			
+								});
+
+</script>
+    <!--************************************* END 3RD PARTY SCRIPTS *********************************************-->
+
+
+
+    <!--************************************* BEGIN OUR CUSTOM SCRIPTS *********************************************-->
+    <!-- Main tableau javascript with document.ready -->
+    <script src="../js/main.js" type="text/javascript"></script>
+    <!-- Script to control Hash Filtering - Contains updateGraphs function -->
+    <script src="../js/tableauFilter.js" type="text/javascript"></script>
+    <!-- Script for initializing the floating menu -->
+    <!--<script src="../js/tableauFloatingMenu.js" type="text/javascript"></script>-->
+
+</body>
+</html>

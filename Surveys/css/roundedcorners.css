@@ -1,0 +1,81 @@
+
+
+/**************************************************************
+
+	Rounded Corners
+	v 1.1
+
+**************************************************************/
+
+
+.boxFloat, .imageFloat {
+	float: left;
+}
+
+/***********************************/
+
+
+.boxTopLeft {
+	background: url(http://www.phatfusion.net/roundedcorners/images/topLeft.gif) top left no-repeat;
+}
+.boxTop {
+	border-top: 1px solid #ccc;
+	background-color: #eee;
+}
+.boxTopRight {
+	background: url(http://www.phatfusion.net/roundedcorners/images/topRight.gif) top right no-repeat;
+}
+.boxMiddleLeft {
+	background-color: #eee;
+	border-left: 1px solid #ccc;
+}
+.boxMiddle {
+	background-color: #eee;
+}
+.boxMiddleRight {
+	background-color: #eee;
+	border-right: 1px solid #ccc;
+}
+.boxBottomLeft {
+	background: url(http://www.phatfusion.net/roundedcorners/images/bottomLeft.gif) bottom left no-repeat;
+}
+.boxBottom {
+	border-bottom: 1px solid #ccc;
+	background-color: #eee;
+}
+.boxBottomRight {
+	background: url(http://www.phatfusion.net/roundedcorners/images/bottomRight.gif) bottom right no-repeat;
+}
+
+/***********************************/
+
+.imageTopLeft {
+	background: url(http://www.phatfusion.net/roundedcorners/images/topLeft.png) top left no-repeat;
+}
+.imageTopRight {
+	background: url(http://www.phatfusion.net/roundedcorners/images/topRight.png) top right no-repeat;
+}
+.imageBottomLeft {
+	background: url(http://www.phatfusion.net/roundedcorners/images/bottomLeft.png) bottom left no-repeat;
+}
+.imageBottomRight {
+	background: url(http://www.phatfusion.net/roundedcorners/images/bottomRight.png) bottom right no-repeat;
+}
+.imageTop, .imageMiddleLeft, .imageMiddle, .imageMiddleRight, .imageBottom {
+	border: 0;
+}
+
+/***********************************/
+
+.roundedContent {
+	padding: 30px;
+	margin: 0px;
+	width: 150px;
+	border: 1px solid #ccc;
+	background-color:#7CC8DE;
+	margin-bottom: 20px;
+}
+
+
+/*************************************************************/
+

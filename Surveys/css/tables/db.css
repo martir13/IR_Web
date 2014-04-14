@@ -1,0 +1,18 @@
+#box {
+	background-color: #FFFF99;
+	background-position: left;
+	text-align: center;
+	padding: 5px;
+	float: left;
+	margin-left: 5px;
+	border: ridge #FFFF99;
+	position: relative;
+	left: 5px;
+}
+
+#container
+{
+position:relative;
+margin-left:10px;
+}
+

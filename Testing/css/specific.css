@@ -1,0 +1,29 @@
+/* Trustee Pages */
+h1.trustee { }
+h1.trustee span { display: block; font-size: .6em; margin-top: 6px; color: #000;}
+
+div.trusteephoto {float: right; margin: -60px 0 15px 15px; display: inline;  padding: 10px; text-align: center; border: 1px solid #ccc;}
+div.trusteephoto p {margin: 3px 0 0 0; font: bold .8em Arial, Helvetica, sans-serif;} 
+
+
+
+
+/*News Release Pages*/
+
+#release-banner p { font: bold .85em arial; border-top: 1px solid #999;  border-bottom: 1px solid #999; padding: 3px 0  3px 0; margin: 10px 0 0 0; }
+
+#release-banner p.release-address, #release-banner p.release-contact { border: 0; display: inline; float: left; margin: 2px 0 0 90px; font: normal .75em arial; }
+
+#release-banner p.release-contact { margin-left: 30px}
+
+/*Feature Articles*/
+.publication { font-style: italic; font-size: .75em; margin: 25px 0 10px 0; padding: 4px 0; border-top: 1px solid #666; border-bottom: 1px solid #666;}
+
+.byline { font-style: italic; }
+
+
+
+/*Advertising Opportunities "ad-promos.html"*/
+.advertising_ops h2 { clear: both; margin-top: 20px;  padding-top: 8px; border-top: 1px solid #ccc;}
+.advertising_ops img { float: right; margin-top: -24px;}
+.advertising_ops p { margin-right: 280px; }

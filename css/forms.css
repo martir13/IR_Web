@@ -1,0 +1,159 @@
+/*
+#content { border: 1px solid red; }
+#content_main { border: 1px solid green; }
+#page_copy { border: 1px solid purple; }*/
+
+
+/*
+FORM LAYOUTS:*/
+
+#form { margin: 0; padding: 0; }
+#text { width: 280px; float: left; }
+
+form { width: auto; margin: 0 auto; padding: 10px 10px 10px 10px; background: #fff; border: 1px solid #aaa; } 
+form:after, fieldset:after { /* stretch to contain floats */ content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+form h2 { margin: 0; padding: 12px; background: #b0c5e7; text-align: center;  }
+form  div { width: 100%; padding:4px 0;}
+form  p {font: italic .75em/1.2 arial, serif; margin: 5px 8px; color: #3f61a1}
+
+fieldset { margin: 15px 0 0 0;  padding: 12px 10px 10px 10px;  border: 1px solid #b0c5e7; /*background: #fff;*/ }
+fieldset.actions { margin: 0;  padding: 0; border: 0; background: transparent;}
+fieldset.radio-set div { display: inline; float: left; width: 85px; padding-left: 5px; }
+
+fieldset fieldset { width: auto; background: #fff; margin: 5px 5px; padding: 0 7px;}
+
+legend { font: bold .75em/1 arial, sans-serif; color:#333; margin-top: 3px; margin-bottom: 5px;}
+fieldset fieldset legend { font: normal .75em/1 arial, sans-serif; }
+
+
+label { display: block; font: normal .75em/1 arial, sans-serif; margin: 0 6px 3px 0; }
+label em { font-size: 11px; font-weight: normal; color: #b0c5e7; }
+
+input, textarea { width: 300px; border: 1px solid #666; padding: 2px 0 0 0; font: normal .80em/1 arial, sans-serif;}
+input#tournumber {width: 50px;}
+
+input:focus, textarea:focus {background: #e1eafd}
+
+input.radio, input.checkbox { width: auto;  float: left; margin-right: 6px; border: 0}
+
+input.submit
+{ width: auto;
+border: 3px double #999999;
+border-top-color: #cccccc;
+border-left-color: #cccccc;
+padding: 0.25em;
+background-color: #e1eafd;
+color: #333333;
+font-size: .6875em;
+font-weight: bold;
+float: right; 
+margin: 6px 12px} 
+
+input.hidden {display: none; border: 0}
+select { font: normal .80em/1 arial, sans-serif; }
+
+
+
+/*
+FORM LAYOUT: FOR <div class="text-and-form-cols">*/
+
+div.text-and-form-cols #form { float: right; width: 345px; display: inline;}
+
+div.text-and-form-cols fieldset { width: 300px; margin: 15px 0 0 0;  padding: 12px 10px 10px 10px;  border: 1px solid #b0c5e7;  }
+div.text-and-form-cols fieldset.actions { margin: 0;  padding: 0; border: 0; background: transparent;}
+div.text-and-form-cols fieldset.radio-set div { display: inline; float: left; width: 85px; padding-left: 5px; }
+div.text-and-form-cols fieldset fieldset { width: auto; background: #fff; margin: 5px 5px; padding: 0 7px;}
+
+
+div.text-and-form-cols legend { font: bold .85em/1 arial, sans-serif; color:#333; margin-top: 3px;}
+
+div.text-and-form-cols label { display: block; font: normal .75em/1 arial, sans-serif; margin: 0 6px 3px 0; }
+div.text-and-form-cols label em { font-size: 11px; font-weight: normal; color: #b0c5e7; }
+
+div.text-and-form-cols input#tournumber {width: 50px;}
+
+
+div.text-and-form-cols input.radio, div.text-and-form-cols input.checkbox { width: auto; border: 0; float: left; margin-right: 6px; }
+
+
+
+
+
+
+
+
+
+
+/*FORM LAYOUT: FOR <div class="form-only">*/
+
+div.form-only #text { display: none; }
+div.form-only #form { float: none; width: 100%; padding: 0; background: transparent; }
+div.form-only #form form {  background: #fff; }
+
+
+div.form-only fieldset.float { width: 280px;  display: inline; padding: 20px 12px 12px 12px;}
+div.form-only fieldset.nofloat { clear: both; float: none; padding: 20px 12px 12px 12px;}
+
+div.form-only fieldset.float input, div.form-only fieldset.float textarea { width: 100%;}
+div.form-only fieldset.float fieldset input, div.form-only fieldset.float fieldset textarea { width: 100%;}
+
+
+div.form-only fieldset.left {float: left; }
+div.form-only fieldset.right {float: right; }
+
+fieldset.radio-yn {  border: 0; width: 145px; float: left;  }
+fieldset.radio-yn div { display: inline; float: left; width: 65px; padding-left: 5px; border: 0}
+
+div.form-only form fieldset fieldset div input.checkbox { width: 18px; border: 0; float: left; margin-right: 6px; }
+
+/*For Floating 3 field sets nested in another field set only in page-copy class="form-only".*/
+
+div.form-only fieldset.float3sets fieldset {width: 172px; float: left; margin-right: 8px; padding-top: 10px}
+div.form-only fieldset.float3sets fieldset legend {font-size: .75em; }
+
+div.form-only fieldset.float3sets fieldset div { padding:  0; font-size: .95em; }
+div.form-only fieldset.float3sets fieldset div label { padding-top: 3px; margin-left: 24px; }
+div.form-only fieldset.float3sets fieldset div.inline div {display: inline; float: left; width: 85px; padding-left: 5px; }
+
+
+div.form-only fieldset.all-float div {display: inline; float: left; width:145px; padding-left: 5px;  }
+
+div.form-only fieldset.all-float label {padding-top: 3px; }
+
+#NumRooms { width: 80px }
+#PresentationDate { width: 140px }
+
+
+
+
+fieldset div br { display : none; }
+
+/* HEADER Search Form*/
+#erau_search_container * { margin: 0; padding: 0; width: auto; height: auto; background: transparent; border: 0; }
+#erau_search_container { display: block;  position: absolute; top: 9px; left: 705px; width: 250px; margin: 0; padding: 0; background: transparent; overflow: hidden;}
+
+form#erausearch span.search_input_container { height: 17px; overflow: hidden; float: left;  }
+
+form#erausearch input.search_input { 
+width: 170px; height: 17px; overflow: hidden;
+color: #000; font-weight: normal; font-size: 12px;  
+padding: 0; margin: 0; 
+border: 0; background: #e3e9f4; background-image: none;
+}
+
+form#erausearch span.submit_button_container { 
+	display: block; width: 70px; 
+	/* _display: inline-block; only for IE6 ;*/
+	padding: 0; margin: 0;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+
+form#erausearch input.submit {/* position: absolute;*/
+	font: bold 11px/17px arial, sans-serif; color: #000;
+	background: #c3cfe6;
+	width: 100%; height: 17px;
+	cursor: pointer;
+}

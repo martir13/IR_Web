@@ -1,0 +1,54 @@
+/* ###################################################################
+	
+	ITEM NAME  : Meganizr Responsive CSS3 Mega Menu
+	ITEM URI   : http://codecanyon.net/item/meganizr-responsive-css3-mega-menu/2629504
+	VERSION    : 1.0.1
+	AUTHOR     : Valeriu Timbuc
+	AUTHOR URI : http://vtimbuc.net
+	LICENSE    : Regular License - http://codecanyon.net/licenses/regular_extended
+
+################################################################### */
+
+
+
+.meganizr > li > div,
+.meganizr > li > ul,
+.meganizr > li > ul li > ul {
+	overflow: visible;
+	visibility: visible;
+	display: none;
+}
+
+.meganizr > li.mzr-drop:hover > div,
+.meganizr > li.mzr-drop:hover > ul,
+.meganizr > li > ul li.mzr-drop:hover > ul { display: block; }
+
+.meganizr > li.mzr-home-dark,
+.meganizr > li.mzr-home-light { min-width: 50px; }
+
+/* Styles for menu over map */
+div#mapMenu ul {
+  top: 28px;
+  width: 97% !important;
+  float: right;
+}
+div#mapMenu ul li:first-child {
+  border-left: 1px solid #28659E;
+}
+div#mapMenu ul li {
+background-color: #013C73;
+    border-bottom: 1px solid #28659E;
+    border-radius: 0 0 0 0;
+    border-top: 1px solid #28659E;
+    float: left;
+    height: 32px;
+    max-width: 200px;
+    position: relative;
+    /*width: 155px;*/
+    z-index: 500;
+}
+div#mapMenu ul li a {
+  text-align: center;
+ /*width: 135px;*/
+  padding: 3px 25px 0;
+}

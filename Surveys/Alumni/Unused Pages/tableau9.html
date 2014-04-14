@@ -1,0 +1,630 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/jquery.multiselect.css" media="all" rel="stylesheet" type=
+    "text/css">
+    <link href="css/jquery.multiselect.filter.css" media="all" rel="stylesheet"
+    type="text/css">
+    <link href=
+    "http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/themes/smoothness/jquery-ui.css"
+    rel="stylesheet" type="text/css">
+    <link href="css/tableau.css" media="all" rel="stylesheet" type=
+    "text/css">
+    <link href="css/smoothness/jquery-ui-1.10.2.custom_black.css" rel="stylesheet">
+
+    <!-- Stylesheet for breadcrumbs navigation -->
+    <link rel="stylesheet" href="css/BreadCrumb.css" type="text/css">
+
+    <!-- Stylesheet for the dataTables on the first tab -->
+    <link rel="stylesheet" type="text/css" href="css/tableau.jquery.dataTables_new.css">
+
+    <!-- CSS stylesheet for IE 8 and below. -->
+    <!--[if lt IE 9]>
+        <link rel="stylesheet" type="text/css" href="css/ieonly.css" />
+    <![endif]-->
+
+    <title>GSS Interactive Report</title>
+    
+</head>
+
+<body class="erauBody" id="erauBody">
+    <!--[if lt IE 8]><p class="chromeframe">You are using an <strong>outdated</strong> browser (or IE compatibilitiy mode is on and should be turned off). Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p><![endif]-->
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="brand" href=
+                "/private/daytona/records/orientation/index.cfm" style=
+                "white-space:nowrap; color:white;"><img alt="" height="16" src=
+                "img/erau_logo.png"
+                width="184"> <span style=
+                "position:relative;top:1px; color:#3A5079">GSS Interactive Report</span></a>
+
+                <!--<nav id="topCollapse"></nav>-->
+            </div>
+        </div>
+    </div>
+
+    <div class="container outerContainer">
+        <h1 class="formTitle">GSS Interactive Report</h1>
+        <hr>
+
+        <!-- Start Breadcrumbs -->
+        <div class="breadCrumbHolder module">
+            <div id="breadCrumb3" class="breadCrumb module surveyBreadcrumb">
+                <ul>
+                    <li>
+                        <a href="http://irweb.erau.edu">Home</a>
+                    </li>
+                    <li>
+                        <a href="http://irweb.db.erau.edu/irstudies/">Surveys</a>
+                    </li>
+                    <li>
+                        <a href="/Testing/SurveyReporting/index.html">GSS</a>
+                    </li>
+                    <li>
+                        GSS Interactive Report
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="chevronOverlay main">
+        </div>
+
+        <div id="filterArea">
+            <div id="filterOptions">
+                <select id="CAMPUS" multiple="multiple" name="example-list"
+                style="width:100px;">
+                    <option value="Daytona Beach">
+                        Daytona Beach
+                    </option>
+
+                    <option value="Prescott">
+                        Prescott
+                    </option>
+                </select>
+
+                <select id="YEAR" multiple="multiple" name=
+                "example-list" style="width:100px;">
+                    <option value="AY 2008/09">
+                        AY 2008/09
+                    </option>
+
+                    <option value="AY 2009/10">
+                        AY 2009/10
+                    </option>
+
+                    <option value="AY 2010/11">
+                        AY 2010/11
+                    </option>
+
+                    <option value="AY 2011/12">
+                        AY 2011/12
+                    </option>
+                </select> 
+
+                <select id="MAJOR" multiple="multiple" name=
+                "example-list" style="width:70px;">
+                    <option value="PC BS Aerospace Engineering">
+                        PC BS Aerospace Engineering
+                    </option>
+
+                    <option value="DB BS Aerospace Engineering">
+                        DB BS Aerospace Engineering
+                    </option>
+
+                    <option value="DB BS Computer Engineering">
+                        DB BS Computer Engineering
+                    </option>
+
+                    <option value="PC BS Mechanical Engineering">
+                        PC BS Mechanical Engineering
+                    </option>
+
+                    <option value="DB BS Software Engineering">
+                        DB BS Software Engineering
+                    </option>
+
+                    <option value="DB MS Mechanical Engineering">
+                        DB MS Mechanical Engineering
+                    </option>
+
+                    <option value="DB MS Aerospace Engineering">
+                        DB MS Aerospace Engineering
+                    </option>
+
+                    <option value="DB BS Civil Engineering">
+                        DB BS Civil Engineering
+                    </option>
+
+                    <option value="DB BS Electrical Engineering">
+                        DB BS Electrical Engineering
+                    </option>
+
+                    <option value="DB M Software Engineering">
+                        DB M Software Engineering
+                    </option>
+
+                    <option value="PC BS Electrical Engineering">
+                        PC BS Electrical Engineering
+                    </option>
+
+                    <option value="DB D Engineering Physics">
+                        DB D Engineering Physics
+                    </option>
+
+                    <option value="DB BS Mechanical Engineering">
+                        DB BS Mechanical Engineering
+                    </option>
+
+                    <option value="PC BS Computer Engineering">
+                        PC BS Computer Engineering
+                    </option>
+
+                    <option value="DB BS Aerospace Electronics">
+                        DB BS Aerospace Electronics
+                    </option>
+
+                    <option value="PC BS Software Engineering">
+                        PC BS Software Engineering
+                    </option>
+
+                    <option value="DB M Aerospace Engineering">
+                        DB M Aerospace Engineering
+                    </option>
+
+                    <option value="DB M Electrica/ Computer Engineering">
+                        DB M Electrica/ Computer Engineering
+                    </option>
+
+                    <option value="PC MS Software Engineering">
+                        PC MS Software Engineering
+                    </option>
+                </select>
+
+                <select id="SEX" multiple="multiple" name=
+                "example-list" style="width:100px;">
+                    <option value="Male">
+                        Male
+                    </option>
+
+                    <option value="Female">
+                        Female
+                    </option>
+                </select>
+
+                <select id="ETHNIC" multiple="multiple" name=
+                "example-list" style="width:100px;">
+                    <option value="Black/African American">
+                        Black/African American
+                    </option>
+
+                    <option value="Race/Ethnicity Unknown">
+                        Race/Ethnicity Unknown
+                    </option>
+
+                    <option value="Asian">
+                        Asian
+                    </option>
+
+                    <option value="American Indian/Alaskan Native">
+                        American Indian/Alaskan Native
+                    </option>
+
+                    <option value="White">
+                        White
+                    </option>
+
+                    <option value="Hispanic/Latino">
+                        Hispanic/Latino
+                    </option>
+
+                    <option value="Two or more races">
+                        Two or more races
+                    </option>
+
+                    <option value="Nonresident Alien">
+                        Nonresident Alien
+                    </option>
+
+                    <option value="Native Hawaiian/Pacific Islander">
+                        Native Hawaiian/Pacific Islander
+                    </option>
+                </select>
+                <!-- Loads showSelected from tableau.js to update the URL hash and graphs based off filter selections -->
+                <div class="applyFilters">
+                    <a class="ui-button applyFilterButton" id="link_param" onclick="showSelected();">Apply Filter</a>
+                
+
+                    <div class="clearFilters"><a class="ui-button applyFilterButton" onclick="clearFilters();">Clear Filter</a></div>
+              </div>
+
+            </div>
+
+            <div id="filterBreadcrumbs">
+                <p>Current Filter: None</p>
+            </div>
+
+        </div>
+
+        <div class="tableauPlaceholder">
+            <!-- Tabs -->
+
+            <div class="clearfix" id="tabs">
+                <ul>
+                    <li>
+                        <a href="#tabs-1" title="Home">Survey Data</a>
+                    </li>
+
+                    <li>
+                        <a href="#tabs-2" id="academicExperienceTab" title=
+                        "Academic Experience">Academic Experience</a>
+                    </li>
+
+                    <li>
+                        <a href="#tabs-3" id="programSkillsTab" title=
+                        "Program Skills">Program Skills</a>
+                    </li>
+
+                    <li>
+                        <a href="#tabs-4" id="minorProgramSkillsTab" title=
+                        "Minor Program Skills">Minor Program Skills</a>
+                    </li>
+
+                    <li>
+                        <a href="#tabs-5" id="universiryExperienceTab" title=
+                        "University Experience">University Experience</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="panels">
+                <div class="panel-wrapper">
+                    <div class="panel">
+                        <!-- First Tab -->
+
+                        <div id="tabs-1">
+                            <!-- The table -->
+
+                            <div id="mainContentMainTab">
+                                <div id="beforeTable">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    </p>
+                                </div>
+
+                                <table cellpadding="0" cellspacing="0" border="0" class="display" id="mainDataTable" width="100%">
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 20%;">Category (Clickable)</th>
+                                            <th style="width: 20%;">Sub-Category</th>
+                                            <th style="width: 60%;">Question</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="odd gradeX">
+                                            <td class="center"><a href="tableau.html#tabs-2" onClick="updateGraphs();" style="font-weight:900; " >Academic Experience</a></td>
+                                            <td class="center">Degree Program</td>
+                                            <td class="center">Major</td>
+                                        </tr>
+                                        <tr class="odd gradeX">
+                                            <td class="center"><a href="tableau.html#tabs-2" onClick="updateGraphs();" style="font-weight:900" >Academic Experience</a></td>
+                                            <td class="center">Degree Program</td>
+                                            <td class="center">Do you have a second major?</td>
+                                        </tr>
+                                        <tr class="odd gradeX">
+                                            <td class="center"><a href="tableau.html#tabs-2" onClick="updateGraphs();" style="font-weight:900" >Academic Experience</a></td>
+                                            <td class="center">Degree Program</td>
+                                            <td class="center">Second Major</td>
+                                        </tr>
+                                        <tr class="odd gradeX">
+                                            <td class="center"><a href="tableau.html#tabs-2" onClick="updateGraphs();" style="font-weight:900" >Academic Experience</a></td>
+                                            <td class="center">Degree Specializations</td>
+                                            <td class="center">Which track/specialization did you complete in Electrical Engineering?</td>
+                                        </tr>
+                                        <tr class="odd gradeX">
+                                            <td class="center"><a href="tableau.html#tabs-2" onClick="updateGraphs();" style="font-weight:900" >Academic Experience</a></td>
+                                            <td class="center">Degree Specializations</td>
+                                            <td class="center">What is your Area of Concentration (MSHF-AOC)?</td>
+                                        </tr>
+                                        <tr class="odd gradeX">
+                                            <td class="center"><a href="tableau.html#tabs-2" onClick="updateGraphs();" style="font-weight:900" >Academic Experience</a></td>
+                                            <td class="center">Degree Specializations</td>
+                                            <td class="center">Which track/specialization did you complete in Mechanical Engineering?</td>
+                                        </tr>
+                                        <tr class="odd gradeX">
+                                            <td class="center"><a href="tableau.html#tabs-2" onClick="updateGraphs();" style="font-weight:900" >Academic Experience</a></td>
+                                            <td class="center">Degree Specializations</td>
+                                            <td class="center">Which track/specialization did you complete in Aerospace Engineering?</td>
+                                        </tr>
+                                        <tr class="odd gradeX">
+                                            <td class="center"><a href="tableau.html#tabs-2" onClick="updateGraphs();" style="font-weight:900" >Academic Experience</a></td>
+                                            <td class="center">Degree Specializations</td>
+                                            <td class="center">What was your area of concentration in Computer Science?</td>
+                                        </tr>
+                                        <tr class="odd gradeX">
+                                            <td class="center"><a href="tableau.html#tabs-2" onClick="updateGraphs();" style="font-weight:900" >Academic Experience</a></td>
+                                            <td class="center">Degree Program</td>
+                                            <td class="center">Major</td>
+                                        </tr>
+                                        <tr class="odd gradeX">
+                                            <td class="center"><a href="tableau.html#tabs-2" onClick="updateGraphs();" style="font-weight:900" >Academic Experience</a></td>
+                                            <td class="center">Degree Program</td>
+                                            <td class="center">Overall how would you rate your major at ERAU in the following areas?</td>
+                                        </tr>
+                                        <tr class="odd gradeX">
+                                            <td class="center"><a href="tableau.html#tabs-2" onClick="updateGraphs();" style="font-weight:900" >Academic Experience</a></td>
+                                            <td class="center">Degree Program</td>
+                                            <td class="center">Overall how would you rate your second major at ERAU in the following areas?</td>
+                                        </tr>
+                                        <tr class="odd gradeX">
+                                            <td class="center"><a href="tableau.html#tabs-2" onClick="updateGraphs();" style="font-weight:900" >Academic Experience</a></td>
+                                            <td class="center">Program Advising</td>
+                                            <td class="center">Did you have an Academic Advisor for your program?</td>
+                                        </tr>
+                                        <tr class="odd gradeX">
+                                            <td class="center"><a href="tableau.html#tabs-2" onClick="updateGraphs();" style="font-weight:900" >Academic Experience</a></td>
+                                            <td class="center">Program Advising</td>
+                                            <td class="center">Overall how would you rate your advisor in the following areas?</td>
+                                        </tr>
+                                        <tr class="odd gradeX">
+                                            <td class="center"><a href="tableau.html#tabs-2" onClick="updateGraphs();" style="font-weight:900" >Academic Experience</a></td>
+                                            <td class="center">Enrollment Length</td>
+                                            <td class="center">Has it taken you MORE THAN 4 years to complete your degree requirements at ERAU?</td>
+                                        </tr>
+                                        <tr class="odd gradeX">
+                                            <td class="center"><a href="tableau.html#tabs-2" onClick="updateGraphs();" style="font-weight:900" >Academic Experience</a></td>
+                                            <td class="center">Enrollment Length</td>
+                                            <td class="center">How many additional semesters beyond four years has it taken you to graduate?</td>
+                                        </tr>
+                                        <tr class="odd gradeX">
+                                            <td class="center"><a href="tableau.html#tabs-2" onClick="updateGraphs();" style="font-weight:900" >Academic Experience</a></td>
+                                            <td class="center">Enrollment Length</td>
+                                            <td class="center">If yes, please indicate the reason(s) why: (select all that apply)</td>
+                                        </tr>
+                                        <tr class="odd gradeX">
+                                            <td class="center"><a href="tableau.html#tabs-2" onClick="updateGraphs();" style="font-weight:900" >Academic Experience</a></td>
+                                            <td class="center">Thesis</td>
+                                            <td class="center">Did you complete a Senior Thesis?</td>
+                                        </tr>
+                                        <tr class="odd gradeX">
+                                            <td class="center"><a href="tableau.html#tabs-2" onClick="updateGraphs();" style="font-weight:900" >Academic Experience</a></td>
+                                            <td class="center">Thesis</td>
+                                            <td class="center">During my Senior Thesis:</td>
+                                        </tr>
+                                        <tr class="odd gradeX">
+                                            <td class="center"><a href="tableau.html#tabs-4" onClick="updateGraphs();">Minor Program Skills</a></td>
+                                            <td class="center"></td>
+                                            <td class="center">Did you have a minor?</td>
+                                        </tr>
+                                        <tr class="odd gradeX">
+                                            <td class="center"><a href="tableau.html#tabs-4" onClick="updateGraphs();">Minor Program Skills</a></td>
+                                            <td class="center"></td>
+                                            <td class="center">What were your minors?</td>
+                                        </tr>
+                                        <tr class="odd gradeX">
+                                            <td class="center"><a href="tableau.html#tabs-4" onClick="updateGraphs();">Minor Program Skills</a></td>
+                                            <td class="center"></td>
+                                            <td class="center">Minor in Air Traffic Control</td>
+                                        </tr>
+                                        <tr class="odd gradeX">
+                                            <td class="center"><a href="tableau.html#tabs-3" onClick="updateGraphs();">Program Skills</a></td>
+                                            <td class="center"></td>
+                                            <td class="center">BS Aeronautical Science...all other majors</td>
+                                        </tr>
+                                        <tr class="odd gradeX">
+                                            <td class="center"><a href="tableau.html#tabs-5" onClick="updateGraphs();">University Experience</a></td>
+                                            <td class="center">Professional Development</td>
+                                            <td class="center">Do you belong to or plan to join any professional societies or organizations? (choose one)</td>
+                                        </tr>
+                                        <tr class="odd gradeX">
+                                            <td class="center"><a href="tableau.html#tabs-5" onClick="updateGraphs();">University Experience</a></td>
+                                            <td class="center">FAA Certifications</td>
+                                            <td class="center">Do you have any FAA certificates or licenses?</td>
+                                        </tr>
+                                        <tr class="odd gradeX">
+                                            <td class="center"><a href="tableau.html#tabs-5" onClick="updateGraphs();">University Experience</a></td>
+                                            <td class="center">FAA Certifications</td>
+                                            <td class="center">If yes, indicate when you obtained them, in relation to your enrollment at ERAU.</td>
+                                        </tr>
+                                        <tr class="odd gradeX">
+                                            <td class="center"><a href="tableau.html#tabs-5" onClick="updateGraphs();">University Experience</a></td>
+                                            <td class="center">Overall Experience</td>
+                                            <td class="center">How strongly do you agree/disagree with the following statements:</td>
+                                        </tr>
+                                        <tr class="odd gradeX">
+                                            <td class="center"><a href="tableau.html#tabs-5" onClick="updateGraphs();">University Experience</a></td>
+                                            <td class="center">Financial Aid</td>
+                                            <td class="center">Did you have to borrow money (money that must be repaid) to graduate from ERAU?</td>
+                                        </tr>
+                                        <tr class="odd gradeX">
+                                            <td class="center"><a href="tableau.html#tabs-5" onClick="updateGraphs();">University Experience</a></td>
+                                            <td class="center">Financial Aid</td>
+                                            <td class="center">If yes, approximately how much?</td>
+                                        </tr>
+                                        <tr class="odd gradeX">
+                                            <td class="center"><a href="tableau.html#tabs-5" onClick="updateGraphs();">University Experience</a></td>
+                                            <td class="center">Professional Development</td>
+                                            <td class="center">My academic experience or co-curricular activity was helpful in preparation for employment.</td>
+                                        </tr>
+                                        <tr class="odd gradeX">
+                                            <td class="center"><a href="tableau.html#tabs-5" onClick="updateGraphs();">University Experience</a></td>
+                                            <td class="center">ROTC</td>
+                                            <td class="center">Did you participate in the ROTC program?</td>
+                                        </tr>
+                                        <tr class="odd gradeX">
+                                            <td class="center"><a href="tableau.html#tabs-5" onClick="updateGraphs();">University Experience</a></td>
+                                            <td class="center">ROTC</td>
+                                            <td class="center">Evaluate the preparation you received at ERAU's ROTC program for:</td>
+                                        </tr>
+                                        <tr class="odd gradeX">
+                                            <td class="center"><a href="tableau.html#tabs-5" onClick="updateGraphs();">University Experience</a></td>
+                                            <td class="center">ROTC</td>
+                                            <td class="center">Were you commissioned through ERAU's program</td>
+                                        </tr>
+                                        <tr class="odd gradeX">
+                                            <td class="center"><a href="tableau.html#tabs-5" onClick="updateGraphs();">University Experience</a></td>
+                                            <td class="center">Professional Development</td>
+                                            <td class="center">Did you complete a Co-op experience?</td>
+                                        </tr>
+                                        <tr class="odd gradeX">
+                                            <td class="center"><a href="tableau.html#tabs-5" onClick="updateGraphs();">University Experience</a></td>
+                                            <td class="center">Professional Development</td>
+                                            <td class="center">During my Co-op experience:</td>
+                                        </tr>
+                                        <tr class="odd gradeX">
+                                            <td class="center"><a href="tableau.html#tabs-5" onClick="updateGraphs();">University Experience</a></td>
+                                            <td class="center">General Skills</td>
+                                            <td class="center">Compared to your FIRST year at ERAU, how would you describe your current skills/knowledge?</td>
+                                        </tr>
+                                        <tr class="odd gradeX">
+                                            <td class="center"><a href="tableau.html#tabs-5" onClick="updateGraphs();">University Experience</a></td>
+                                            <td class="center">General Skills</td>
+                                            <td class="center">To what extent has your experience at ERAU contributed to your development of the following skills or knowledge?</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <th>Category</th>
+                                            <th>Sub-Category</th>
+                                            <th>Question</th>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+
+                            </div> 
+                        </div>
+                    </div><!-- Second Tab -->
+
+                    <div class="panel">
+                        <div id="tabs-2"></div>
+                    </div><!-- Third Tab -->
+
+                    <div class="panel">
+                        <div id="tabs-3">
+                            <select id="PSKILLS" name="programSkills">
+                                <option value="PC BS Aerospace Engineering">
+                                    PC BS Aerospace Engineering
+                                </option>
+
+                                <option value="DB BS Aerospace Engineering">
+                                    DB BS Aerospace Engineering
+                                </option>
+
+                                <option value="DB BS Computer Engineering">
+                                    DB BS Computer Engineering
+                                </option>
+
+                                <option value="PC BS Mechanical Engineering">
+                                    PC BS Mechanical Engineering
+                                </option>
+
+                                <option value="DB BS Software Engineering">
+                                    DB BS Software Engineering
+                                </option>
+
+                                <option value="DB MS Mechanical Engineering">
+                                    DB MS Mechanical Engineering
+                                </option>
+
+                                <option value="DB MS Aerospace Engineering">
+                                    DB MS Aerospace Engineering
+                                </option>
+
+                                <option value="DB BS Civil Engineering">
+                                    DB BS Civil Engineering
+                                </option>
+
+                                <option value="DB BS Electrical Engineering">
+                                    DB BS Electrical Engineering
+                                </option>
+
+                                <option value="DB M Software Engineering">
+                                    DB M Software Engineering
+                                </option>
+
+                                <option value="PC BS Electrical Engineering">
+                                    PC BS Electrical Engineering
+                                </option>
+
+                                <option value="DB D Engineering Physics">
+                                    DB D Engineering Physics
+                                </option>
+
+                                <option value="DB BS Mechanical Engineering">
+                                    DB BS Mechanical Engineering
+                                </option>
+
+                                <option value="PC BS Computer Engineering">
+                                    PC BS Computer Engineering
+                                </option>
+
+                                <option value="DB BS Aerospace Electronics">
+                                    DB BS Aerospace Electronics
+                                </option>
+
+                                <option value="PC BS Software Engineering">
+                                    PC BS Software Engineering
+                                </option>
+
+                                <option value="DB M Aerospace Engineering">
+                                    DB M Aerospace Engineering
+                                </option>
+
+                                <option value=
+                                "DB M Electrica/ Computer Engineering">
+                                    DB M Electrica/ Computer Engineering
+                                </option>
+
+                                <option value="PC MS Software Engineering">
+                                    PC MS Software Engineering
+                                </option>
+                            </select>
+
+                            <div id="PSContent"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel">
+                        <div id="tabs-4"></div>
+                    </div><!-- Fourth Tab -->
+
+                    <div class="panel">
+                        <div id="tabs-5"></div>
+                    </div><!-- Fifth Tab -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
+    <script src="js/tableau.js" type="text/javascript"></script>
+    <script src="js/jquery.address.js" type="text/javascript"></script>
+    <script src="js/jquery-ui-1.10.2.custom.min.js" type="text/javascript"></script>
+    <!-- Script to enable the tabs -->
+    <script src="js/tableauQtabs.js" type="text/javascript"></script>
+    <!-- Script to control Hash Filtering -->
+    <script src="js/tableauFilter.js" type="text/javascript"></script>
+    <script src="js/tableauMultiselect.js" type="text/javascript"></script>
+    <script src="js/tableauFloatingMenu.js" type="text/javascript"></script>
+
+    <script src="js/jquery.cookie.js" type="text/javascript"></script>
+    <script src="js/jquery.multiselect.filter.min.js" type="text/javascript"></script>
+    <script src="js/jquery.multiselect.min.js" type="text/javascript"></script>
+
+    <!-- Scripts for the data Table on the first tab -->
+    <script type="text/javascript" language="javascript" src="js/tableau.jquery.dataTables.min.js"></script>
+    <!-- Add-on script for grouping the data table -->
+    <script type="text/javascript" language="javascript" src="js/tableau.rowGrouping.js"></script>
+
+    <!-- Scripts used for breadcrumbs -->
+    <script src="js/jquery.easing.1.3.js" type="text/javascript" language="JavaScript"></script>
+    <script src="js/jquery.jBreadCrumb.1.1.js" type="text/javascript" language="JavaScript"></script>
+</body>
+</html>

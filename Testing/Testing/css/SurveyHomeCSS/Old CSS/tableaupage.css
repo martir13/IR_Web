@@ -1,0 +1,224 @@
+/* Styles for map area at the top-right */
+  div#mapMenu {
+    height: 123px;
+    background-image: url('../img/map.png');
+  }
+  div#mapMenu ul {
+    top: 28px;
+    width: 639px;
+    float: right;
+  }
+  /*div#mapMenu ul li:first-child {
+    border-left: 1px solid #28659E;
+  }*/
+
+  /* Styles Specific to Tableau Page */
+  div#erauContainer.perc-region div.perc-vertical div#nav.perc-region {
+    box-shadow: none;
+  }
+  div#filterArea {
+    width: 100%;
+    clear: both;
+  }
+  div#filterOptions {
+    background-color: #B0A176;
+    padding: 10px;
+    color: #FFFFFF;
+    clear: both;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  div#filterOptions select {
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    width: auto;
+  }
+  p.filterOptionsButton {
+    color: #FFFFFF;
+    margin-left: 4px;
+    margin-bottom: 3px;
+    padding: 4px 6px;
+    background-color: #013C73;
+    border: 1px solid #28659E;
+    float: left;
+    -webkit-box-shadow:   #000000 0px 0px 4px 0px;
+    -moz-box-shadow:      #000000 0px 0px 4px 0px;
+    box-shadow:           #000000 0px 0px 4px 0px;
+  }
+  div.tableauPlaceholder {
+    width: auto;
+    height: auto;
+    clear: both;
+    display: block;
+    background-color: #AFA999;
+    border-top: 1px solid #777777;
+    -webkit-border-bottom-right-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  div.mainTableauGraphs {
+    padding: 2px;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+  }
+  div.tooltipImages {
+    width: 320px;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    /*border: 1px solid #02437F;*/
+    padding-left: 2px;
+    padding-right: 2px;
+    float: left;
+  }
+  html body div#erauContainer.perc-region div#tableauMainContent div.tableauPlaceholder div#panels div.panel-wrapper div.panel div#tabs-1 div.tooltipImages div.mosaic-block div.mosaic-backdrop img {
+    width: 322px;
+  }
+  html body div#erauContainer.perc-region div#tableauMainContent div.tableauPlaceholder div#panels div.panel-wrapper div.panel div#tabs-1 div.tooltipImages div.mosaic-block {
+    width: 322px;
+    height: 292px;
+  }
+  a:focus { 
+    outline: none; 
+  }
+  a.applyFilterButton {
+    color: #FFFFFF;
+    margin-left: 8px;
+    margin-bottom: 3px;
+    margin-top: 3px;
+    padding: 4px 6px;
+    background-color: #013C73;
+    border: 1px solid #28659E;
+    display: inline-block;
+    -webkit-box-shadow:   #000000 0px 0px 4px 0px;
+    -moz-box-shadow:      #000000 0px 0px 4px 0px;
+    box-shadow:           #000000 0px 0px 4px 0px;
+  }
+  html body div#erauContainer.perc-region div#tableauMainContent div#filterArea div#filterOptions button.ui-multiselect {
+    width: 145px !important;
+  }
+  html body div#erauContainer.perc-region div#bigTableauMainContent div#filterArea div#filterOptions button.ui-multiselect {
+    width: 148px !important;
+  }
+
+  /* Styles for Mosaic image hover CSS */     
+  .details{ margin:15px 20px; } 
+  .details h4{ font:300 16px 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height:160%; letter-spacing:0.15em; color:#fff; text-shadow:1px 1px 0 rgb(0,0,0); }
+  .details p{ font:300 12px 'Lucida Grande', Tahoma, Verdana, sans-serif; color:#aaa; text-shadow:1px 1px 0 rgb(0,0,0);}
+  .bar a{ text-decoration:none; }
+
+  /* Styles for TABS */
+  #tabs-1 {
+    width: 100%;
+  }
+  #tabs-2 {
+    width: 100%;
+  }
+  html body div#erauContainer.perc-region div#tableauMainContent div.tableauPlaceholder div#tabs.ui-tabs div#tabs-1.ui-tabs-panel {
+    padding: 5px 0px 5px 5px;
+  }
+  html body div#erauContainer.perc-region div#tableauMainContent div.tableauPlaceholder div#tabs.ui-tabs div#tabs-2.ui-tabs-panel {
+    padding: 5px 0px 5px 7px;
+  }
+
+  /* Styles for new tabs */
+  #tabs ul {
+    list-style:none;
+    margin:0; 
+    padding:0;
+}
+    #tabs ul li {
+        float:left;
+    }
+    
+    #tabs ul li a {
+        display:block;
+        padding:5px 10px;
+        font-weight: normal;
+        color:#333333;
+        text-decoration:none;
+        font-size:120%;
+    }        
+    #tabs ul li.active a {
+        background:#CCCCCC;
+        color:#333333;
+        font-weight: bold;
+    }                
+#panels {
+    width:100%;
+    background:#CCCCCC;
+}
+    #panels .panel-wrapper {
+        padding:10px;
+    }
+    #panels .panel {
+        
+    }
+    #panels .panel h2 {
+        margin:0 0 10px 0;    
+    }        
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+    }
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */        
+/*
+* CSS3
+*/
+#tabs ul li a {    
+    border-top-left-radius : 5px;      
+    border-top-right-radius : 5px;              
+}
+#panels {
+    border-bottom-left-radius : 5px;      
+    border-bottom-right-radius : 5px;        
+}
+
+/* Fix spacing of tableau graphs */
+html body div#erauContainer.perc-region div#tableauMainContent div.tableauPlaceholder div#panels div.panel-wrapper {
+  padding-left: 11px;
+  padding-right: 11px;
+  overflow: auto;
+}
+
+/* Style for Drop-Down on Program Skills Tab */
+html body div#erauContainer.perc-region div#tableauMainContent div.tableauPlaceholder div#panels div.panel-wrapper div.panel div#tabs-3 button.ui-multiselect {
+  margin-bottom: 6px;
+}
+
+/* Change width of secondTableauGraph for the infographic */
+html body div#erauContainer.perc-region div#tableauMainContent div.tableauPlaceholder div#panels div.panel-wrapper div.panel div#tabs-1 div.secondTableauGraph {
+  float: right;
+}
+
+/* Change width of lastTableauGraph */
+html body div#erauContainer.perc-region div#tableauMainContent div.tableauPlaceholder div#panels div.panel-wrapper div.panel div#tabs-1 div.firstTableauGraph{
+  width: 40.5%;
+}
+
+/* Styles for ERAU branding banner */
+.header.branding {
+ height: 60px;
+ background: #335497;
+ background-image:url(http://css.erau.edu/images/affiliate-header.jpg);
+ border-top: 2px solid #f1b228;
+ border-bottom: 2px solid #f1b228; 
+}
+
+html body div#erauContainer.perc-region div.perc-vertical {
+  height: 35px;
+}

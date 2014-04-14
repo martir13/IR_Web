@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script type="text/javascript">
+$("document").ready(function (){
+	var tes = $(location).attr('href');
+	var C = tes.substr(tes.indexOf("=") + 1);
+
+		//Open the XML file to find the correct record's info
+		$.ajax({
+			type: "GET",
+		    url: "/XMLContactData/data-set.xml",
+		    dataType: "xml",
+		    success: function(xml) {
+				//Read through each record until you find one that matches the C value
+			  	$(xml).find('record').each(function()
+		            {
+		            	//If we have a match, get the Link value and redirect to the link
+		                if($(this).find("C").text()==C) 
+		                    window.location.href = $(this).find("Link").text();
+		            });
+			}
+		});
+
+
+	//var tes = $(location).attr('href');
+	//var myString = tes.substr(tes.indexOf("?") + 1);
+	//window.location.href = "/cgi/rws5.pl?FORM=" + myString; 
+});
+</script>
+<title>Survey</title>
+</head>
+
+<body>
+</body>
+</html>

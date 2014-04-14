@@ -1,0 +1,85 @@
+
+    
+/*--------------Common Table Styles*/
+
+table {
+border-collapse: collapse; border: 1px solid #ccc; width: 100%;}
+
+table+p { margin-top: 1em; }
+
+th {
+text-align: center;
+background: #6699CC url(http://webhost1.erau.edu/css/iface/contentHomenav-bg.gif) repeat-x; 
+color: #fff;
+border: 1px solid #ccc; 
+border-width: 0 1px; 
+padding: 4px; 
+font: bold .75em/1 Arial, Helvetica, sans-serif;
+}
+
+th a { font: bold .75em/1 Arial, Helvetica, sans-serif;}
+
+
+
+td { text-align: left;
+font: normal .75em/1 Arial, Helvetica, sans-serif; 
+border: 1px solid #ccc; 
+/*border-width: 0 1px;*/
+padding: 3px 4px 3px 8px; }
+
+td.number-col {text-align: center; padding-right: 1em }
+
+
+
+caption { text-align: left; font: bold .75em/1 Arial, Helvetica, sans-serif; padding: 12px 0 6px 0;}
+
+tfoot tr td { 
+font: italic .6875em/1.1 arial, sans-serif; 
+background: #ccc; 
+padding: 8px 6px 6px 8px; 
+border-top: 1px solid #ccc;
+text-align: left;}
+
+.odd { background-color: #fff; }
+.even { background-color: #f6f6f6; }
+
+
+
+/*--------------Degree Requirement Tables*/
+
+table.course-req { width: 600px;}
+
+/*Applies to Columns.
+CSS only allows the attributes: border (only if border-collapse is set to collapse), background, width, and visibility.*/
+col.coursecode { width: 80px; text-align: center;}
+col.coursetitle {width: 250px;}
+col.coursecredit { text-align: center;  width: 50px;}/*targets 3rd column. Alignment is incorrectly allowed Explorer. The td+td+td method is correct for setting alignment*/
+
+col.begin, col.end {width: 120px;}
+
+
+
+
+col.course-req td+td+td { text-align: center;}/*targets 3rd column. Alignment is incorrectly allowed Explorer. The td+td+td method is correct for setting alignment*/
+
+.course-req td.totalcreditlabel { font-weight: bold; text-align: right; padding: 3px; background:  #fff; border-top: 1px solid #ccc;}
+
+
+.course-req td.totalcredits { font-weight: bold; border-top: 4px double #000;}
+
+.coursecredit {width: 15%}
+
+table.aviationphd-master td {  text-align: center;}
+table.aviationphd-master td.coursetitle { text-align: left; width: 320px}
+table.aviationphd-master tfoot tr td {text-align: left; padding-left: 6px;}
+table.aviationphd-master th.semester { width: 50px; text-align: center;}
+
+
+/*ITEMS COSTS classes added with jquery erau_allsites_enhancement.js*/
+
+table.items-costs {  background: #fff;   }
+table.items-costs tr th { text-align: left; }
+table.items-costs tr td.number_column { text-align: left; padding-right: 8px; width: 75%; }
+table.items-costs td.total_label { font-weight: bold; text-align: right; padding: 6px; border-top: 2px solid #000;}
+table.items-costs td.total_amount { text-align: right; padding-right: 20px; font-weight: bold; border-top: 2px solid #000;}
+

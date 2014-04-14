@@ -1,0 +1,10 @@
+<option value="BS Aeronautical Sciences">BS Aeronautical Sciences</option>
+<option value="BS Aeronautics">BS Aeronautics</option>
+<option value="BS Aerospace Engineering">BS Aerospace Engineering</option>
+<option value="BS Applied Meteorology">BS Applied Meteorology</option>
+<option value="BS Computer Engineering">BS Computer Engineering</option>
+<option value="BS Electrical Engineering">BS Electrical Engineering</option>
+<option value="BS Mechanical Engineering">BS Mechanical Engineering</option>
+<option value="BS Software Engineering">BS Software Engineering</option>
+<option value="M Software Engineering">M Software Engineering</option>
+<option value="MS Safety Science">MS Safety Science</option>

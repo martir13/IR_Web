@@ -1,0 +1,51 @@
+<!-- ____________________________ BEGIN footer ____________________________ -->
+<div id="footer">
+<p class="copyright">&copy;Copyright 2013 Embry-Riddle Aeronautical University. All rights reserved.</p>
+<p class="address">Administrative Offices: 600 South Clyde Morris Blvd., Daytona Beach, FL 32114</p>
+</div>
+<!-- END footer -->
+
+<noscript><img alt="" border="0" name="DCSIMG" width="1" height="1" src="https://stats.erau.edu/dcsyk1n5z1wuqpz6v6oje0jt4_9l2b/njs.gif?dcsuri=/nojavascript&amp;WT.js=No" id="DCSIMG" /></noscript><!-- END OF SmartSource Data Collector TAG -->
+<script type="text/javascript">
+//<![CDATA[
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+//]]>
+</script><script type="text/javascript">
+//<![CDATA[
+try {
+var pageTracker = _gat._getTracker("UA-4715404-2");
+pageTracker._trackPageview();
+} catch(err) {}
+//]]>
+</script>
+
+ <!-- Scripts used for breadcrumbs -->
+    <script src="Factbook/js/jquery.easing.1.4.js" type="text/javascript"></script>
+    <script src="Factbook/js/jquery.jBreadCrumb.1.1.js" type="text/javascript"></script>
+	<script src="Factbook/js/make_dropdown.min.js" type="text/javascript"></script>
+	<script src="Factbook/js/factbook.js" type="text/javascript"></script><!-- Js to control the factbook menu functionality -->
+
+	<script src="Factbook/js/jquery.hashchange.min.js" type="text/javascript"></script>
+	<script src="Factbook/js/jquery.easytabs.js" type="text/javascript"></script>
+    <!--************************************* END 3RD PARTY SCRIPTS *********************************************-->
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-46374119-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Mixpanel --><script type="text/javascript">var mpq=[];mpq.push(["init","c8129860e8fe46f12acddfbd810d31c9"]);(function(){var a=document.createElement("script");a.type="text/javascript";a.async=true;a.src=(document.location.protocol==="https:"?"https:":"http:")+"//api.mixpanel.com/site_media/js/api/mixpanel.js";var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)})();</script><!-- End Mixpanel -->
+<script type='text/javascript'> var mp_protocol = (('https:' == document.location.protocol) ? 'https://' : 'http://'); document.write(unescape('%3Cscript src="' + mp_protocol + 'api.mixpanel.com/site_media/js/api/mixpanel.js" type="text/javascript"%3E%3C/script%3E')); </script> <script type='text/javascript'> try {  var mpmetrics = new MixpanelLib('6aca59ce015677d2f2b7beb31a8d3204'); } catch(err) { null_fn = function () {}; var mpmetrics = {  track: null_fn,  track_funnel: null_fn,  register: null_fn,  register_once: null_fn, register_funnel: null_fn }; } </script>
+
+</body>
+</html>

@@ -1,0 +1,400 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/jquery.multiselect.css" media="all" rel="stylesheet" type=
+    "text/css">
+    <link href="css/jquery.multiselect.filter.css" media="all" rel="stylesheet"
+    type="text/css">
+    <link href=
+    "http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/themes/smoothness/jquery-ui.css"
+    rel="stylesheet" type="text/css">
+    <link href="css/tableau.css" media="all" rel="stylesheet" type=
+    "text/css">
+    <link href="css/smoothness/jquery-ui-1.10.2.custom.css" rel="stylesheet">
+
+    <!-- Stylesheet for breadcrumbs navigation -->
+    <link rel="stylesheet" href="css/BreadCrumb.css" type="text/css">
+
+    <title>GSS Interactive Report</title>
+    
+</head>
+
+<body class="erauBody" id="erauBody">
+    <!--[if lt IE 8]><p class="chromeframe">You are using an <strong>outdated</strong> browser (or IE compatibilitiy mode is on and should be turned off). Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p><![endif]-->
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="brand" href=
+                "/private/daytona/records/orientation/index.cfm" style=
+                "white-space:nowrap; color:white;"><img alt="" height="16" src=
+                "img/erau_logo.png"
+                width="184"> <span style=
+                "position:relative;top:1px; color:#3A5079">GSS Interactive Report</span></a>
+
+                <nav class="nav-collapse" id="topCollapse"></nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="container outerContainer">
+        <h1 class="formTitle">GSS Interactive Report</h1>
+        <hr>
+
+        <!-- Start Breadcrumbs -->
+        <div class="breadCrumbHolder module">
+            <div id="breadCrumb3" class="breadCrumb module surveyBreadcrumb">
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Surveys</a>
+                    </li>
+                    <li>
+                        <a href="#">GSS</a>
+                    </li>
+                    <li>
+                        GSS Interactive Report
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="chevronOverlay main">
+        </div>
+
+        <div id="filterArea">
+            <div id="filterOptions">
+                <select id="CAMPUS" multiple="multiple" name="example-list"
+                style="width:100px;">
+                    <option value="Daytona Beach">
+                        Daytona Beach
+                    </option>
+
+                    <option value="Prescott">
+                        Prescott
+                    </option>
+                </select>
+
+                <select id="YEAR" multiple="multiple" name=
+                "example-list" style="width:100px;">
+                    <option value="AY 2008/09">
+                        AY 2008/09
+                    </option>
+
+                    <option value="AY 2009/10">
+                        AY 2009/10
+                    </option>
+
+                    <option value="AY 2010/11">
+                        AY 2010/11
+                    </option>
+
+                    <option value="AY 2011/12">
+                        AY 2011/12
+                    </option>
+                </select> 
+
+                <select id="MAJOR" multiple="multiple" name=
+                "example-list" style="width:70px;">
+                    <option value="PC BS Aerospace Engineering">
+                        PC BS Aerospace Engineering
+                    </option>
+
+                    <option value="DB BS Aerospace Engineering">
+                        DB BS Aerospace Engineering
+                    </option>
+
+                    <option value="DB BS Computer Engineering">
+                        DB BS Computer Engineering
+                    </option>
+
+                    <option value="PC BS Mechanical Engineering">
+                        PC BS Mechanical Engineering
+                    </option>
+
+                    <option value="DB BS Software Engineering">
+                        DB BS Software Engineering
+                    </option>
+
+                    <option value="DB MS Mechanical Engineering">
+                        DB MS Mechanical Engineering
+                    </option>
+
+                    <option value="DB MS Aerospace Engineering">
+                        DB MS Aerospace Engineering
+                    </option>
+
+                    <option value="DB BS Civil Engineering">
+                        DB BS Civil Engineering
+                    </option>
+
+                    <option value="DB BS Electrical Engineering">
+                        DB BS Electrical Engineering
+                    </option>
+
+                    <option value="DB M Software Engineering">
+                        DB M Software Engineering
+                    </option>
+
+                    <option value="PC BS Electrical Engineering">
+                        PC BS Electrical Engineering
+                    </option>
+
+                    <option value="DB D Engineering Physics">
+                        DB D Engineering Physics
+                    </option>
+
+                    <option value="DB BS Mechanical Engineering">
+                        DB BS Mechanical Engineering
+                    </option>
+
+                    <option value="PC BS Computer Engineering">
+                        PC BS Computer Engineering
+                    </option>
+
+                    <option value="DB BS Aerospace Electronics">
+                        DB BS Aerospace Electronics
+                    </option>
+
+                    <option value="PC BS Software Engineering">
+                        PC BS Software Engineering
+                    </option>
+
+                    <option value="DB M Aerospace Engineering">
+                        DB M Aerospace Engineering
+                    </option>
+
+                    <option value="DB M Electrica/ Computer Engineering">
+                        DB M Electrica/ Computer Engineering
+                    </option>
+
+                    <option value="PC MS Software Engineering">
+                        PC MS Software Engineering
+                    </option>
+                </select>
+
+                <select id="SEX" multiple="multiple" name=
+                "example-list" style="width:100px;">
+                    <option value="Male">
+                        Male
+                    </option>
+
+                    <option value="Female">
+                        Female
+                    </option>
+                </select>
+
+                <select id="ETHNIC" multiple="multiple" name=
+                "example-list" style="width:100px;">
+                    <option value="Black/African American">
+                        Black/African American
+                    </option>
+
+                    <option value="Race/Ethnicity Unknown">
+                        Race/Ethnicity Unknown
+                    </option>
+
+                    <option value="Asian">
+                        Asian
+                    </option>
+
+                    <option value="American Indian/Alaskan Native">
+                        American Indian/Alaskan Native
+                    </option>
+
+                    <option value="White">
+                        White
+                    </option>
+
+                    <option value="Hispanic/Latino">
+                        Hispanic/Latino
+                    </option>
+
+                    <option value="Two or more races">
+                        Two or more races
+                    </option>
+
+                    <option value="Nonresident Alien">
+                        Nonresident Alien
+                    </option>
+
+                    <option value="Native Hawaiian/Pacific Islander">
+                        Native Hawaiian/Pacific Islander
+                    </option>
+                </select>
+                <!-- Loads showSelected from tableau.js to update the URL hash and graphs based off filter selections -->
+                <div class="applyFilters">
+                    <a class="ui-button applyFilterButton" id="link_param" onclick="showSelected();">Apply Filter</a>
+                
+
+                    <div class="clearFilters"><a class="ui-button applyFilterButton" onclick="clearFilters();">Clear Filter</a></div>
+                </div>
+
+            </div>
+
+            <div id="filterBreadcrumbs">
+                <p>Current Filter: None</p>
+            </div>
+
+        </div>
+
+        <div class="tableauPlaceholder">
+            <!-- Tabs -->
+
+            <div class="clearfix" id="tabs">
+                <ul>
+                    <li>
+                        <a href="#tabs-1" title="Home">Survey Data</a>
+                    </li>
+
+                    <li>
+                        <a href="#tabs-2" id="educationPlansTab" title=
+                        "Educational Plans">ERAU Experience</a>
+                    </li>
+
+                    <li>
+                        <a href="#tabs-3" id="programSkillsTab" title=
+                        "Program Skills">Program Experience</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="panels">
+                <div class="panel-wrapper">
+                    <div class="panel">
+                        <!-- First Tab -->
+
+                        <div id="tabs-1">
+                            <!-- The graphs -->
+
+                            <div class="mainTableauGraphs firstTableauGraph">
+                                <!-- Content loaded by tableauFilter.js -->
+                            </div> 
+                            <div class="mainTableauGraphs secondTableauGraph">
+                                <!-- Content loaded by tableauFilter.js -->
+                            </div>
+                            <div class="mainTableauGraphs thirdTableauGraph">
+                                <!-- Content loaded by tableauFilter.js -->
+                            </div>
+                        </div>
+                    </div><!-- Second Tab -->
+
+                    <div class="panel">
+                        <div id="tabs-2"></div>
+                    </div><!-- Third Tab -->
+
+                    <div class="panel">
+                        <div id="tabs-3">
+                            <select id="PSKILLS" name="programSkills">
+                                <option value="PC BS Aerospace Engineering">
+                                    PC BS Aerospace Engineering
+                                </option>
+
+                                <option value="DB BS Aerospace Engineering">
+                                    DB BS Aerospace Engineering
+                                </option>
+
+                                <option value="DB BS Computer Engineering">
+                                    DB BS Computer Engineering
+                                </option>
+
+                                <option value="PC BS Mechanical Engineering">
+                                    PC BS Mechanical Engineering
+                                </option>
+
+                                <option value="DB BS Software Engineering">
+                                    DB BS Software Engineering
+                                </option>
+
+                                <option value="DB MS Mechanical Engineering">
+                                    DB MS Mechanical Engineering
+                                </option>
+
+                                <option value="DB MS Aerospace Engineering">
+                                    DB MS Aerospace Engineering
+                                </option>
+
+                                <option value="DB BS Civil Engineering">
+                                    DB BS Civil Engineering
+                                </option>
+
+                                <option value="DB BS Electrical Engineering">
+                                    DB BS Electrical Engineering
+                                </option>
+
+                                <option value="DB M Software Engineering">
+                                    DB M Software Engineering
+                                </option>
+
+                                <option value="PC BS Electrical Engineering">
+                                    PC BS Electrical Engineering
+                                </option>
+
+                                <option value="DB D Engineering Physics">
+                                    DB D Engineering Physics
+                                </option>
+
+                                <option value="DB BS Mechanical Engineering">
+                                    DB BS Mechanical Engineering
+                                </option>
+
+                                <option value="PC BS Computer Engineering">
+                                    PC BS Computer Engineering
+                                </option>
+
+                                <option value="DB BS Aerospace Electronics">
+                                    DB BS Aerospace Electronics
+                                </option>
+
+                                <option value="PC BS Software Engineering">
+                                    PC BS Software Engineering
+                                </option>
+
+                                <option value="DB M Aerospace Engineering">
+                                    DB M Aerospace Engineering
+                                </option>
+
+                                <option value=
+                                "DB M Electrica/ Computer Engineering">
+                                    DB M Electrica/ Computer Engineering
+                                </option>
+
+                                <option value="PC MS Software Engineering">
+                                    PC MS Software Engineering
+                                </option>
+                            </select>
+
+                            <div id="PSContent"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="js/tableau.js" type="text/javascript"></script>
+    <script src="js/jquery.address.js" type="text/javascript"></script>
+    <script src="js/jquery-ui-1.10.2.custom.min.js"></script>
+    <!-- Script to enable the tabs -->
+    <script src="js/tableauQtabs.js" type="text/javascript"></script>
+    <!-- Script to control Hash Filtering -->
+    <script src="js/tableauFilterTest.js" type="text/javascript"></script>
+    <script src="js/tableauMultiselect.js" type="text/javascript"></script>
+    <script src="js/tableauFloatingMenu.js" type="text/javascript"></script>
+
+    <script src="js/jquery.cookie.js" type="text/javascript"></script>
+    <script src="js/jquery.multiselect.filter.min.js"></script>
+    <script src="js/jquery.multiselect.min.js"></script>
+
+    <!-- Scripts used for breadcrumbs -->
+    <script src="js/jquery.easing.1.3.js" type="text/javascript" language="JavaScript"></script>
+    <script src="js/jquery.jBreadCrumb.1.1.js" type="text/javascript" language="JavaScript"></script>
+</body>
+</html>

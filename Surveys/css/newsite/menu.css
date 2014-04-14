@@ -1,0 +1,57 @@
+/* CSS Document */
+
+
+/*Credits: Dynamic Drive CSS Library */
+/*URL: http://www.dynamicdrive.com/style/ */
+
+#ddblueblockmenu{
+
+border-bottom-width: 0;
+width: 90%;
+margin-left:5%;
+}
+
+#ddblueblockmenu ul{
+margin: 0;
+padding: 0;
+list-style-type: none;
+font: normal 90% 'Trebuchet MS', 'Lucida Grande', Arial, sans-serif;
+}
+
+#ddblueblockmenu li a{
+display: block;
+padding: 3px 0;
+padding-left: 9px;
+width: 92%; /*185px minus all left/right paddings and margins*/
+height:32px;
+text-decoration: none;
+color: white;
+font-size:14px;
+background-color: rgb(0, 54, 108);
+border-bottom: 1px solid #90bade;
+border-left: 7px solid #1958b7;
+}
+
+* html #ddblueblockmenu li a{ /*IE only */
+width: 92%; /*IE 5*/
+w\idth: 93.5%; /*185px minus all left/right paddings and margins*/
+}
+
+#ddblueblockmenu li a:hover {
+background-color: #2586d7;
+border-left-color: #1c64d1;
+}
+
+#ddblueblockmenu div.menutitle{
+color: white;
+border-bottom: 1px solid black;
+padding: 1px 0;
+width:95%;
+padding-left: 5px;
+background-color: black;
+font: bold 90% 'Trebuchet MS', 'Lucida Grande', Arial, sans-serif;
+}
+
+
+
+

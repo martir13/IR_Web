@@ -1,0 +1,238 @@
+a:link    { color: #000066; font-weight: bold; text-decoration: none }
+a:visited    {
+	color: #000066;
+	font-weight: bold;
+	text-decoration: none;
+}
+a:hover    { color: #0066CC; text-decoration: none }
+a:active  { color: #000066; font-weight: bold; text-decoration: none }
+
+
+/* BEGIN globalmenus styles*/
+
+td#globalnav { background-color: #000066; text-align: right; vertical-align: middle; }
+td#globalnav img  { padding-right: 15px }
+
+table#contentcells  { margin-top: 15px }	
+
+td#presmenu-placeholder { margin-top: 25px }
+
+td#globalcontent p.trusteename {
+	font-size: 14px;
+	margin: 6px 0px 0px;
+	padding: 0px;
+}
+td#globalcontent p.trusteetitle {
+	font-size: 11px;
+	font-style: italic;
+	margin: 0px 0px 0px 25px;
+	padding: 0px;
+}
+/* END globalmenus styles*/
+
+
+
+/* Begin menu-campuslist styles for horizontal colorcoded campus links*/
+
+
+#campuslist {
+	width: 750px;
+	text-align: center;
+    margin: 0; /*removes indent IE and Opera*/
+    padding: 0; /*removes indent Mozilla and NN7*/
+    list-style-type: none; /*turns off display of bullet*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+	white-space: nowrap;
+} 
+
+#campuslist li {
+width: 187px;
+	float: left;
+	list-style: none;
+	white-space: nowrap;
+	margin: 0; /*removes indent IE and Opera*/
+    padding: 0; /*removes indent Mozilla and NN7*/
+} 
+
+#campuslist a {
+	display: block;
+	padding: 2px;
+	text-decoration: none;	
+} 
+
+
+
+#db a:link, #db a:visited, #db a:active { background-color: #006600; color: #fff }
+#pr a:link, #pr a:visited, #pr a:active { background-color: #a52a2a; color: #fff }
+#ec a:link, #ec a:visited, #ec a:active { background-color: #4b0082; color: #fff }
+#ol a:link, #ol a:visited, #ol a:active { background-color: #660066; color: #fff }
+
+#db a:hover { background-color: #009933; color: #000 }
+#pr a:hover { background-color: #FF9999; color: #000 }
+#ec a:hover { background-color: #8a2be2; color: #000 }
+#ol a:hover { background-color: #cc33cc; color: #000 }
+
+
+/* End menu-campuslist styles for horizontal colorcoded campus links*/
+
+
+
+
+/* BEGIN Index menu styles*/
+td#mainmenu           { color: #f5f5f5; text-align: right; vertical-align: top; margin-right: 5px; padding-top: 3px; padding-right: 6px; padding-left: 6px; border-top: 1px solid #a9a9a9 }
+
+td#mainmenu a  { margin-bottom: 3px; padding-top: 2px; padding-right: 3px; padding-bottom: 1px; display: block }
+
+td#mainmenu h2       { color: #4682b4; font-weight: bold; font-size: 10px; text-align: center; margin: 
+0px 0px 8px; padding-top: 2px; padding-right: 0px; padding-bottom: 2px; border-bottom: 1px solid #4682b4 }
+
+td#mainmenu a:link { color: #000; font-size: 10px; text-decoration: none;  border-right: 1px solid #fff; border-bottom: 1px solid #fff;}
+td#mainmenu a:visited  { color: #000; font-size: 10px; text-decoration: none;  border-right: 1px solid #fff; border-bottom: 1px solid #fff; }
+td#mainmenu a:hover  { color: #006; font-size: 10px; text-decoration: none; background-color: #b0c4de; border-right: 1px solid #006; border-bottom: 1px solid #006;}
+td#mainmenu a:active   { color: #1e90ff; font-size: 10px; text-decoration: none; margin-bottom: 1px; padding-right: 3px; border-right: 1px solid #fff; border-bottom: 1px solid #fff; }
+
+/*retained menu should be named leftmenu. All the campus sites css uses that. This retainedmenu should be like left menu with different colors. The old retainedmenu was removed from teh common.css sheet*/
+
+td#retainedmenu {
+	font-size: 10px;
+	color: #000; 
+	text-decoration: none; 
+	background-color: #b0c4de;
+	text-align: right;
+	vertical-align: top;
+	margin-right: 5px;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-left: 8px;
+	padding-bottom: 14px;
+}
+
+td#retainedmenu div.icon {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #006;
+	text-align: center;
+	margin-right: 10px;
+	margin-left: 10px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+}
+
+td#retainedmenu a:link  { margin-bottom: 1px; padding-right: 2px; padding-bottom: 1px; border-right: 1px solid #b0c4de; border-bottom: 1px solid #b0c4de; display: block; width: 150px; }
+td#retainedmenu a:visited  { margin-bottom: 1px; padding-right: 2px; padding-bottom: 1px; border-right: 1px solid #b0c4de; border-bottom: 1px solid #b0c4de; display: block }
+td#retainedmenu a:hover { background-color: #f0f8ff; margin-bottom: 1px; padding-right: 2px; padding-bottom: 1px; border-right: 1px solid #006; border-bottom: 1px solid #006; display: block }
+td#retainedmenu a:active { margin-bottom: 1px; padding-right: 2px; padding-bottom: 1px; border-right: 1px solid #b0c4de; border-bottom: 1px solid #b0c4de; display: block }
+
+div#presnav { position: absolute; left: 50%; width: 14em; top: 160px; margin-left: -365px; font-size: 11px;  }
+/* remove all margin and padding from all ULs and set ul same width as parent div. */
+
+div#presnav ul { margin: 0; padding: 0; width: 14em; background-color: white;  } 
+/*All list items must be positioned so that contained lists can be positioned. All LIs get no margin or list style*/
+
+div#presnav li { position: relative; list-style: none; margin: 0; text-align: right; }
+
+div#presnav li a { display: block; /*so link will fill LI making it hot and padding on <a> possible.*/ height: 1em; padding: .3em .5em .4em 0; width: 13em;  text-decoration: none;  }
+
+div#presnav li a:hover {background-color: #006; color: #fff;}
+
+
+
+div#ebbs  { margin-top: 14px; margin-right: 3px; margin-bottom: 3px; padding-top: 4px; border-top: 1px solid #b0c4de }
+
+td#presidentleftmenu  { text-align: left; padding-top: 30px }
+.trusteename { color: #006; font-size: 13px; margin: 0px; padding: 10px 0px 0px }
+.trusteetitle { font-weight: normal; font-size: 12px; line-height: 16px; margin: 0px; padding: 3px 0px 0px }
+td#usermenu             { background-color: #b0c4de; text-align: left; vertical-align: top; margin-right: 5px; padding-top: 3px; padding-right: 10px; padding-left: 8px; border-top: 1px solid #a9a9a9 }
+
+td#usermenu a  { margin-bottom: 3px; padding-top: 2px; padding-bottom: 1px; padding-left: 3px }
+
+td#usermenu h2       { color: #fff; font-weight: bold; font-size: 10px; text-align: center; margin: 0px 
+0px 8px; padding-top: 2px; padding-right: 0px; padding-bottom: 2px; border-bottom: 1px solid #fff }
+td#usermenu  a:link         { color: #000; font-size: 10px; text-decoration: none; border-bottom: 1px solid #b0c4de; border-left: 1px solid #b0c4de; display: block }
+td#usermenu  a:visited       { color: #000; font-size: 10px; text-decoration: none; border-bottom: 1px solid #b0c4de; border-left: 1px solid #b0c4de; display: block }
+td#usermenu  a:hover      { color: #006; font-size: 10px; text-decoration: none; background-color: #f0f8ff; border-bottom: 1px solid #006; border-left: 1px solid #006; display: block }
+td#usermenu  a:active       { color: #1e90ff; font-size: 10px; text-decoration: none; border-bottom: 1px solid #b0c4de; border-left: 1px solid #b0c4de; display: block }
+
+
+td#feature       { background-color: #fff; text-align: left; vertical-align: top; padding: 15px 15px 15px 18px; border-top: 1px solid #a9a9a9 }
+td#feature h1       { color: #000; font-weight: bold; font-size: 14px; line-height: 14px }
+td#feature h2     { color: #000; font-weight: bold; font-size: 12px; line-height: 12px; margin-top: 12px; margin-bottom: 0px; padding-top: 6px; padding-bottom: 0px; border-top: 1px solid #808080 }
+td#feature img    { padding-top: 5px; padding-right: 5px }
+td#feature p    { font-style: normal; font-weight: normal; font-size: 11px; line-height: 13px; margin: 0px; padding: 5px 0px 0px }
+
+td#sidebar         { background-color: #fff; text-align: left; vertical-align: top; margin: 0px; padding: 0px; border-top: 1px solid #a9a9a9; border-left: 1px solid #a9a9a9 }
+td#sidebar h2       { color: #006; font-weight: bold; font-size: 11px; background-color: #b0c4de; text-align: center; margin: 0px 0px 8px; padding-top: 2px; padding-right: 0px; padding-bottom: 2px }
+td#sidebar h3     { color: #006; font-weight: bold; font-size: 11px; background-color: #b0c4de; text-align: center; margin: 10px 0px 8px; padding-top: 2px; padding-right: 0px; padding-bottom: 2px }
+
+td#sidebar p.nolink  { color: #000; font-weight: normal; font-size: 10px; line-height: 11px; text-decoration: none; margin-right: 10px; margin-left: 15px;}
+
+td#sidebar a:link        { color: #000; font-weight: normal; font-size: 10px; line-height: 11px; text-decoration: none; margin-right: 10px; margin-left: 15px; padding-top: 5px; padding-bottom: 5px; display: block }
+td#sidebar a:visited    { color: #000; font-weight: normal; font-size: 10px; line-height: 11px; text-decoration: none; margin-right: 10px; margin-left: 15px; padding-top: 5px; padding-bottom: 5px; display: block }
+td#sidebar a:hover     { color: #006; font-weight: normal; font-size: 10px; line-height: 11px; text-decoration: none; margin-right: 10px; margin-left: 15px; padding-top: 5px; padding-bottom: 5px; display: block }
+td#sidebar a:active    { color: #000; font-weight: normal; font-size: 10px; line-height: 11px; text-decoration: none; margin-right: 10px; margin-left: 15px; padding-top: 5px; padding-bottom: 5px; display: block }
+
+
+td#sidebar div#emergency      { text-align: center; margin-top: 6px; margin-bottom: 6px; padding: 0px; border-top: 1px solid #696969; border-bottom: 1px solid #696969 }
+td#sidebar div#emergency  a:link    { color: #006; font-size: 10px; text-decoration: none; text-align: center; padding-top: 1px; padding-bottom: 1px }
+td#sidebar div#emergency  a:visited   { font-size: 10px; text-align: center; }
+td#sidebar div#emergency  a:hover     { color: #f00; font-size: 10px; text-decoration: none; text-align: center }
+td#sidebar div#emergency  a:active     { font-size: 10px; text-align: center }
+
+/* END Index menu styles*/
+
+/* BEGIN footer styles*/
+td#footer     { font-size: 10px; background-color: #ffffff; text-align: center; padding: 10px 30px 18px; border-top: 1px solid #a9a9a9; width: 750px; border-bottom-style: none; border-left-style: none; border-right-style: none; border-top-color: #333333; border-top-style: solid  }
+td#footer p    { font-size: 10px; margin: 0px; padding: 0px }
+
+
+/* BEGIN User/BridgepageStyles styles*/
+
+td#usertitle        { background-color: #fff; text-align: center }
+td#usertitle h1    {
+	color: #006;
+	font-weight: normal;
+	font-size: 18px;
+	text-align: center;
+	letter-spacing: 6px;
+	vertical-align: middle;
+	margin-top: 5px;
+	padding: 8px 0px;
+    border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #696969;
+	border-bottom-color: #696969;
+}
+
+td#slideshow     { background-color: #fff; text-align: center; vertical-align: top; padding-top: 10px; padding-bottom: 10px; padding-left: 30px }
+
+
+td.userlinks        { font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular; background-color: #fff; text-align: left; vertical-align: text-top; margin: 0px; padding: 10px 5px 8px 15px; border-left: 1px solid #808080 }
+td.userlinks a.link:link      { color: #000; font-weight: normal; font-size: 11px; text-decoration: none; text-align: left; vertical-align: top; padding-top: 3px; display: block }
+td.userlinks a.link:visited { color: #000; font-weight: normal; font-size: 11px; text-decoration: none; text-align: left; vertical-align: top; padding-top: 3px; display: block  }
+td.userlinks a.link:hover  { color: #0000cd; font-weight: normal; font-size: 11px; text-decoration: none; text-align: left; vertical-align: top; padding-top: 3px; display: block }
+td.userlinks a.link:active { color: #000; font-weight: normal; font-size: 11px; text-decoration: none; text-align: left; vertical-align: top; padding-top: 3px; display: block  }
+
+td.userlinks a.sublink:link      { color: #696969; font-weight: normal; font-size: 10px; line-height: 11px; text-decoration: none; margin-left: 15px; padding: 0px; display: block }
+td.userlinks a.sublink:visited { color: #696969; font-weight: normal; font-size: 10px; line-height: 11px; text-decoration: none; margin-left: 15px; padding: 0px; display: block }
+td.userlinks a.sublink:hover  { color: #0000cd; font-weight: normal; font-size: 10px; line-height: 11px; text-decoration: none; margin-left: 15px; padding: 0px; display: block }
+td.userlinks a.sublink:active {  color: #696969; font-weight: normal; font-size: 10px; line-height: 11px; text-decoration: none; margin-left: 15px; padding: 0px; display: block }
+
+div#bbML21 { position: absolute; z-index: 1000; top: 120px; left: 55px; width:165px; height:190px; visibility: visible; }
+
+div#presnav { position: absolute; left: 50%; width: 14em; top: 160px; margin-left: -365px; font-size: 11px;  }
+/* remove all margin and padding from all ULs and set ul same width as parent div. */
+
+div#presnav ul { margin: 0; padding: 0; width: 14em; background-color: white;  } 
+/*All list items must be positioned so that contained lists can be positioned. All LIs get no margin or list style*/
+
+div#presnav li { position: relative; list-style: none; margin: 0; text-align: right; }
+
+div#presnav li a { display: block; /*so link will fill LI making it hot and padding on <a> possible.*/ height: 1em; padding: .3em .5em .4em 0; width: 13em;  text-decoration: none;  }
+
+div#presnav li a:hover {background-color: #006; color: #fff;}
+
+

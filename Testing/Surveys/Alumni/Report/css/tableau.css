@@ -1,0 +1,715 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}/********************* END CSS RESET ***************************/
+
+  html {
+    height: 100% !important;
+  }
+
+ /* Styles Specific to Tableau Page */
+  div#filterArea {
+    width: 100%;
+    clear: both;
+  }
+  div#filterOptions {
+    background-color: #FFFFFF;
+    padding: 0px 8px 5px 8px;
+    color: #FFFFFF;
+    clear: both;
+  }
+  div#filterOptions select {
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    width: auto;
+  }
+  p.filterOptionsButton {
+    color: #FFFFFF;
+    margin-left: 4px;
+    margin-bottom: 3px;
+    padding: 4px 6px;
+    background-color: #013C73;
+    border: 1px solid #28659E;
+    float: left;
+    -webkit-box-shadow:   #000000 0px 0px 4px 0px;
+    -moz-box-shadow:      #000000 0px 0px 4px 0px;
+    box-shadow:           #000000 0px 0px 4px 0px;
+  }
+  div.tableauPlaceholder {
+    width: auto;
+    height: auto;
+    padding: 5px;
+    clear: both;
+    display: block;
+    margin-bottom: 10px;
+    background-color: #FFFFFF;
+    border-top: 1px solid #777777;
+    -webkit-border-bottom-right-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  div.tooltipImages {
+    width: 320px;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    padding-left: 2px;
+    padding-right: 2px;
+    float: left;
+  }
+  a:focus { 
+    outline: none; 
+  }
+  a.applyFilterButton {
+    color: #FFFFFF;
+    margin-left: 0px;
+    margin-bottom: 3px;
+    margin-top: 5px;
+    padding: 4px 6px;
+    background-color: #013C73;
+    border: 1px solid #28659E;
+    display: inline-block;
+  }
+
+  /* Styles for new tabs */
+  #tabs ul {
+    list-style:none;
+    padding:0;
+}
+    #tabs ul li {
+        float:left;
+    }
+    
+    #tabs ul li a {
+        display:block;
+        padding:5px 13px;
+        font-weight: normal;
+        color:#0E0E0E;
+        text-decoration:none;
+        font-size:120%;
+    }        
+    #tabs ul li.active a {
+        background:#013C73;
+        color:#F0B93A;
+        font-weight: bold;
+    }                
+#panels {
+    width:100%;
+    background:#FFFFFF;
+}
+    #panels .panel-wrapper {
+        padding:10px;
+    }
+    #panels .panel h2 {
+        margin:0 0 10px 0;    
+    }        
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+    }
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */        
+/*
+* CSS3
+*/
+#tabs ul li a {    
+    border-top-left-radius : 5px;      
+    border-top-right-radius : 5px;
+    background-color: #F0B93A; 
+    margin-right: 1px;           
+}
+#panels {
+    border-bottom-left-radius : 5px;      
+    border-bottom-right-radius : 5px;        
+}
+
+/* Fix spacing of tableau graphs */
+div#panels div.panel-wrapper {
+  padding-left: 11px;
+  padding-right: 11px;
+  overflow: hidden;
+}
+
+/* Style for Drop-Down on Program Skills Tab */
+div#panels div.panel-wrapper div.panel div#tabs-3 button.ui-multiselect {
+  margin-bottom: 6px;
+}
+
+/* Styles for Floating menu - NM*/
+#container{
+ width:100%;
+ margin:0 auto;
+ text-align:left;
+}
+
+#floatingbar{
+ background-color: #013C73; 
+ overflow: hidden;
+ height:50px;
+ width: 100%;
+}
+
+#floatingbar ul{
+ list-style-type:none;
+ position: relative;
+ float: left;
+ display: block;
+ left: 50%;
+ margin-left: 0px;
+}
+
+#floatingbar ul li{
+ float:left;
+ position: relative;
+ display: block;
+ right:50%;
+ padding:13px 3px 10px 2px;
+
+}
+
+button {
+  cursor: pointer;
+  }
+  button:hover,
+  button:focus {
+    box-shadow: 0 0 7px rgba(0,0,0,0.4), inset 0 1px 0 #fff;
+        -webkit-box-shadow: 0 0 7px rgba(0,0,0,0.4), inset 0 1px 0 #fff;
+        -moz-box-shadow: 0 0 7px rgba(0,0,0,0.4), inset 0 1px 0 #fff;
+        -o-box-shadow: 0 0 7px rgba(0,0,0,0.4), inset 0 1px 0 #fff;
+    }
+  button:active {
+    background: #ccc;
+    background: -webkit-gradient(linear, left top, left bottom, from(#c3c3c3), to(#ebebeb));
+    background: -moz-linear-gradient(top, #c3c3c3, #ebebeb);
+    border-color: #a6a6a6;
+
+
+    
+      box-shadow: inset 0 -1px 0 #fff;
+        -webkit-box-shadow: inset 0 -1px 0 #fff;
+        -moz-box-shadow: inset 0 -1px 0 #fff;
+        -o-box-shadow: inset 0 -1px 0 #fff;
+    }
+button.default {
+  color: #000000;
+  text-decoration:underline;
+
+  /*color: #F0B93A;
+  text-shadow: 1px 0 0 #666, -1px 0 0 #666, 0 1px 0 #666, 0 -1px 0 #666, 1px 1px #666, -1px -1px 0 #666, 1px -1px 0 #666, -1px 1px 0 #666;*/
+  font-weight: bold;
+  }
+  button.default:hover,
+  button.default:focus {
+         box-shadow: 0 0 7px rgba(0,0,0,0.4), inset 0 1px 0 #fff;
+        -webkit-box-shadow: 0 0 7px rgba(0,0,0,0.4), inset 0 1px 0 #fff;
+        -moz-box-shadow: 0 0 7px rgba(0,0,0,0.4), inset 0 1px 0 #fff;
+        -o-box-shadow: 0 0 7px rgba(0,0,0,0.4), inset 0 1px 0 #fff;
+      
+    }
+  button.default:active {
+    background: #013C73;
+    background: -webkit-gradient(linear, left top, left bottom, from(#013C73), to(#013C73));
+    background: -moz-linear-gradient(top, #013C73, #013C73);
+    border-color: #6e94a9;
+    border-top-color: #567c91;
+    border-bottom-color: #88aec4;
+  
+    box-shadow: inset 0 -1px 1px #fff;
+        -webkit-box-shadow: inset 0 -1px 1px #fff;
+        -moz-box-shadow: inset 0 -1px 1px #fff;
+        -o-box-shadow: inset 0 -1px 1px #fff;
+    }
+button[disabled],
+button[disabled]:active {
+  color: #a7a7a7;
+  background: #efefef;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f6f6f6), to(#e1e1e1));
+  background: -moz-linear-gradient(top, #f6f6f6, #e1e1e1);
+  border-color: #d4d4d4;
+  border-top-color: #dedede;
+  border-bottom-color: #c9c9c9;
+  cursor: default;
+  }
+button[disabled]:hover,
+button[disabled]:focus {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -o-box-shadow: none;
+    }
+    
+#dirbutton img { margin-top:-3px;}
+
+body {
+    width: 100%;
+    height: 100% !important;
+    margin: 0 !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+    margin-left: auto;
+    margin-right: auto;
+    color: #013C73;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    background: #4d6ea4;
+    background: -moz-linear-gradient(top, #2D5499 0%, #BDCBE4 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2D5499), color-stop(100%,#BDCBE4));
+    background: -webkit-linear-gradient(top, #2D5499 0%,#BDCBE4 100%);
+    background: -o-linear-gradient(top, #2D5499 0%,#BDCBE4 100%);
+    background: -ms-linear-gradient(top, #2D5499 0%,#BDCBE4 100%);
+    background: linear-gradient(to bottom, #2D5499 0%,#BDCBE4 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2D5499',endColorstr='#BDCBE4',GradientType=0 );
+}
+
+/* Main container for content */
+div.mainContentContainer {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* Styles for top-hat */
+div.topHat {
+  background-color: #1B1B1B;
+  height: 30px;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+a.logo {
+  float: left;
+  white-space:nowrap;
+  color:white;
+  padding-left: 5px;
+  padding-top: 7px;
+  text-decoration: none;
+}
+a.logo span {
+  color:#F0B93A;
+  font-weight: 900;
+  font-size: 20px;
+}
+#topThreeLinks {
+  float: left;
+  padding: 5px 5px 0px 15px;
+}
+#topThreeLinks a {
+  color: #6FB8D9;
+  font-size: 16px;
+  font-weight: bold;
+}
+#needHelp {
+  float: right;
+  font-size: 16px;
+  font-weight: bold;
+  color: #F0B93A;
+  padding: 5px 5px 0 0;
+}
+
+/* Styles for graph area 
+#postcontent {
+  width: 99.8%;
+  
+}*/
+
+/* Style to fix Multiselect menu in Chrome */
+div.ui-multiselect-menu {
+  width: 223px !important;
+}
+
+/* Style for filter breadcrumbs and clear links */
+#filterBreadcrumbs p {
+  width: auto;
+  color: #FFFFFF;
+  background-color: #555555;
+  padding-left: 14px;
+  font-size: 1.2em;
+}
+.clearFilters {
+  padding-left: 6px;
+  display: inline-block;
+}
+.clearFilters a {
+  cursor: hand;
+  cursor: pointer;
+}
+.applyFilters {
+  height: 31px;
+  clear: both;
+}
+
+/* Styles for real breadcrumbs, not filter breadcrumbs */
+.surveyBreadcrumb {
+  width: 100% !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  border-left: 0px !important;
+  border-right: 0px !important;
+}
+.surveyBreadcrumb ul {
+  padding-left: 12px !important;
+}
+
+/* Force iframes to have height */
+div #Q1 {
+  height: 916px;
+  display: block;
+}
+div #Q2 {
+  height: 816px;
+  display: block;
+}
+div #Q3 {
+  height: 716px;
+  display: block;
+}
+div #Q4 {
+  height: 960px;
+  display: block;
+}
+div #Q5 {
+  height: 416px;
+  display: block;
+}
+div #Q6-7 {
+  height: 816px;
+  display: block;
+}
+
+/* Styles for data tables */
+div#tabs-1 div#mainContentMainTab div#mainDataTable_wrapper.dataTables_wrapper table#mainDataTable.display tbody tr.gradeX td.center a {
+  color: #00549A;
+  font-weight: bold;
+}
+div#tabs-1 div#mainContentMainTab div#mainDataTable_wrapper.dataTables_wrapper table#mainDataTable.display tbody tr.gradeX td.center {
+  color: #000000;
+}
+div#beforeTable p {
+  color: #000000;
+}
+div#beforeTable {
+  display: none;
+  background-color: #FFFFFF;
+  width: 92%;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+/* Styles for The 3 columns on the Survey Categories Tab */
+div.oneThird {
+  width: 32%;
+  padding: 5px;
+  float: left;
+}
+div.oneThird p {
+  text-align: justify;
+}
+div.oneThird h4 {
+  font-size: 20px;
+}
+ol#usageList {
+  color: #000000;
+}
+ol#usageList li {
+  font-size: 14px;
+}
+
+
+    .expanded-group{
+        background: url("img/minus.jpg") no-repeat scroll left center transparent;
+        padding-left: 15px !important
+      }
+
+      .collapsed-group{
+        background: url("img/plus.jpg") no-repeat scroll left center transparent;
+        padding-left: 15px !important
+      }
+
+/* Styles for headings above tableau graphs */
+h2#graphHeading {
+  font-size: 32px !important;
+  padding-bottom: 14px;
+  padding-top: 19px;
+}
+
+#mainContentMainTab {
+  padding: 5px;
+  background-color: #013C73;
+}
+
+/* Styles for Taskstream and Download headings above Tableau graphs */
+div.bigTableauGraph div#container div#postcontent div span {
+  color: #E54E4E;
+  font-weight: bold;
+}
+
+/* Styles for footer */
+/*FOOTER is positioned at the bottom of the screen window or at the end of content by footer stick method. Footer content styles are in typography section*/
+#footer {
+  position: relative; 
+  width: 100%; 
+  margin: auto; 
+  background: #e3e9f4 url(img/footer-bg.gif) repeat-x top;  
+  text-align: center; height: 85px; 
+}
+
+/* Styles for the Taskstream and Download titles */
+#taskstreamDownload {
+  width: 100%;
+  position: relative;
+}
+#taskstreamLabel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+#downloadLabel {
+  text-align: center;
+  position: static;
+  display: inline-block;
+  width: 100%;
+}
+
+.bigTableauPlaceholder {
+  width:100%;
+  height:auto;
+  overflow: hidden;
+  border-left: 1px solid #888888;
+  border-right: 1px solid #888888;
+  border-bottom: 1px solid #888888;
+}
+
+/* Styles for the Need Help? Dropdown */
+#needHelpDropdown {
+  float: right;
+  width: 120px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+/* Styles for filter option select boxes */
+button.ui-multiselect {
+  margin-top: 6px;
+  width: 220px !important;
+}
+
+/* Styles for the close button */
+div.close {
+  float: right;
+  cursor: pointer;
+  color: #FFFFFF;
+  background-color: #F95757;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 0px 5px;
+  border: 1px solid #666666;
+}
+div.close:hover {
+  background-color: #FF0000;
+}
+
+/* Styles for the stop button on the 3rd step of the intro tour. */
+html body div.introjs-helperLayer div.introjs-tooltip div.introjs-tooltiptext span {
+  color: #666666;
+  clear: top;
+  -webkit-border-radius: 0.2em 0 0 0.2em;
+  -moz-border-radius: 0.2em 0 0 0.2em;
+  border-radius: 0.2em 0 0 0.2em;
+  border-right: none;
+  position: relative;
+  overflow: visible;
+  display: inline-block;
+  padding: 0.3em 0.8em;
+  border: 1px solid #d4d4d4;
+  margin: 0;
+  text-decoration: none;
+  text-shadow: 1px 1px 0 #fff;
+  font: 11px/normal sans-serif;
+  color: #333;
+  white-space: nowrap;
+  cursor: pointer;
+  outline: none;
+  background-color: #ececec;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f4f4f4), to(#ececec));
+  background-image: -moz-linear-gradient(#f4f4f4, #ececec);
+  background-image: -o-linear-gradient(#f4f4f4, #ececec);
+  background-image: linear-gradient(#f4f4f4, #ececec);
+  -webkit-background-clip: padding;
+  -moz-background-clip: padding;
+  -o-background-clip: padding-box;
+  /*background-clip: padding-box;*/ /* commented out due to Opera 11.10 bug */
+  -webkit-border-radius: 0.2em;
+  -moz-border-radius: 0.2em;
+  border-radius: 0.2em;
+  /* IE hacks */
+  zoom: 1;
+  *display: inline;
+  margin-top: 10px;
+  top: 32px;
+  left: 10px;
+}
+
+/* Styles for the data filters title */
+#filtersTitle {
+  font-size: 1.5em;
+  color: #222222;
+  font-weight: bold;
+  padding-top: 5px;
+  text-align: center;
+}
+#surveyTitle {
+  font-size: 2.0em;
+  color: #222222;
+  font-weight: bold;
+  padding: 3px 0px 8px 0px;
+  text-align: center;
+}
+#filterBreadcrumbs {
+  margin-top: 5px;
+}
+
+#exitTheTour {
+  padding-left: 5px;
+}
+
+/* Styles for the show more filters link */
+#moreFiltersLink {
+  display: inline-block;
+  float: left;
+  padding-top: 10px;
+  padding-left: 5px;
+}
+div#hiddenFilters {
+  clear: both;
+}
+div#visibleFilters {
+  float: left;
+}
+
+/* Styles for the label on Program Skills tab */
+#majorDropdownLabel {
+  color: #F0B93A;
+}
+.dropdownProgramSkills {
+  height: 30px !important;
+  padding-top: 12px;
+  text-align: center;
+}
+
+/* Styles for the tooltip icons */
+.infoIcon {
+	margin-top: 7px;
+}
+
+
+
+
+
+
+/* ************************** Responsive Styles ******************************** */
+/* iPad - screen width from 768px up to 1023px */
+@media only screen and (min-width:768px) and (max-width:1023px) {
+  #container {
+    width: 100%;
+  }
+  .floater{
+    top: .8%;
+    height:82px;
+    width: 100% !important;
+    border-top:none;
+    clear:both;
+    margin-left:auto;
+    margin-right:auto;
+    float:left;
+  }
+  #floatingbar{
+    overflow: visible;
+    background-color: #013C73;
+    width: 100%;
+    height: 82px;
+  }
+  #floatingbar ul{
+   left: 49%;
+  }
+  #floatingbar ul li{
+   right:50%;
+   padding-bottom: 0px;
+   padding-top: 0px;
+  }
+/* Small tablet - screen width from 480px up to 767px */
+@media only screen and (min-width:480px) and (max-width:767px) {
+  #container {
+    width: 100%;
+  }
+  .floater{
+    top: .7%;
+  }
+}
+/* iPhone and small phones - screen width up to 479px */
+@media only screen and (max-width:479px) {
+  #container {
+    width: 100%;
+  }
+  .floater{
+    top: .6%;
+  }
+}
+/******************************* END RESPONSIVE STYLES **************************************/
+
+
+/* ----------------------- DO NOT PUT STYLES UNDER THIS LINE ------------------------------------- */

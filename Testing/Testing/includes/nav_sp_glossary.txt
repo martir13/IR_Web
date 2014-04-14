@@ -1,0 +1,17 @@
+</div><!--___ End page_copy ___ --> 
+
+</div><!--___ End contentMain ___ -->
+
+
+<!--_____________ BEGIN Nav _____________ -->
+
+<div id="nav">
+<h2><a href="/glossary/glossary.html">GLOSSARY OF TERMS</a></h2>
+<ul>
+	<li><a href="../glossary/planning-terms.html">Strategic Planning Terms</a></li>
+	<li><a href="../glossary/assessment-terms.html">Administrative Assessments Terms</a></li>
+</ul>
+<img src="../css/iface/nav-bottomfade.jpg" alt="" />
+
+<script language="JavaScript" type="text/javascript">setPage()</script>
+</div><!-- END section_nav -->

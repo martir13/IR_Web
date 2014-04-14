@@ -1,0 +1,77 @@
+.content {
+	font-family: helvetica, arial, sans-serif;
+	font-size: 9pt;
+	text-indent: 0px;
+}
+
+.subhead {
+	font-family: helvetica, arial, sans-serif;
+	font-size: 12pt;
+	text-indent: 0px;
+}
+
+.factoid {
+	font-family: helvetica, arial, sans-serif;
+	font-size: 9pt;
+	margin-left: 5px;
+	margin-right: 5px;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+.subnav {
+	font-family: helvetica, arial, sans-serif;
+	font-size: 9pt;
+	text-decoration: none;
+	color: #FFCCOO;
+}
+
+.news {
+	font-family: helvetica, arial, sans-serif;
+	font-size: 9pt;
+	margin-left: 5px;
+	margin-right: 5px;
+	text-decoration: none;
+	color: #000000;
+}
+
+.header_on_blue {
+	font-family: helvetica, arial, sans-serif;
+	font-size: 9pt;
+	margin-left: 5px;
+	margin-right: 5px;
+	text-decoration: none;
+	color: #FFCC00;
+}
+
+.homepageNavColumn {
+	font-family: helvetica, arial, sans-serif;
+	font-size: 10pt;
+	margin-left: 0px;
+	margin-right: 0px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #99CCCC;
+}
+
+.generallinkanchor {
+	font-family: helvetica, arial, sans-serif;
+	font-size: 10pt;
+	font-style: normal;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+}
+
+.blueanchor {	
+	color: #000066;
+}
+
+.whiteanchor {
+	font-family: helvetica, arial, sans-serif;
+	font-size: 10pt;
+	font-style: normal;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+}

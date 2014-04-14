@@ -1,0 +1,46 @@
+img { border: 0; margin: 10px 0; display: block; padding: 0;}
+img.landing-image, #logo-homelink img,  .flashdemo  { margin: 0}
+
+img a, a img {border: 0; text-decoration: none;}
+
+/*This is a full bleed image at top of pages above the H1*/
+.pageimage { position: relative; width: 720px; overflow: hidden; display: inline; }
+
+
+
+
+/*Photos with captions must be contained in the same floating div. A p tag under the image is styled as the caption*/
+
+div.photo-caption-r { float:right; margin: 5px 0 15px 15px; border-left: 3px solid #ccc; padding-left: 6px;}
+div.photo-caption-l { float:left; margin: 5px 15px 15px 0; }
+
+div.photo-caption-r img, div.photo-caption-l img { display: block;  margin: 0; padding: 0; border: 0;}
+div.photo-caption-l p, div.photo-caption-r p { width: 100%; font: bold .75em/1.2 Arial, Helvetica, sans-serif; margin: 0 0 0 0; padding: 8px 8px 6px 8px; background: #fff; }
+
+
+/*Gallery CSS developed for News Media image downloads /newsmedia/downloads/db01.html*/
+
+ul.gallery_list {
+	margin: 1em 0 0 -20px;
+	width: 100%;
+	list-style: none;
+}
+ul.gallery_list li {
+	float: left;
+	width: 160px; height: 270px;
+	margin: 20px 20px 0 0;
+	background: #CCCCCC;
+	padding: 15px;
+	list-style: none;
+	display: inline;
+	text-align: center;}
+
+ul.gallery_list img { 
+	border: 1px solid #fff;
+	margin-bottom: 6px;}
+
+ul.gallery_list p {
+	font: bold .8em/1.1 Arial, Helvetica, sans-serif; margin: 0 0 3px 0}
+ul.gallery_list p a {
+	font: normal .9em/1.1 Arial, Helvetica, sans-serif; margin: 0 0 3px 0}
+

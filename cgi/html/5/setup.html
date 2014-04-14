@@ -1,0 +1,256 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Remark Web Survey Control Panel</title>
+<SCRIPT LANGUAGE="JAVASCRIPT">
+function validate(action_name)
+{
+	switch(action_name)
+	{
+		case "UPDATE":
+		if(document.RWSADMIN.DEFAULT_DIR.value == '')
+		{
+			alert("Please enter a default Form directory.");
+			document.RWSADMIN.DEFAULT_DIR.focus();
+		}
+		else if(document.RWSADMIN.IMAGE_SCRIPT.value == '')
+		{
+			alert("Please enter the name of the Image Script.");
+			document.RWSADMIN.IMAGE_SCRIPT.focus();
+		}
+		else if((document.RWSADMIN.USE_LOCAL_IP.checked) && (document.RWSADMIN.LOCAL_IP.value == ''))
+		{
+			alert("Please enter the local IP address you would like to use for SMTP.");
+			document.RWSADMIN.LOCAL_IP.focus();
+		}
+		else
+		{
+			if (!(document.RWSADMIN.USE_LOCAL_IP.checked))
+			{
+				document.RWSADMIN.LOCAL_IP.value = "";
+			}
+			document.RWSADMIN.FORM_ACTION.value = "UPDATE!" + document.RWSADMIN.DEFAULT_DIR.value + ">" + document.RWSADMIN.AUTO_UPLOAD.checked + ">" + document.RWSADMIN.CGI_REDIRECT.checked + ">" + document.RWSADMIN.AUTO_DOWNLOAD.checked + ">" + document.RWSADMIN.LOG.checked + ">" + document.RWSADMIN.IMAGE_SCRIPT.value + ">" + document.RWSADMIN.AUTO_BACKUP.checked + ">" + document.RWSADMIN.LOCAL_IP.value + ">" + document.RWSADMIN.DIAGNOSTIC_MODE.checked;
+			document.RWSADMIN.submit();
+		}
+		break;
+	}
+}
+</SCRIPT>
+<style type="text/css">
+<!--
+body {
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	background: #FFFFFF;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+}
+
+/* Tips for Elastic layouts 
+1. Since the elastic layouts overall sizing is based on the user's default fonts size, they are more unpredictable. Used correctly, they are also more accessible for those that need larger fonts size since the line length remains proportionate.
+2. Sizing of divs in this layout are based on the 100% font size in the body element. If you decrease the text size overall by using a font-size: 80% on the body element or the #container, remember that the entire layout will downsize proportionately. You may want to increase the widths of the various divs to compensate for this.
+3. If font sizing is changed in differing amounts on each div instead of on the overall design (ie: #sidebar1 is given a 70% font size and #mainContent is given an 85% font size), this will proportionately change each of the divs overall size. You may want to adjust based on your final font sizing.
+*/
+.oneColElsCtrHdr #container {
+	width: 48em;  /* this width will create a container that will fit in an 800px browser window if text is left at browser default font sizes */
+	background: #DCE8FC;
+	margin: 15px auto; /* the auto margins (in conjunction with a width) center the page */
+	border: 1px solid #000000;
+	text-align: left; /* this overrides the text-align: center on the body element. */
+}
+.oneColElsCtrHdr #header {
+	background: #90B2EA;  /* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
+	height: 130px;
+} 
+.oneColElsCtrHdr #header h1 {
+	margin: 0;
+	padding-top: 23px;
+}
+.oneColElsCtrHdr #mainContent {
+	padding: 0 20px; /* remember that padding is the space inside the div box and margin is the space outside the div box */
+	background: #DCE8FC;
+}
+.oneColElsCtrHdr #footer { 
+	padding: 0 10px; /* this padding matches the left alignment of the elements in the divs that appear above it. */
+	background:#DCE8FC;
+} 
+.oneColElsCtrHdr #footer p {
+	margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
+	padding: 10px 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+	font-size: small;
+	text-align:center;
+}
+
+#nav-menu ul
+{
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+#nav-menu li
+{
+float: left;
+margin: 0 .1em;
+}
+
+#nav-menu li a
+{
+background: #ECF5FF;
+height: 1.9em;
+line-height: 1.9em;
+float: left;
+width: 8.9em;
+display: block;
+border: 1px solid #dcdce9;
+border-bottom: none;
+text-decoration: none;
+text-align: center;
+font-size:small;
+color:#000000
+}
+
+#nav-menu li a:hover
+{
+background:#B9CCFD;
+}
+
+/* Hide from IE5-Mac \*/
+#nav-menu li a
+{
+float: none
+}
+/* End hide */
+
+#nav-menu
+{
+	width:48em;
+	background: #90B2EA;
+	height:1.7em;
+	border-bottom: 1px solid #DCE8FC;
+} 
+.oneColElsCtrHdr #container #nav-menu li a.selected {
+	background:#DCE8FC;
+	border-bottom:none;
+	height:2em;
+}
+.oneColElsCtrHdr #container #header #welcome {
+	margin-top:65px;
+	float:right;
+	padding-right: 15px;
+	text-align:right;
+	font-size:smaller;
+	width:13.1em;
+}
+
+-->
+</style>
+</head>
+
+<body class="oneColElsCtrHdr">
+
+<div id="container">
+  <div id="header">
+    <img img src="@*(img)" alt="RWS5 Logo" width="128" height="128" style="float:left; margin-right:10px; margin-left:10px; " />
+    <div id="welcome">Welcome, <strong>@*(username)</strong>.<br /> 
+      <a href="@*(admin)@*(uid)&amp;NAV=Logout"><strong>Logout</strong></a></div>
+    <h1>Remark Web Survey<sup style="font-size:smaller;">&reg;</sup> 5<br />
+      <span style="font-size:smaller;">Admin Control Panel </span>
+      <!-- end #header -->
+    </h1>
+  </div>
+  <div id="nav-menu">
+  <ul>
+  <li><a class="selected">Server Setup</a></li>
+  <li><a href="@*(admin)@*(uid)&NAV=WebForms">Web Forms</a></li>
+  <li><a href="@*(admin)@*(uid)&NAV=Data">Data & Stats</a></li>
+  <li><a href="@*(admin)@*(uid)&NAV=Users">Users</a></li>
+  <li><a href="@*(admin)@*(uid)&NAV=Password">Password</a></li>
+  <li><a href="@*(admin)@*(uid)&NAV=Diagnostics">Diagnostics</a></li>
+  </ul>
+  </div>
+  <div id="mainContent">
+    <h2>Server Setup </h2>
+    
+    <table border="0" style="margin-left:10px; font-size:small;">
+    <FORM NAME="RWSADMIN" ACTION="@*(admin)@*(uid)" METHOD="POST">
+        <tr>
+          <td colspan="2"><i>*It is recommended that the default form directory not be a publicly accessible directory.</i></td>
+        </tr>
+        <tr>
+          <td width="202"><label for="FORM_DIR"><strong>Default form directory:</strong></label>          </td>
+    <td width="402"><input type="text" id="FORM_DIR" name="DEFAULT_DIR" value="@*(default_dir)" size="45" />
+              </INPUT></td>
+        </tr>
+        <tr>
+          <td width="202"><label for="IMG_SCRIPT"><strong>Image script name:</strong></label>          </td>
+    <td width="402"><input type="text" id="IMG_SCRIPT" name="IMAGE_SCRIPT" value="@*(img_script)" size="45" />
+              </INPUT></td>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+          <td align="left" colspan="2" style="height:2em"><input type="checkbox" id="AUTO_UP" name="AUTO_UPLOAD" @*(enable_auto_upload) />
+              <label for="AUTO_UP"><strong>Enable automatic publishing</strong></label>
+              <strong>
+              </INPUT>
+                </strong></td>
+        </tr>
+        <tr>
+          <td align="left" colspan="2" style="height:2em"><input type="checkbox" id="AUTO_DOWN" name="AUTO_DOWNLOAD" @*(enable_auto_download) />
+              <strong>
+                <label for="AUTO_DOWN">Enable automatic downloads</label>
+                </INPUT>
+                </strong></td>
+        </tr>
+        <tr>
+          <td align="left" colspan="2" style="height:2em"><input type="checkbox" id="LOGGING" name="LOG" @*(logging) />
+                <label for="LOGGING"><strong>Enable respondent logging</strong></label>
+                <strong>
+                </INPUT>
+                    </strong></td>
+        </tr>
+        <tr>
+          <td align="left" colspan="2" style="height:2em"><input type="checkbox" id="CGI_REDIR" name="CGI_REDIRECT" @*(cgi_redirection) />
+              <label for="CGI_REDIR"><strong>Enable CGI for form redirections</strong></label>
+              <strong>
+              </INPUT>
+                </strong></td>
+        </tr>
+        <tr>
+          <td align="left" colspan="2" style="height:2em"><input type="checkbox" id="AUTO_BACKUP" name="AUTO_BACKUP" @*(auto_backup) />
+              <strong>
+              <label for="AUTO_BACKUP">Enable data backup during uploads</label>
+              </INPUT>
+                </strong></td>
+        </tr>
+        <tr>
+          <td align="left" colspan="2" style="height:2em"><input type="checkbox" id="USE_LOCAL_IP" name="USE_LOCAL_IP" @*(use_local_ip) />
+              <label for="USE_LOCAL_IP"><strong>Define Local IP Address for SMTP&nbsp;</strong>&nbsp;</label>
+              <input type="text" id="LOCAL_IP" name="LOCAL_IP" value="@*(local_ip)" size="31" />
+            </INPUT></td>
+        </tr>
+        <tr>
+          <td align="left" colspan="2" style="height:2em"><input type="checkbox" id="DIAGNOSTIC_MODE" name="DIAGNOSTIC_MODE" @*(diagnostic_mode) />
+              <label for="DIAGNOSTIC_MODE"><strong>Turn on Diagnostic Mode (Note: Only recommended for use with Remark technical support)&nbsp;</strong>&nbsp;</label>
+            </INPUT></td>
+        </tr>
+        <tr>
+          <td colspan="2"></td>
+        </tr>
+        <tr>
+          <td colspan="2" align="right"><input type="button" id="UPDATE" name="UPDATE" value="Update" onclick="validate('UPDATE');" style="width: 144" />
+              </INPUT>
+  <INPUT TYPE="HIDDEN" ID="FORM_ACTION" NAME="FORM_ACTION"></INPUT></FORM></td>
+        </tr>
+</table>
+      <FORM NAME="RWSADMINGET" ACTION="@*(admin)@*(uid)" METHOD="GET"><INPUT TYPE="HIDDEN" ID="FORMNAME" NAME="FORMNAME"><INPUT TYPE="HIDDEN" ID="DOWNLOAD_TYPE" NAME="DOWNLOADTYPE"></INPUT></FORM>
+	<!-- end #mainContent --></div>
+  <div id="footer">
+    <p>© @*(year) Gravic, Inc. All Rights Reserved.</p>
+  <!-- end #footer --></div>
+<!-- end #container --></div>
+</body>
+</html>

@@ -1,0 +1,442 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux (vers 6 November 2007), see www.w3.org" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Embry-Riddle Aeronautical University - World's Leader in Aviation and Aerospace Education</title>
+<meta name="Description" content="Embry-Riddle is rated number one in aviation and aerospace college education offering a wide variety of air and space related degrees." />
+<meta name="Keywords" content="Embry-Riddle, aviation, aerospace, space, degree, education college" />
+<meta http-equiv="imagetoolbar" content="no" />
+<script language="javascript" type="text/javascript" src="http://www.erau.edu/assets/javascript/js/swfobject.js">
+</script>
+<script type="text/javascript"
+ src="//ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<link href="http://www.erau.edu/assets/css/print.css" rel="stylesheet" type="text/css" media="print" />
+<link href="/Surveys/css/iconize.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript">
+function printPage() 
+{
+window.parent.inner.focus();                   //inner the  id of iframe.....
+window.print()
+}
+</script>
+<style type="text/css">
+/*<![CDATA[*/
+@import url("/Surveys/css/screen.css");
+
+
+/*]]>*/
+</style><!--[if IE 6]>
+<link rel="stylesheet" type="text/css" href="http://www.erau.edu/css/ie6.css" />
+<![endif]-->
+<!--[if IE 7]>
+<link rel="stylesheet" type="text/css" href="http://www.erau.edu/css/ie7.css" />
+<![endif]-->
+
+<style type="text/css">
+/*<![CDATA[*/
+ li.c2 {color: red;}
+ a.c1 {color:red;}
+/*]]>*/
+</style>
+
+ 
+<style type="text/css">
+
+.ca{
+	margin: 1em 2em;
+		font: 1em/1.33 verdana, sans-serif;
+	background: #e0e0e0;
+	}
+
+.card {
+	float: left;
+	width: 250px;
+	height:550px;
+	margin-left:2%;
+	margin-right:2%;
+	margin-top:2%;
+	margin-bottom:2%;
+	padding: 10px 0;
+	text-align: center;
+	background: white;
+		border-top: 1px solid #666;
+	border-left: 1px solid #666;
+	border-right: 1px solid #666;
+	border-bottom: 1px solid #666;
+	font-size: 70%;
+	}
+	
+.card-title {
+	margin: 0 0 5px 0;
+	font-size: 130%;
+	background-position: center;
+	color: #dc8;
+	}
+
+.card-title a
+{
+color:rgb(0,54,108);
+}
+
+.card-title a:hover
+{
+color:#dc8;
+}
+.card-photo {
+	margin:0 auto; padding:0;
+	border: none;
+	}
+.card-desc {
+	margin: 5px 10px; padding:0;
+	text-align: center;
+	font-weight: bold;
+	font-size: 28px;
+	}
+.card-resp {
+	margin: 5px 10px; padding:0;
+	text-align: center;
+	font-weight: 500;
+	font-size: 16px;
+	}
+	.card-desckathy {
+	margin: 5px 10px; padding:0;
+	text-align: center;
+	font-weight: bold;
+	font-size: 14px;
+	}
+.card-resp {
+	margin: 5px 10px; padding:0;
+	text-align: center;
+	font-weight: 500;
+	font-size: 12px;
+	}
+
+.list {
+	margin: 5px 10px; padding:0;
+	text-align: left;
+	font-weight: 200;
+	font-size: 12px;
+	}
+.card-info {
+	margin: 1% 10px 0 10px; padding:0;
+	text-align: center;
+	font-size: 14px;
+	color: #666;
+	}
+
+.card-info a
+{ color:red;
+}
+
+#listmaria
+{
+	float:left;
+	margin-left:45px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+	
+#listmichael
+{
+	float:left;
+	margin-left:5px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+#listmichaelsecond
+{
+	float:left;
+	margin-left:50px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+
+}
+
+.cleaner { clear:both }
+
+div.card p.card-photo img {
+	margin: auto;
+}
+</style>
+
+<script type="text/javascript" src="/Staff/jquery.js"></script> 
+<script type="text/javascript" src="/Staff/thickbox.js"></script>
+<link rel="stylesheet" href="/Staff/thickbox.css" type="text/css" media="screen" />
+
+
+ 
+ 
+  
+
+
+
+<body onload="void(0);">
+
+<!-- header_extender displays bars at top of page behind header -->
+<div id="header_extender"></div>
+<div id="nonFooter"><!--Begin Header-->
+<div id="header">
+<div id="globalnav">
+
+<ul>
+	<li><a href="http://directory.erau.edu">PEOPLE SEARCH</a></li>
+	<li><a href="https://ernie.erau.edu">ERNIE</a> </li>
+</ul>
+</div>
+
+<!--SEARCH FORM-->
+<div id="erau_search_container">
+			<form  id="erausearch" action="http://www.erau.edu/searchresults.htm" onSubmit="dcsMultiTrack('DCS.dcsuri','http://www.erau.edu/searchresults.htm','WT.oss',erausearch.q.value, 'WT.oss_r','1');">
+    <input type="hidden" name="cx" value="002357049919384000151:ah5zfp7kmxe" />
+
+    <input type="hidden" name="cof" value="FORID:11" />
+    <input type="hidden" name="ie" value="UTF-8" />
+							<span class="search_input_container"><input type="text" name="q" size="21" class="search_input" /></span>
+							<span class="submit_button_container"><input type="submit" name="sa" value="SEARCH" class="submit" /></span>
+			</form>
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=erausearch&lang=en"></script>
+</div>
+
+
+<div id="logo-homelink"> <a href="http://www.erau.edu"><img src="http://www.erau.edu//assets/css/iface/erau-logo.gif" alt="Embry-Riddle Aeronautical University" />
+
+<span><img src="http://www.erau.edu/assets/css/iface/hover_sitehome-white.gif" alt="" /></span></a>
+</div>
+
+<div id="slogan">
+<a href="/"><img src="/images/ir.gif" alt="" /></a></div>
+<!--#include virtual="/Surveys/Climate/menu.txt"-->
+</div>
+<!--End Header-->
+<div style="height:1777px;" id="content"><!--Content contains #contentFlash and #contentCampusbar-->
+<!--_____________ END contentFlash_____________ -->
+<div id="contentHomelinks">
+<div id="panel"></div>
+<h1 align="center"> Staff</h1>
+<div class="photo">
+
+	<div class="card">
+		<h2 class="card-title"><a href="mailto:francom@erau.edu">Maria Franco</a></h2>
+		<p class="card-photo"><img src="/images/Picture 028.jpg" width="220" height="150" alt="" /></p>
+		<p class="card-desc">Director </p>
+		<p class="card-resp"><strong>Responsibilities</strong></p>
+		<div><ul style="margin-left:25%; font-size:12px; text-align:left; "><li style="margin-top:1%; margin-bottom:1%; ">
+		  Office Oversight
+		</li><li style="margin-top:1%; margin-bottom:1%; ">
+		  <a href="/Factbook/Retention/" style=" border-bottom-style:none border-bottom-width:thin; margin-top:1%; margin-bottom:4%;">Retention Research</a>
+		</li><li style="margin-top:1%; margin-bottom:1%; ">
+		  Enrollment Projections
+		</li>
+		</ul>
+		</div>
+		<hr>
+		<p class="card-info"><a href="/Staff/maria.htm?keepThis=true&TB_iframe=true&height=500&width=500" title="" class="thickbox">More...</a> </p>
+		<hr>
+	</div>
+</div>
+<div class="card">
+	<h2 class="card-title"><a href="mailto:amburged@erau.edu">Dale Amburgey </a></h2>
+	<p class="card-photo"><img src="/images/DalePic.JPG" width="220" height="150" alt="" /></p>
+	<p class="card-desc">Assistant Director </p>
+	<p class="card-resp"><strong>Responsibilities</strong></p>
+	<div><ul style="margin-left:25%; font-size:12px; text-align:left; "><li style="margin-top:1%; margin-bottom:1%; ">
+	  Data Governance
+	</li><li style="margin-top:1%; margin-bottom:1%; ">
+	  Data quality practice and procedures
+	</li><li style="margin-top:1%; margin-bottom:1%; ">
+	  Business Intelligence promotion and support
+	</li>
+	<li style="margin-top:1%; margin-bottom:1%; ">
+	  University dashboard/scorecard development
+	</li>
+	<li style="margin-top:1%; margin-bottom:1%; ">
+	  Data mining and predictive modeling
+	</li>
+
+	</ul>
+	</div>
+	<hr>
+	<p class="card-info"><a href="/Staff/dale.htm?keepThis=true&TB_iframe=true&height=500&width=500" title="" class="thickbox">More...</a> </p>
+	<hr>
+</div>
+</div>
+<div class="card">
+	<h2 class="card-title"><a href="mailto:ottosonk@erau.edu">Kathy Ottoson</a></h2>
+	<p class="card-photo"><img src="/images/kathypic.jpg" width="220" height="150" alt="" /></p>
+	<p class="card-desckathy">Manager - Information &amp; Reporting</p>
+	<p class="card-respkathy"><strong>Responsibilities</strong></p>
+	<ul style="margin-left:15%; font-size:12px; text-align:left; "><li style="margin-top:1%; margin-bottom:1%; ">
+	  Campus Solutions Downloads and Reporting
+	</li>
+	<li style="margin-top:1%; margin-bottom:1%; ">
+	  Reporting/Accountability Oversight
+	</li>
+	<li style="margin-top:1%; margin-bottom:1%; ">
+	  <a href="https://ernie.erau.edu/portal/page/portal/university_services/ir/discoverer/ir_data" style="border-bottom-style:none; border-bottom-width:thin; margin-top:1%; margin-bottom:4%;">Datamart/Dashboard Oversight</a>
+	</li>
+	<li style="margin-top:1%; margin-bottom:1%; ">
+	  <a href="/Factbook/Enrollment/" style="border-bottom-style:none; border-bottom-width:thin; margin-top:1%; margin-bottom:4%;">Enrollment Statistics</a>
+	</li>
+	<li style="margin-top:1%; margin-bottom:1%; ">
+	  <a href="/OnlineCourseEval/" target="_parent" style="border-bottom-style:none; border-bottom-width:thin; margin-top:1%; margin-bottom:4%;">Online Course Evaluations</a>
+	</li>
+	</ul><hr>
+	<p class="card-info"><a href="/Staff/kathy.htm?keepThis=true&TB_iframe=true&height=500&width=500" title="" class="thickbox">More...</a> </p>
+	<hr>
+</div>
+
+<div class="card">
+	<h2 class="card-title"><a href="mailto:michael.chronister@erau.edu">Michael Chronister</a></h2>
+	<p class="card-photo"><img src="/images/Michaelpic.jpg" width="220" height="150" alt="" /></p>
+	<p class="card-desckathy">Manager - Survey Research </p>
+	<p class="card-respkathy"><strong>Responsibilities</strong></p>
+	<div><ul style="margin-left:25%; font-size:12px; text-align:left; "><li style="margin-top:1%; margin-bottom:1%; ">
+	  <a href="/Surveys/" style="border-bottom-style:none; border-bottom-width:thin; margin-top:1%; margin-bottom:4%;">Survey Research Oversight</a>
+	</li>
+	<li style="margin-top:1%; margin-bottom:1%; ">
+	  <a href="/Surveys/" style="border-bottom-style:none; border-bottom-width:thin; margin-top:1%; margin-bottom:4%;">Student Satisfaction Surveys</a>
+	</li>
+	<li style="margin-top:1%; margin-bottom:1%; ">
+	  Related Focus Groups
+	</li>
+	</ul><hr>
+	<p class="card-info"><a href="/Staff/michael.htm?keepThis=true&TB_iframe=true&height=500&width=500" title="" class="thickbox">More...</a> </p>
+	<hr>
+	</div>
+</div>
+<hr>
+<div class="photo">
+<div class="card">
+	<h2 class="card-title"><a href="mailto:branteeb@erau.edu">Kimberly Brantley</a></h2>
+	<p class="card-photo"><img src="/images/kimpic.jpg" width="220" height="150" alt="" /></p>
+	<p class="card-desckathy">Senior Research Analyst </p>
+	<p class="card-respkathy"><strong>Responsibilities</strong></p>
+	<ul style="margin-left:25%; font-size:12px; text-align:left; "><li style="margin-top:1%; margin-bottom:1%; ">
+	  Graduating Student Survey
+	</li>
+	<li style="margin-top:1%; margin-bottom:1%; ">
+	  <a href="/Surveys/Alumni/" style="border-bottom-style:none; border-bottom-width:thin; margin-top:1%; margin-bottom:4%;">Alumni Survey</a>
+	</li>
+	<li style="margin-top:1%; margin-bottom:1%; ">
+	  <a href="/Surveys/efs/index.htm" style="border-bottom-style:none; border-bottom-width:thin; margin-top:1%; margin-bottom:4%;">Employer Feedback Survey</a>
+	</li>
+	<li style="margin-top:1%; margin-bottom:1%; ">
+	  <a href="/OnlineCourseEval/" target="_parent" style="border-bottom-style:none; border-bottom-width:thin; margin-top:1%; margin-bottom:4%;">Online Course Evaluations</a>
+	</li>
+
+	<li style="margin-top:1%; margin-bottom:1%; ">
+	  Related Focus Groups
+	</li>
+	</ul><hr>
+	<p class="card-info"><a href="/Staff/kim.htm?keepThis=true&TB_iframe=true&height=500&width=500" title="" class="thickbox">More...</a> </p>
+	<hr>
+</div>
+
+<div class="card">
+	<h2 class="card-title"><a href="mailto:mahesfe6@erau.edu@erau.edu">Nimesh Maheshwari</a></h2>
+	<p class="card-photo"><img src="/images/nimpic.jpg" width="220" height="150" alt="" /></p>
+	<p class="card-desckathy">Data &amp; Systems Analyst </p>
+	<p class="card-respkathy"><strong>Responsibilities</strong></p>
+	<ul style="margin-left:25%; font-size:12px; text-align:left; ">
+		<li style="margin-top:1%; margin-bottom:1%; ">
+	  <a href="https://ernie.erau.edu/portal/page/portal/university_services/ir/discoverer/ir_data" style="border-bottom-style:none; border-bottom-width:thin; margin-top:1%; margin-bottom:4%;">Dashboard Development & Maintainence</a>
+	</li>
+	<li style="margin-top:1%; margin-bottom:1%; ">
+	  <p>Datawarehouse Development</p>
+	</li>
+	<li style="margin-top:1%; margin-bottom:1%; ">
+	  <p>Report Development</p>
+	</li>
+	<li style="margin-top:1%; margin-bottom:1%; ">
+	  <a href="/" style="border-bottom-style:none; border-bottom-width:thin; margin-top:1%; margin-bottom:4%;">IR Website Administrator </a>
+	</li>
+	<li style="margin-top:1%; margin-bottom:1% ">
+	  IT Support for all IR Hardware/Software
+	</li>
+
+	</ul><hr>
+	<p class="card-info"><a href="/Staff/nimesh.htm?keepThis=true&TB_iframe=true&height=500&width=550" title="" class="thickbox">More...</a> </p>
+	<hr>
+</div>
+
+<div class="card">
+	<h2 class="card-title"><a href="mailto:AL-HAJEL@erau.edu@erau.edu">Lesley Al-Hajeri</a></h2>
+	<p class="card-photo"><img src="/images/lesley2.JPG" width="220" height="150" alt="" /></p>
+	<p class="card-desckathy">Information &amp; Reporting Coordinator </p>
+	<p class="card-respkathy"><strong>Responsibilities</strong></p>
+	<ul style="margin-left:25%; font-size:12px; text-align:left; ">
+		<li style="margin-top:1%; margin-bottom:1%; ">
+	  External Agency Requests
+	</li>
+	<li style="margin-top:1%; margin-bottom:1%; ">
+	  Internal and External Data Requests
+	</li>
+		<li style="margin-top:1%; margin-bottom:1%; ">
+	  <a href="/Factbook/" style="border-bottom-style:none; border-bottom-width:thin; margin-top:1%; margin-bottom:4%;">Factbook Updates</a>
+	</li>
+	<li style="margin-top:1%; margin-bottom:1%; ">
+	  <a href="http://www.erau.edu/about/facts-figures.html" style="border-bottom-style:none; border-bottom-width:thin; margin-top:1%; margin-bottom:4%;">Facts & Figures Updates</a>
+	</li>
+	<li style="margin-top:1%; margin-bottom:1%; ">
+	  IR Website/Executive Dashboard Support
+	</li>
+	<li style="margin-top:1%; margin-bottom:1%; ">
+	  Office Manager
+	</li>
+
+
+
+
+	</ul><hr>
+	<p class="card-info"><a href="/Staff/lesley.htm?keepThis=true&TB_iframe=true&height=500&width=550" title="" class="thickbox">More...</a> </p>
+	<hr>
+</div>
+
+<div class="card">
+<h2 class="card-title"><a href="mailto:instrsch@erau.edu">Alex Holtzapple</a></h2>
+<p class="card-photo"><img src="/images/alex.JPG" width="220" height="150" alt="" /></p>
+<p class="card-desckathy">Research Analyst </p>
+<p class="card-respkathy"><strong>Responsibilities</strong></p>
+<ul style="margin-left:25%; font-size:12px; text-align:left; ">
+	<li style="margin-top:1%; margin-bottom:1%; ">
+  <a href="/Surveys/Alumni/" style="border-bottom-style:none; border-bottom-width:thin; margin-top:1%; margin-bottom:4%;">Alumni Surveys (DB/PC/WW)</a>
+</li>
+<li style="margin-top:1%; margin-bottom:1%; ">
+  <a href="/Surveys/GSS/" style="border-bottom-style:none; border-bottom-width:thin; margin-top:1%; margin-bottom:4%;">Graduating Student Survey (GSS)</a>
+</li>
+	<li style="margin-top:1%; margin-bottom:1%; ">
+  <a href="/Surveys/efs/index.htm" style="border-bottom-style:none; border-bottom-width:thin; margin-top:1%; margin-bottom:4%;">Employer Feedback Survey</a>
+</li>
+<li style="margin-top:1%; margin-bottom:1%; ">
+  <a href="/Surveys/CIRP/" style="border-bottom-style:none; border-bottom-width:thin; margin-top:1%; margin-bottom:4%;">First Destination Survey </a>
+</li>
+
+
+
+
+
+</ul><hr>
+<p class="card-info"><a href="/Staff/Alex.htm?keepThis=true&TB_iframe=true&height=500&width=550" title="" class="thickbox">More...</a> </p>
+<hr>
+</div>
+</div>
+
+
+<!-- END contentHomelinks --></div>
+<!-- END content --></div>
+<!-- END nonFooter -->
+<!-- ____________________________ BEGIN footer ____________________________ -->
+<div id="footer">
+	<img style="float:left; margin: 0px" src="http://www.erau.edu/assets/images/usnews09-sm.gif" id="usnews" alt="us news icon" name="usnews" />
+<p class="copyright">&#169;Copyright 2008 Embry-Riddle Aeronautical University. All rights reserved.</p>
+<p class="address">Administrative Offices: 600 South Clyde Morris Blvd., Daytona Beach, FL 32114</p>
+</div>
+<!-- END footer -->
+
+</body>
+</html>
+
+    

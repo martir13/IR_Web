@@ -1,0 +1,146 @@
+/*__________BEGIN STYLES FOR EMBRY-RIDDLE TOP DROP DOWN NAVIGATION_________*/
+
+
+div#ernav { position: absolute; width:750px; top: 100px; left: 50%; margin-left:-375px; }
+
+/*all lists get white white background and borders L and R*/
+div#ernav ul { margin: 0; padding: 0;  background-color: white; border: 1px solid #ccc; border-width: 0 1px;} 
+
+/*After this all LIs are 92px wide. Sub menus width is changed when displayed*/
+div#ernav li { position: relative; list-style: none; margin: 0; padding: 0; float: left; width: 92px; line-height: 1em; font-weight: bold;}
+
+
+/*Border Dividers between level one LIs*/
+div#ernav ul.level1 li { border-left: 1px solid gray; }
+div#ernav ul.level1 li.last { border-right: 1px solid gray; }
+
+/*This keeps level 2 and 3 LIs from inheriting left borders from above dividers*/
+div#ernav ul.level2 li, div#ernav ul.level3 li { border-left: 0 }
+
+/*All LIs in nested dropdown lists are 14em align left. Level one is centered.*/
+div#ernav li li { height: auto; text-align: left; width: 14em;}
+
+
+div#ernav li a { display: block; padding: 0.25em 0 0.25em 0; text-decoration: none;  height: 25px; text-align: center; color: #000 }
+div#ernav li a:hover {color: #fff;} 
+
+div#ernav ul.level2 li a { padding-left: 0.5em}/*No padding in level 1 since text is centered*/
+div#ernav ul.level3 li a { padding-left: 0.5em}
+
+
+/*
+These styles would be used to add a background graphic to the level1 LIs class subnav.
+div#ernav li.submenu {background: url(dropmenu.gif) 95% 50% no-repeat;}
+div#ernav li.submenu:hover { color: #fff; background-color: #006;}
+*/
+
+div#ernav li li a { text-align: left; height: auto; font-weight: normal;}
+div#ernav>li a { width: auto;}
+
+
+div#ernav li:hover { background-color: #006;}
+div#ernav li:hover a { color: #fff; }
+
+
+div#ernav li:hover li a { color: #000; }
+div#ernav li:hover li a:hover { color: #fff; }
+
+
+div#ernav ul ul {position: absolute; display: none;} /*Every nested list does not display*/
+div#ernav ul ul li { border-bottom: 1px solid #ccc;} /*Every li in a nested list gets bottom border*/
+
+
+div#ernav li.submenu li.submenu { background: url(/menudev/submenu.gif) 95% 50% no-repeat; } /*Nested list submenu LIs get arrow image*/
+
+div#ernav li.submenu li.submenu:hover {background-color: #006;}
+div#ernav li.submenu li.submenu:hover a:link {color: #fff;}
+div#ernav li.submenu li.submenu:hover li a:link {color: #000;}
+div#ernav li.submenu li.submenu:hover li:hover a {color: #fff;}
+
+
+/*Display nested lists on hover*/
+div#ernav ul.level1 li.submenu:hover ul.level2, 
+div#ernav ul.level2 li.submenu:hover ul.level3 {display: block;  width: 14em;}
+
+
+/*Adjust position of lower level lists*/
+div#ernav ul.level2 {top: 1.5em left: -1px;}
+div#ernav ul.level3 {top: -1px; left: 14em}
+
+div#ernav a.db:hover {background-color: #3b6167;}
+div#ernav a.pr:hover {background-color: #973a1d;}
+div#ernav a.ww:hover {background-color: 4b0082;}
+div#ernav a.er:hover {background-color: #006;}
+
+
+
+
+
+/*______________BEGIN STYLES FOR EMBRY-RIDDLE HOME DROP DOWN NAVIGATION________________*/
+
+div#homenav { position: absolute; z-index: 1; width:290px; top: 1px; left: 30px; }
+
+/*all lists get white white background and borders L and R*/
+div#homenav ul { margin: 0; padding: 0;  background-color: white; border: 1px solid #ccc; border-width: 0 1px;} 
+
+/*After this all LIs are 135px wide. Sub menus width is changed when displayed*/
+div#homenav li { position: relative; list-style: none; margin: 0; padding: 0; float: left; width: 140px; line-height: .9em; font-weight: bold;}
+
+
+/*All LIs in nested dropdown lists are 14em align left. Level one is centered.*/
+div#homenav li li { height: auto; text-align: left; width: 14em;}
+
+
+div#homenav li a { font-size: 11px; display: block; padding: 0.25em 0 0.25em 0; text-decoration: none;  height: 13px; text-align: left; padding-left: 0.5em; color: #fff; } /*Overall menu text size*/
+* html div#homenav li a {  height: 11px; }
+
+
+
+
+div#homenav li a:hover {color: #fff;} /*Top level hover link font color*/
+
+/*
+div#homenav ul.level2 li a { padding-left: 0.5em}No padding in level 1 since text is centered
+div#homenav ul.level3 li a { padding-left: 0.5em}
+*/
+
+
+div#homenav li li a { text-align: left; height: auto; font-weight: normal;}
+div#homenav>li a { width: auto;}
+
+
+div#homenav li:hover { background-color: #006;}
+div#homenav li:hover a { color: #fff; } /*hover font color level 1*/
+
+
+div#homenav li:hover li a { color: #000; }
+div#homenav li:hover li a:hover { color: #fff; }
+
+
+div#homenav ul ul {position: absolute; display: none;} /*Every nested list does not display*/
+div#homenav ul ul li { border-bottom: 1px solid #ccc;} /*Every li in a nested list gets bottom border*/
+
+
+/*div#homenav li.submenu li.submenu { background: url(/menudev/submenu.gif) 95% 50% no-repeat; } Nested list submenu LIs get arrow image*/
+
+div#homenav li.submenu li.submenu:hover {background-color: #006;}
+div#homenav li.submenu li.submenu:hover a:link {color: #fff;}
+div#homenav li.submenu li.submenu:hover li a:link {color: #000;}
+div#homenav li.submenu li.submenu:hover li:hover a {color: #fff;}
+
+
+/*Display nested lists on hover*/
+div#homenav ul.level1 li.submenu:hover ul.level2, 
+div#homenav ul.level2 li.submenu:hover ul.level3 {display: block;  width: 14em;}
+
+
+/*Adjust position of lower level lists*/
+div#homenav ul.level2 {top: 1.5em left: -1px;}
+div#homenav ul.level3 {top: -1px; left: 14em}
+
+div#homenav a.db:hover {background-color: #3b6167;}
+div#homenav a.pr:hover {background-color: #973a1d;}
+div#homenav a.ww:hover {background-color: 4b0082;}
+div#homenav a.er:hover {background-color: #006;}
+
+

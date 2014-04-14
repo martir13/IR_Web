@@ -1,0 +1,142 @@
+* {
+  margin: 0 0 0 0;
+  padding: 0;
+}
+
+.menu  {
+  font-family: verdana, arial, sans-serif;
+  width:100%;
+  padding:10px 0 0px 50px;
+  position:relative;
+  z-index:100;
+
+
+ 
+  
+}
+
+/* remove the bullets and set the margin and padding to zero for the unordered list */
+.menu ul {
+  padding:0; 
+  margin:0; 
+  list-style-type: none; 
+  border:0;
+
+}
+
+/* float the list so that the items are in a line */
+.menu ul li  {
+  float:left; 
+  position:relative; 
+  margin-right:1px;
+}
+
+/* style the links to be 150px wide by 25px high. Set the background color and the font size. */
+.menu ul li a, 
+.menu ul li a:visited  {
+  display:block; 
+  text-align:center;
+  text-decoration:none; 
+  width:150px; 
+  height:25px; 
+  color:#000; 
+  background:#000 url(/images/db1.GIF); 
+  line-height:24px; 
+  font-size:11px; 
+  text-indent:10px;
+}
+
+/* Get rid of any default table style */
+table {
+  border-collapse:collapse;
+  margin:0; 
+  padding:0;
+}
+
+/* make the dropdown ul invisible */
+.menu ul li ul {
+  display:none; 
+  text-align:left; 
+  position:absolute; 
+  top:25px; 
+  left:-20px; 
+  text-align:left;
+  z-index:100; 
+  padding:0 30px 20px 20px; 
+ 
+}
+
+/* set the foreground color of the main menu li on hover and the border to trigger IE */
+.menu ul li:hover a, 
+.menu ul li a:hover {
+  color:#fff; 
+  border:0;
+}
+
+/* make the sub menu ul visible and position it beneath the first list item */
+.menu ul li:hover ul, 
+.menu ul li a:hover ul {
+  display:block;
+}
+
+/* make the sub menu ul li the full width with padding and border. Add an auto scroll bar */
+.menu ul li:hover ul li, 
+.menu ul li a:hover ul li {
+  /*background:#363636;*/
+  background:#006600;
+  color:#000; 
+  width:149px; 
+  height:150px;
+  overflow:auto; 
+  /*border-left:1px solid #7a7a7a;*/
+ 
+}
+
+/* hack the widht for IE5.5 */
+* html .menu ul li a:hover ul li {
+  width:150px; 
+  w\idth:149px;
+}
+
+/* style the background and foreground color of the submenu links */
+.menu ul li:hover ul li a, 
+.menu ul li a:hover ul li a {
+  float:left; 
+  display:block; 
+  /*background:#363636;*/
+  background:#006600;
+  color:#000; 
+  width:129px; 
+  text-align:left; 
+  text-decoration:none; 
+  border:0; 
+  text-indent:10px;
+}
+
+/* style the background and forground colors of the links on hover */
+.menu ul li:hover ul li a:hover,
+.menu ul li a:hover ul li a:hover {
+  text-decoration:none; 
+  color:#fff;
+  /*background:#222;*/
+  background:#006600;
+}
+
+div #childpage{
+ 
+  
+  height: auto;
+}
+
+
+#container1 {
+	margin-left:60px;
+	
+	
+	position:relative;
+
+	
+
+}
+
+

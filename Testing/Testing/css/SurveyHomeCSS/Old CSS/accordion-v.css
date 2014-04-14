@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.accordion {margin:14px; background-color:#dce3eb;}
+.accordion dd,.accordion dt{padding:10px;border:1px solid #fff; border-bottom:0;}
+/*.accordion dd:last-of-type,.accordion dt:last-of-type{border-bottom:1px solid #fff;}*/
+.accordion dt a{display:block; font-weight:bold; text-decoration:none;}
+.accordion dd a{font-weight:bold;} 
+.accordion dd{border-top:0; margin-left:0px; padding:1px; background-color:white;}
+/*.accordion dd:last-of-type{border-top:1px solid #fff;position:relative;top:-1px}*/
+
+/*	overrides for above generic style	*/
+#location .accordion {margin:0; background-color:transparent;}
+#location .accordion dd, #location .accordion dt{border:0px;}
+#location .accordion dd{padding:0px; background-color:transparent;}
+#location .accordion dt a{color:black;}
+/*#location .accordion dt a h4:after {content:url(../images/gold-arrow-10.png); margin-left:10px; margin-right:8px; float:right;}*/
+#location .accordion dd a{font-weight:normal;} 
+
+#resources .accordion {margin:0; background-color:transparent;}
+#resources .accordion dd, #resources .accordion dt{border:0px;}
+#resources .accordion dd{padding:0px; background-color:transparent;}
+#resources .accordion dt a{color:black;}
+/*#resources .accordion dt a h4:after {content:url(../images/gold-arrow-10.png); margin-left:10px; margin-right:8px; float:right;}*/
+#resources .accordion dd a{font-weight:normal;} 
+
+.accordion-closed:after {content:url(../img/gold-arrow-10-down.png); margin-left:10px; margin-right:14px; float:right;}
+.accordion-open:after {content:url(../img/gold-arrow-10-up.png); margin-left:10px; margin-right:14px; float:right;}
